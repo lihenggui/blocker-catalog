@@ -1,17 +1,17 @@
 # Component coverage
 
-Repositories: 509
+Repositories: 530
 
 | Capability | Repositories |
 | --- | ---: |
 | central-search | 1 |
 | google-index | 1 |
-| listing | 65 |
-| metadata | 373 |
+| listing | 68 |
+| metadata | 386 |
 | mirror | 48 |
 | nexus3 | 31 |
 
-Artifacts: 33803
+Artifacts: 33806
 Artifacts with components: 6034
 Components: 28104
 
@@ -10258,6 +10258,7 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 
 ## Repositories without enumeration or seeds
 
+- http://artifacts.unidata.ucar.edu/content/repositories/unidata-releases
 - http://bits.netbeans.org/maven2
 - http://bits.netbeans.org/nexus/content/groups/netbeans
 - http://cdn.adnxs.com/anx-sdk/maven
@@ -10302,13 +10303,17 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 - https://jipipe.hki-jena.de/nexus/repository/jipipe-releases
 - https://jipipe.hki-jena.de/nexus/repository/jipipe-snapshots
 - https://maven.pkg.github.com/saalfeldlab/*
+- https://mirrors.cloud.tencent.com/gradle/android
 - https://packages.jetbrains.team/maven/p/grazi/grazie-platform
 - https://raw.github.com/jug6ernaut/mvn-repo/mvn-repo
 - https://raw.githubusercontent.com/nroduit/mvn-repo/master
 - https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master
 - https://raw.githubusercontent.com/sendbird/sendbird-syncmanager-android/master
+- https://raw.githubusercontent.com/yuriy-budiyev/code-scanner/mvn-repo
 - https://repo.typesafe.com/typesafe/releases
 - https://repo.typesafe.com/typesafe/snapshots
 - https://repository.jboss.org/nexus
 - https://saalfeldlab.github.io/maven
 - https://storage.googleapis.com/devan-maven
+- https://storage.googleapis.com/download.flutter.io
+- https://webrtc.github.io/webrtc-org/native-code/android

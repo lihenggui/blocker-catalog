@@ -65,6 +65,15 @@
         "com.pangle.global:pag-gecko:2.0.0.8"
       ]
     },
+    "unfat-8364-20261112115847-release": {
+      "fetchedAt": "2026-11-15T13:14:41Z",
+      "sha256": "22a9a3c6b0d60e1583a84892667a3d0a442ac732a752d02d37f081695deb898d",
+      "dependencies": [
+        "androidx.recyclerview:recyclerview:1.2.1",
+        "com.pangle.global:pag-apm:2.0.0.11",
+        "com.pangle.global:pag-gecko:2.0.0.8"
+      ]
+    },
     "unfat-8401-20260831151758-release": {
       "fetchedAt": "2026-10-26T16:02:27Z",
       "sha256": "a5b0ceaf6922f08e6250eda44348bad344c8aff600cfa3e7e5a5ac321a5488b5",

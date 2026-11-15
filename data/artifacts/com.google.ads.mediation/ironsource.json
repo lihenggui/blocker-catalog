@@ -218,6 +218,17 @@
         "com.unity3d.ads-mediation:mediation-sdk:9.7.0",
         "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
       ]
+    },
+    "9.8.0.0": {
+      "fetchedAt": "2026-11-15T13:08:33Z",
+      "sha256": "9573369eae3271bd98d3312a8d8cf822dd515014e27dde672e6f0cb67013b3ad",
+      "dependencies": [
+        "androidx.annotation:annotation:1.5.0",
+        "com.google.ads.mediation:common:1.1.0",
+        "com.google.android.gms:play-services-ads:25.5.0",
+        "com.unity3d.ads-mediation:mediation-sdk:9.8.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
+      ]
     }
   },
   "components": [
@@ -227,7 +238,7 @@
       "versionRanges": [
         [
           "8.9.1.0",
-          "9.7.0.0"
+          "9.8.0.0"
         ]
       ],
       "exported": false,
@@ -244,7 +255,7 @@
       "versionRanges": [
         [
           "8.9.1.0",
-          "9.7.0.0"
+          "9.8.0.0"
         ]
       ],
       "exported": false,
@@ -261,7 +272,7 @@
       "versionRanges": [
         [
           "8.9.1.0",
-          "9.7.0.0"
+          "9.8.0.0"
         ]
       ],
       "exported": false,

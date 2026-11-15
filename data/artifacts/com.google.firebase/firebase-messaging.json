@@ -552,6 +552,33 @@
         "com.google.firebase:firebase-measurement-connector:19.0.0",
         "org.jetbrains.kotlin:kotlin-stdlib:2.1.21"
       ]
+    },
+    "26.0.2": {
+      "fetchedAt": "2026-11-15T13:09:11Z",
+      "sha256": "e819e404affe326a6282d9131620b46502866246308e6e136a38e387155d1833",
+      "dependencies": [
+        "androidx.annotation:annotation:1.8.1",
+        "com.google.android.datatransport:transport-api:5.0.0",
+        "com.google.android.datatransport:transport-backend-cct:5.0.0",
+        "com.google.android.datatransport:transport-runtime:5.0.0",
+        "com.google.android.gms:play-services-base:18.9.0",
+        "com.google.android.gms:play-services-basement:18.9.0",
+        "com.google.android.gms:play-services-cloud-messaging:17.4.0",
+        "com.google.android.gms:play-services-stats:17.0.2",
+        "com.google.android.gms:play-services-tasks:18.4.0",
+        "com.google.errorprone:error_prone_annotations:2.26.0",
+        "com.google.firebase:firebase-common:23.0.0",
+        "com.google.firebase:firebase-components:20.0.0",
+        "com.google.firebase:firebase-datatransport:21.0.0",
+        "com.google.firebase:firebase-encoders-json:19.0.0",
+        "com.google.firebase:firebase-encoders-proto:17.0.0",
+        "com.google.firebase:firebase-encoders:18.0.0",
+        "com.google.firebase:firebase-iid-interop:17.1.0",
+        "com.google.firebase:firebase-installations-interop:18.0.0",
+        "com.google.firebase:firebase-installations:20.0.0",
+        "com.google.firebase:firebase-measurement-connector:19.0.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.1.21"
+      ]
     }
   },
   "components": [
@@ -561,7 +588,7 @@
       "versionRanges": [
         [
           "23.3.0",
-          "26.0.1"
+          "26.0.2"
         ]
       ],
       "exported": false,
@@ -581,7 +608,7 @@
       "versionRanges": [
         [
           "23.3.1",
-          "26.0.1"
+          "26.0.2"
         ]
       ],
       "exported": true,
@@ -621,7 +648,7 @@
       "versionRanges": [
         [
           "23.3.0",
-          "26.0.1"
+          "26.0.2"
         ]
       ],
       "exported": false,

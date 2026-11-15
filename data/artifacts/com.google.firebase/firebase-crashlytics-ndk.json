@@ -210,6 +210,16 @@
         "com.google.firebase:firebase-components:20.0.0",
         "com.google.firebase:firebase-crashlytics:21.0.1"
       ]
+    },
+    "21.1.0": {
+      "fetchedAt": "2026-11-15T13:09:10Z",
+      "sha256": "ee8d7e551332187ff3394d6f1a63e4d9658f2a691eedd73a12b0f6387ce06e1e",
+      "dependencies": [
+        "com.google.android.gms:play-services-basement:18.9.0",
+        "com.google.firebase:firebase-common:23.0.0",
+        "com.google.firebase:firebase-components:20.0.0",
+        "com.google.firebase:firebase-crashlytics:21.1.0"
+      ]
     }
   },
   "components": [
@@ -219,7 +229,7 @@
       "versionRanges": [
         [
           "19.1.0",
-          "21.0.1"
+          "21.1.0"
         ]
       ],
       "exported": false,

@@ -482,6 +482,30 @@
         "org.jetbrains.kotlin:kotlin-stdlib:2.1.21",
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2"
       ]
+    },
+    "27.2.0": {
+      "fetchedAt": "2026-11-15T13:09:10Z",
+      "sha256": "cdf74b19df72268a16bf1424c9fbe6d2ac0f2959a2a82185da3eaff3e8ffd4e7",
+      "dependencies": [
+        "androidx.annotation:annotation:1.8.1",
+        "com.google.android.gms:play-services-base:18.9.0",
+        "com.google.android.gms:play-services-basement:18.9.0",
+        "com.google.android.gms:play-services-tasks:18.4.0",
+        "com.google.firebase:firebase-annotations:18.0.0",
+        "com.google.firebase:firebase-appcheck-interop:18.0.0",
+        "com.google.firebase:firebase-auth-interop:19.0.2",
+        "com.google.firebase:firebase-common:23.0.0",
+        "com.google.firebase:firebase-components:20.0.0",
+        "com.google.firebase:firebase-database-collection:19.0.0",
+        "com.google.firebase:protolite-well-known-types:19.0.0",
+        "com.google.re2j:re2j:1.6",
+        "io.grpc:grpc-android:1.84.0",
+        "io.grpc:grpc-okhttp:1.84.0",
+        "io.grpc:grpc-protobuf-lite:1.84.0",
+        "io.grpc:grpc-stub:1.84.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.1.21",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2"
+      ]
     }
   },
   "components": [
@@ -491,7 +515,7 @@
       "versionRanges": [
         [
           "25.1.0",
-          "27.1.0"
+          "27.2.0"
         ]
       ],
       "exported": false,

@@ -9,6 +9,14 @@
         "androidx.annotation:annotation:1.10.0",
         "org.jetbrains.kotlin:kotlin-stdlib:2.2.10"
       ]
+    },
+    "3.12.0": {
+      "fetchedAt": "2026-11-15T13:08:09Z",
+      "sha256": "142094f37fb78440e661f2b3ae62d8ee9053231d5da614fe967c1e8a04146e99",
+      "dependencies": [
+        "androidx.annotation:annotation:1.10.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.10"
+      ]
     }
   },
   "components": []

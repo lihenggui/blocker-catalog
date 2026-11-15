@@ -19,6 +19,15 @@
         "androidx.test:runner:1.8.0-alpha03",
         "junit:junit:4.13.2"
       ]
+    },
+    "1.8.0-alpha04": {
+      "fetchedAt": "2026-11-15T12:51:55Z",
+      "sha256": "82f543e178a09ece4a5b16a3cd25bf808148ff6f3631b7a856641727c77ad087",
+      "dependencies": [
+        "androidx.annotation:annotation:1.7.0",
+        "androidx.test:runner:1.8.0-alpha04",
+        "junit:junit:4.13.2"
+      ]
     }
   },
   "components": []

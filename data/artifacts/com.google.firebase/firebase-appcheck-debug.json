@@ -242,6 +242,18 @@
         "com.google.firebase:firebase-common:23.0.0",
         "com.google.firebase:firebase-components:20.0.0"
       ]
+    },
+    "20.1.0": {
+      "fetchedAt": "2026-11-15T13:09:07Z",
+      "sha256": "4d20705935d7ae945e0a959e8d8ac4afe3859e03a3d757693a51581f02b8645b",
+      "dependencies": [
+        "com.google.android.gms:play-services-base:18.9.0",
+        "com.google.android.gms:play-services-tasks:18.4.0",
+        "com.google.firebase:firebase-annotations:18.0.0",
+        "com.google.firebase:firebase-appcheck:20.1.0",
+        "com.google.firebase:firebase-common:23.0.0",
+        "com.google.firebase:firebase-components:20.0.0"
+      ]
     }
   },
   "components": [
@@ -251,7 +263,7 @@
       "versionRanges": [
         [
           "16.0.1",
-          "20.0.0"
+          "20.1.0"
         ]
       ],
       "exported": false,

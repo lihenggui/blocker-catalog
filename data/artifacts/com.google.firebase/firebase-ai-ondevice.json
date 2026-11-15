@@ -130,6 +130,25 @@
         "org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1",
         "org.slf4j:slf4j-nop:2.0.17"
       ]
+    },
+    "16.0.0-beta08": {
+      "fetchedAt": "2026-11-15T13:09:05Z",
+      "sha256": "060c987b2769281ac905194878cbcc1326a3c790401ec50d5ea2112acd411968",
+      "dependencies": [
+        "androidx.annotation:annotation:1.8.1",
+        "androidx.core:core-ktx:1.13.1",
+        "com.google.firebase:firebase-ai-ondevice-interop:16.0.0-beta08",
+        "com.google.firebase:firebase-annotations:18.0.0",
+        "com.google.firebase:firebase-common:23.0.0",
+        "com.google.firebase:firebase-components:20.0.0",
+        "com.google.mlkit:genai-prompt:1.0.0-beta5",
+        "com.google.mlkit:genai-schema:1.0.0-alpha2",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.1.21",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.10.2",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1",
+        "org.slf4j:slf4j-nop:2.0.17"
+      ]
     }
   },
   "components": [
@@ -139,7 +158,7 @@
       "versionRanges": [
         [
           "16.0.0-beta01",
-          "16.0.0-beta07"
+          "16.0.0-beta08"
         ]
       ],
       "exported": false,

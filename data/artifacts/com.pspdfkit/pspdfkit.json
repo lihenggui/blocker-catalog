@@ -65,6 +65,36 @@
         "org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0"
       ]
     },
+    "12.1.0": {
+      "fetchedAt": "2026-11-15T13:14:55Z",
+      "sha256": "1c37c26d1c1cf3ab347e6ac7aa2232abebc240301e2511dee7320533750e910d",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.8.0",
+        "androidx.cardview:cardview:1.0.0",
+        "androidx.compose.foundation:foundation:1.12.0",
+        "androidx.compose.material3:material3:1.4.0",
+        "androidx.compose.material:material-icons-core:1.7.8",
+        "androidx.compose.runtime:runtime:1.12.0",
+        "androidx.compose.ui:ui:1.12.0",
+        "androidx.constraintlayout:constraintlayout:2.2.2",
+        "androidx.exifinterface:exifinterface:1.4.2",
+        "androidx.fragment:fragment-compose:1.9.0",
+        "androidx.fragment:fragment-ktx:1.9.0",
+        "androidx.gridlayout:gridlayout:1.1.0",
+        "androidx.legacy:legacy-support-v4:1.0.0",
+        "androidx.preference:preference:1.2.1",
+        "androidx.recyclerview:recyclerview:1.4.0",
+        "androidx.viewpager2:viewpager2:1.1.0",
+        "androidx.webkit:webkit:1.17.0",
+        "com.google.android.material:material:1.14.0",
+        "org.jetbrains.kotlin:kotlin-parcelize-runtime:2.4.10",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.4.10",
+        "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0"
+      ]
+    },
     "2024.1.0": {
       "fetchedAt": "2026-10-25T19:45:23Z",
       "sha256": "233eb52ba5ad2719316baf9d02a10d74c49a5674c74c756592ee98d592da6eb1",
@@ -629,7 +659,7 @@
       "versionRanges": [
         [
           "11.7.0",
-          "12.0.0"
+          "12.1.0"
         ],
         [
           "2024.2.0",

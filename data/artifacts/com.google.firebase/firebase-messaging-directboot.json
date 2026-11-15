@@ -181,6 +181,15 @@
         "com.google.errorprone:error_prone_annotations:2.26.0",
         "com.google.firebase:firebase-messaging:26.0.1"
       ]
+    },
+    "26.0.2": {
+      "fetchedAt": "2026-11-15T13:09:11Z",
+      "sha256": "aca411b3219eb3e4b93b20f8172468c4b5b2578987d3704f18edb00b1492604a",
+      "dependencies": [
+        "com.google.android.gms:play-services-cloud-messaging:17.4.0",
+        "com.google.errorprone:error_prone_annotations:2.26.0",
+        "com.google.firebase:firebase-messaging:26.0.2"
+      ]
     }
   },
   "components": [
@@ -190,7 +199,7 @@
       "versionRanges": [
         [
           "23.3.0",
-          "26.0.1"
+          "26.0.2"
         ]
       ],
       "exported": true,

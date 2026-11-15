@@ -19,6 +19,15 @@
         "androidx.tracing:tracing:1.1.0",
         "org.jetbrains.kotlin:kotlin-stdlib:1.9.21"
       ]
+    },
+    "1.9.0-alpha05": {
+      "fetchedAt": "2026-11-15T12:51:54Z",
+      "sha256": "8cbb5d856691153a8ff081cc0b3725d35e28910d477f4d6e8db140b6118d88a3",
+      "dependencies": [
+        "androidx.annotation:annotation:1.7.0",
+        "androidx.tracing:tracing:1.1.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.9.21"
+      ]
     }
   },
   "components": []

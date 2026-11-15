@@ -17,6 +17,14 @@
         "androidx.annotation:annotation:1.6.0",
         "androidx.media3:media3-exoplayer:1.12.0-alpha02"
       ]
+    },
+    "1.12.0-beta01": {
+      "fetchedAt": "2026-11-15T12:49:37Z",
+      "sha256": "7e6f09681db518c5f9c95d7faee1aa8938c4a765787bce970e514569a439391f",
+      "dependencies": [
+        "androidx.annotation:annotation:1.6.0",
+        "androidx.media3:media3-exoplayer:1.12.0-beta01"
+      ]
     }
   },
   "components": []

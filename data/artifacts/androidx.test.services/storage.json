@@ -17,6 +17,14 @@
         "androidx.annotation:annotation:1.7.0",
         "androidx.test:monitor:1.9.0-alpha04"
       ]
+    },
+    "1.7.0-alpha04": {
+      "fetchedAt": "2026-11-15T12:51:53Z",
+      "sha256": "0680df019eb5c36cae96574b5aaccd90027395f645880291c70283c4a7c1da5f",
+      "dependencies": [
+        "androidx.annotation:annotation:1.7.0",
+        "androidx.test:monitor:1.9.0-alpha05"
+      ]
     }
   },
   "components": []

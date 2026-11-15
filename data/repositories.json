@@ -9,7 +9,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 9,
+    "occurrences": 10,
     "lastChecked": "2026-10-24T19:58:43Z"
   },
   {
@@ -31,7 +31,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T22:00:00Z"
   },
   {
@@ -40,8 +40,20 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T02:45:18Z"
+  },
+  {
+    "url": "http://artifacts.openmicroscopy.org/artifactory/ome.external",
+    "capabilities": [
+      "listing",
+      "metadata"
+    ],
+    "discoveredBy": [
+      "pom"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:50:37Z"
   },
   {
     "url": "http://artifacts.openmicroscopy.org/artifactory/ome.releases",
@@ -49,7 +61,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T02:45:18Z"
   },
   {
@@ -58,8 +70,19 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T02:45:18Z"
+  },
+  {
+    "url": "http://artifacts.unidata.ucar.edu/content/repositories/unidata-releases",
+    "capabilities": [
+      "metadata"
+    ],
+    "discoveredBy": [
+      "pom"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:50:32Z"
   },
   {
     "url": "http://bits.netbeans.org/maven2",
@@ -69,7 +92,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T22:00:26Z"
   },
   {
@@ -80,7 +103,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:32Z"
   },
   {
@@ -100,7 +123,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T02:45:18Z"
   },
   {
@@ -111,7 +134,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T22:00:00Z"
   },
   {
@@ -133,7 +156,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T22:00:18Z"
   },
   {
@@ -144,7 +167,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T22:00:22Z"
   },
   {
@@ -155,7 +178,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:37Z"
   },
   {
@@ -164,7 +187,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:33:12Z"
   },
   {
@@ -173,7 +196,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:33:12Z"
   },
   {
@@ -184,7 +207,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T21:58:57Z"
   },
   {
@@ -195,7 +218,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T21:59:00Z"
   },
   {
@@ -204,7 +227,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:33:12Z"
   },
   {
@@ -213,7 +236,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:33:12Z"
   },
   {
@@ -224,7 +247,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:20Z"
   },
   {
@@ -235,7 +258,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:23Z"
   },
   {
@@ -257,7 +280,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:16Z"
   },
   {
@@ -268,7 +291,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:27Z"
   },
   {
@@ -301,7 +324,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:15Z"
   },
   {
@@ -312,7 +335,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:29Z"
   },
   {
@@ -334,7 +357,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T21:59:07Z"
   },
   {
@@ -345,7 +368,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:59:54Z"
   },
   {
@@ -356,7 +379,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T19:34:35Z"
   },
   {
@@ -367,7 +390,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:30:17Z"
   },
   {
@@ -390,7 +413,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T19:34:43Z"
   },
   {
@@ -402,7 +425,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T19:34:46Z"
   },
   {
@@ -425,7 +448,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-24T20:00:46Z"
   },
   {
@@ -436,7 +459,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:30:14Z"
   },
   {
@@ -459,7 +482,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:25Z"
   },
   {
@@ -468,7 +491,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T18:52:51Z"
   },
   {
@@ -479,7 +502,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:12Z"
   },
   {
@@ -491,7 +514,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T22:00:02Z"
   },
   {
@@ -503,7 +526,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T21:59:12Z"
   },
   {
@@ -515,7 +538,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:40Z"
   },
   {
@@ -527,7 +550,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T22:00:03Z"
   },
   {
@@ -539,7 +562,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T22:00:05Z"
   },
   {
@@ -551,7 +574,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:59:10Z"
   },
   {
@@ -560,7 +583,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T13:40:56Z"
   },
   {
@@ -572,7 +595,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:29Z"
   },
   {
@@ -584,7 +607,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:34Z"
   },
   {
@@ -593,7 +616,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T18:52:51Z"
   },
   {
@@ -605,7 +628,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:47Z"
   },
   {
@@ -617,7 +640,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T21:59:13Z"
   },
   {
@@ -639,7 +662,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:58:36Z"
   },
   {
@@ -648,7 +671,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:33:12Z"
   },
   {
@@ -670,7 +693,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:30Z"
   },
   {
@@ -681,7 +704,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T22:00:14Z"
   },
   {
@@ -693,7 +716,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:43Z"
   },
   {
@@ -702,7 +725,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T13:40:56Z"
   },
   {
@@ -713,7 +736,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:30Z"
   },
   {
@@ -724,7 +747,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T19:35:00Z"
   },
   {
@@ -735,7 +758,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T19:35:04Z"
   },
   {
@@ -747,7 +770,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:35Z"
   },
   {
@@ -781,7 +804,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:06Z"
   },
   {
@@ -792,7 +815,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:47Z"
   },
   {
@@ -803,7 +826,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:39Z"
   },
   {
@@ -815,7 +838,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:30:01Z"
   },
   {
@@ -824,7 +847,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T02:45:18Z"
   },
   {
@@ -835,7 +858,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:30:20Z"
   },
   {
@@ -844,7 +867,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:33:12Z"
   },
   {
@@ -856,7 +879,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:44Z"
   },
   {
@@ -867,7 +890,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T19:34:39Z"
   },
   {
@@ -879,7 +902,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:30:04Z"
   },
   {
@@ -891,7 +914,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:30:08Z"
   },
   {
@@ -902,7 +925,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:30:11Z"
   },
   {
@@ -1010,7 +1033,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 13,
+    "occurrences": 14,
     "lastChecked": "2026-10-24T19:59:21Z"
   },
   {
@@ -1021,7 +1044,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 4,
+    "occurrences": 6,
     "lastChecked": "2026-10-23T04:59:38Z"
   },
   {
@@ -1054,7 +1077,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 252,
+    "occurrences": 254,
     "lastChecked": "2026-10-23T04:59:41Z"
   },
   {
@@ -1134,7 +1157,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-24T03:11:52Z"
   },
   {
@@ -1170,6 +1193,17 @@
     "lastChecked": "2026-10-25T06:27:23Z"
   },
   {
+    "url": "https://artifactory.yandex.ru/artifactory/yandex-mobile-releases",
+    "capabilities": [
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:55:23Z"
+  },
+  {
     "url": "https://artifacts.agora.io/maven",
     "capabilities": [],
     "discoveredBy": [
@@ -1190,6 +1224,18 @@
     "lastChecked": "2026-10-25T01:19:45Z"
   },
   {
+    "url": "https://artifacts.bitmovin.com/artifactory/public-releases",
+    "capabilities": [
+      "listing",
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:50:44Z"
+  },
+  {
     "url": "https://artifacts.consensys.net/public/maven/maven",
     "capabilities": [
       "metadata"
@@ -1208,7 +1254,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T21:59:55Z"
   },
   {
@@ -1217,7 +1263,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T02:45:18Z"
   },
   {
@@ -1228,7 +1274,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:58:50Z"
   },
   {
@@ -1239,7 +1285,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:59Z"
   },
   {
@@ -1250,7 +1296,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T21:58:39Z"
   },
   {
@@ -1261,7 +1307,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:43:02Z"
   },
   {
@@ -1272,7 +1318,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:36:19Z"
   },
   {
@@ -1348,7 +1394,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 19,
+    "occurrences": 21,
     "lastChecked": "2026-10-24T20:01:17Z"
   },
   {
@@ -1383,7 +1429,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T22:00:05Z"
   },
   {
@@ -1438,7 +1484,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 45,
+    "occurrences": 46,
     "lastChecked": "2026-10-23T04:59:53Z"
   },
   {
@@ -1460,7 +1506,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 257,
+    "occurrences": 266,
     "lastChecked": "2026-10-23T15:15:18Z"
   },
   {
@@ -1495,7 +1541,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 2,
+    "occurrences": 3,
     "lastChecked": "2026-10-25T21:59:41Z"
   },
   {
@@ -1507,7 +1553,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 2,
+    "occurrences": 3,
     "lastChecked": "2026-10-25T21:59:43Z"
   },
   {
@@ -1691,7 +1737,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:33Z"
   },
   {
@@ -1758,7 +1804,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 16,
+    "occurrences": 17,
     "lastChecked": "2026-10-23T04:59:56Z"
   },
   {
@@ -1956,7 +2002,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 2,
+    "occurrences": 3,
     "lastChecked": "2026-10-25T06:21:00Z"
   },
   {
@@ -2012,7 +2058,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:55Z"
   },
   {
@@ -2068,7 +2114,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 1,
+    "occurrences": 2,
     "lastChecked": "2026-10-27T00:54:23Z"
   },
   {
@@ -2208,7 +2254,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 15,
+    "occurrences": 16,
     "lastChecked": "2026-10-24T19:59:06Z"
   },
   {
@@ -2252,7 +2298,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 2,
+    "occurrences": 3,
     "lastChecked": "2026-10-25T06:27:07Z"
   },
   {
@@ -2341,6 +2387,15 @@
     "lastChecked": "2026-10-27T00:53:54Z"
   },
   {
+    "url": "https://google.maven.org/releases",
+    "capabilities": [],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:37:51Z"
+  },
+  {
     "url": "https://highsoft.bintray.com/Highcharts",
     "capabilities": [],
     "discoveredBy": [
@@ -2350,6 +2405,15 @@
     "lastChecked": "2026-10-25T00:37:05Z"
   },
   {
+    "url": "https://icy-nexus-dev.pasteur.cloud/repository/Icy",
+    "capabilities": [],
+    "discoveredBy": [
+      "pom"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:22:15Z"
+  },
+  {
     "url": "https://icy-nexus.pasteur.fr/repository/Icy",
     "capabilities": [
       "mirror"
@@ -2357,7 +2421,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:39:13Z"
   },
   {
@@ -2378,7 +2442,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:51Z"
   },
   {
@@ -2390,7 +2454,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:54Z"
   },
   {
@@ -2402,7 +2466,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:58Z"
   },
   {
@@ -2414,8 +2478,20 @@
       "github",
       "pom"
     ],
-    "occurrences": 92,
+    "occurrences": 95,
     "lastChecked": "2026-10-23T19:37:39Z"
+  },
+  {
+    "url": "https://jfrog-artifact.revechat.com/artifactory/artifactory",
+    "capabilities": [
+      "listing",
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:50:41Z"
   },
   {
     "url": "https://jipipe.hki-jena.de/nexus/repository/jipipe-releases",
@@ -2425,7 +2501,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:11Z"
   },
   {
@@ -2436,7 +2512,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:15Z"
   },
   {
@@ -2448,7 +2524,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 40935,
+    "occurrences": 41859,
     "lastChecked": "2026-10-23T04:59:59Z"
   },
   {
@@ -2461,7 +2537,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 12,
+    "occurrences": 13,
     "lastChecked": "2026-10-25T06:21:04Z"
   },
   {
@@ -2498,6 +2574,17 @@
     "lastChecked": "2026-10-23T19:11:10Z"
   },
   {
+    "url": "https://libs.dev.cred.club",
+    "capabilities": [
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:51:18Z"
+  },
+  {
     "url": "https://lightningkite-maven.s3.us-west-2.amazonaws.com",
     "capabilities": [
       "metadata"
@@ -2507,6 +2594,15 @@
     ],
     "occurrences": 3,
     "lastChecked": "2026-10-23T15:15:10Z"
+  },
+  {
+    "url": "https://linkedin.bintray.com/maven",
+    "capabilities": [],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:37:21Z"
   },
   {
     "url": "https://livekit.io",
@@ -2625,7 +2721,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 18,
+    "occurrences": 22,
     "lastChecked": "2026-10-24T15:04:23Z"
   },
   {
@@ -2636,7 +2732,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 3,
+    "occurrences": 4,
     "lastChecked": "2026-10-25T06:22:29Z"
   },
   {
@@ -2647,7 +2743,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 2,
+    "occurrences": 3,
     "lastChecked": "2026-10-23T05:00:02Z"
   },
   {
@@ -2658,7 +2754,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 3,
+    "occurrences": 5,
     "lastChecked": "2026-10-25T06:23:23Z"
   },
   {
@@ -2691,7 +2787,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 32,
+    "occurrences": 35,
     "lastChecked": "2026-10-23T05:00:02Z"
   },
   {
@@ -2702,7 +2798,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 95,
+    "occurrences": 101,
     "lastChecked": "2026-10-23T15:14:52Z"
   },
   {
@@ -2713,7 +2809,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 21,
+    "occurrences": 24,
     "lastChecked": "2026-10-23T15:14:53Z"
   },
   {
@@ -2724,7 +2820,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 66,
+    "occurrences": 71,
     "lastChecked": "2026-10-23T15:14:46Z"
   },
   {
@@ -2735,7 +2831,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 165,
+    "occurrences": 188,
     "lastChecked": "2026-10-23T15:14:53Z"
   },
   {
@@ -2883,7 +2979,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 2,
+    "occurrences": 3,
     "lastChecked": "2026-10-24T03:11:18Z"
   },
   {
@@ -2906,7 +3002,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T19:34:59Z"
   },
   {
@@ -2915,7 +3011,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T02:45:18Z"
   },
   {
@@ -2958,7 +3054,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T21:59:47Z"
   },
   {
@@ -2970,7 +3066,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:59:56Z"
   },
   {
@@ -2982,7 +3078,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:59:58Z"
   },
   {
@@ -3034,7 +3130,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:18Z"
   },
   {
@@ -3046,7 +3142,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:25Z"
   },
   {
@@ -3060,6 +3156,15 @@
     ],
     "occurrences": 1,
     "lastChecked": "2026-10-24T03:11:57Z"
+  },
+  {
+    "url": "https://maven.maplibre.org",
+    "capabilities": [],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:37:51Z"
   },
   {
     "url": "https://maven.mapmyindia.com/repository/mapmyindia",
@@ -3104,7 +3209,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-24T20:01:16Z"
   },
   {
@@ -3113,7 +3218,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 57,
+    "occurrences": 59,
     "lastChecked": "2026-10-25T00:52:41Z"
   },
   {
@@ -3124,7 +3229,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 3,
+    "occurrences": 6,
     "lastChecked": "2026-11-01T10:06:23Z"
   },
   {
@@ -3259,7 +3364,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 2,
+    "occurrences": 4,
     "lastChecked": "2026-11-01T10:07:57Z"
   },
   {
@@ -3270,7 +3375,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:21Z"
   },
   {
@@ -3281,6 +3386,15 @@
     ],
     "occurrences": 2,
     "lastChecked": "2026-10-25T05:37:10Z"
+  },
+  {
+    "url": "https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev",
+    "capabilities": [],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:35:38Z"
   },
   {
     "url": "https://maven.pkg.jetbrains.space/kotlin/p/wasm/experimental",
@@ -3297,7 +3411,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 110,
+    "occurrences": 111,
     "lastChecked": "2026-10-23T04:04:01Z"
   },
   {
@@ -3390,7 +3504,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:33:12Z"
   },
   {
@@ -3399,7 +3513,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:33:12Z"
   },
   {
@@ -3408,7 +3522,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:33:12Z"
   },
   {
@@ -3442,7 +3556,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 9,
+    "occurrences": 10,
     "lastChecked": "2026-10-25T21:58:49Z"
   },
   {
@@ -3454,7 +3568,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:38Z"
   },
   {
@@ -3467,7 +3581,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 9,
+    "occurrences": 10,
     "lastChecked": "2026-10-25T06:27:09Z"
   },
   {
@@ -3553,6 +3667,15 @@
     "lastChecked": "2026-10-24T19:40:21Z"
   },
   {
+    "url": "https://maven.walt.id/repository/waltid",
+    "capabilities": [],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:23:09Z"
+  },
+  {
     "url": "https://maven.weixin.qq.com",
     "capabilities": [],
     "discoveredBy": [
@@ -3580,7 +3703,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-25T06:22:47Z"
   },
   {
@@ -3653,7 +3776,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 18,
+    "occurrences": 21,
     "lastChecked": "2026-10-24T19:58:33Z"
   },
   {
@@ -3679,6 +3802,17 @@
     "lastChecked": "2026-11-08T10:19:05Z"
   },
   {
+    "url": "https://mirrors.cloud.tencent.com/gradle/android",
+    "capabilities": [
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:55:32Z"
+  },
+  {
     "url": "https://mirrors.cloud.tencent.com/nexus/repository/maven-public",
     "capabilities": [
       "mirror"
@@ -3697,7 +3831,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 3,
+    "occurrences": 4,
     "lastChecked": "2026-10-24T20:01:56Z"
   },
   {
@@ -3754,7 +3888,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 4,
+    "occurrences": 5,
     "lastChecked": "2026-10-25T06:26:29Z"
   },
   {
@@ -3832,7 +3966,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 2,
+    "occurrences": 3,
     "lastChecked": "2026-10-27T00:54:43Z"
   },
   {
@@ -3878,7 +4012,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:02Z"
   },
   {
@@ -3901,7 +4035,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 1,
+    "occurrences": 3,
     "lastChecked": "2026-10-25T06:25:30Z"
   },
   {
@@ -3913,7 +4047,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:40Z"
   },
   {
@@ -3924,7 +4058,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:37Z"
   },
   {
@@ -3993,7 +4127,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 15,
+    "occurrences": 16,
     "lastChecked": "2026-10-23T15:15:38Z"
   },
   {
@@ -4022,9 +4156,10 @@
       "mirror"
     ],
     "discoveredBy": [
+      "github",
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 10,
     "lastChecked": "2026-10-26T03:30:13Z"
   },
   {
@@ -4047,7 +4182,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 13,
+    "occurrences": 14,
     "lastChecked": "2026-10-24T15:04:00Z"
   },
   {
@@ -4059,7 +4194,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 245,
+    "occurrences": 258,
     "lastChecked": "2026-10-23T05:00:23Z"
   },
   {
@@ -4114,7 +4249,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:43:05Z"
   },
   {
@@ -4125,7 +4260,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:58:44Z"
   },
   {
@@ -4138,7 +4273,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T15:15:41Z"
   },
   {
@@ -4150,7 +4285,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:58:47Z"
   },
   {
@@ -4195,7 +4330,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 8,
+    "occurrences": 11,
     "lastChecked": "2026-10-25T06:20:51Z"
   },
   {
@@ -4217,6 +4352,17 @@
     ],
     "occurrences": 4,
     "lastChecked": "2026-10-25T06:24:37Z"
+  },
+  {
+    "url": "https://pkgs.dev.azure.com/genexuslabs/3361ab3b-96bc-4a69-a37a-f2b255ff2f35/_packaging/releases/maven/v1",
+    "capabilities": [
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:51:12Z"
   },
   {
     "url": "https://ramani.jfrog.io/artifactory/maplibre-android",
@@ -4424,7 +4570,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:03Z"
   },
   {
@@ -4505,6 +4651,17 @@
     "lastChecked": "2026-10-24T20:00:39Z"
   },
   {
+    "url": "https://raw.githubusercontent.com/yuriy-budiyev/code-scanner/mvn-repo",
+    "capabilities": [
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:51:13Z"
+  },
+  {
     "url": "https://razorpay.jfrog.io/artifactory/maven-public",
     "capabilities": [
       "metadata"
@@ -4575,7 +4732,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T21:59:59Z"
   },
   {
@@ -4642,6 +4799,15 @@
     "lastChecked": "2026-10-25T01:21:35Z"
   },
   {
+    "url": "https://repo.eclipse.org/content/repositories/jetty",
+    "capabilities": [],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:36:38Z"
+  },
+  {
     "url": "https://repo.eclipse.org/content/repositories/orbit-releases",
     "capabilities": [
       "nexus3",
@@ -4650,7 +4816,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:35Z"
   },
   {
@@ -4663,7 +4829,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 21,
+    "occurrences": 24,
     "lastChecked": "2026-10-24T20:01:13Z"
   },
   {
@@ -4675,7 +4841,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 13,
+    "occurrences": 14,
     "lastChecked": "2026-10-23T19:38:02Z"
   },
   {
@@ -4742,7 +4908,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:59:35Z"
   },
   {
@@ -4754,7 +4920,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-25T21:59:38Z"
   },
   {
@@ -4766,7 +4932,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:09Z"
   },
   {
@@ -4778,7 +4944,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:39:11Z"
   },
   {
@@ -4857,7 +5023,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-25T06:27:38Z"
   },
   {
@@ -4869,7 +5035,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T19:34:53Z"
   },
   {
@@ -4927,7 +5093,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 23,
+    "occurrences": 25,
     "lastChecked": "2026-10-24T15:04:19Z"
   },
   {
@@ -5076,7 +5242,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:39Z"
   },
   {
@@ -5088,7 +5254,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 6,
+    "occurrences": 7,
     "lastChecked": "2026-10-26T14:29:19Z"
   },
   {
@@ -5141,7 +5307,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:30:43Z"
   },
   {
@@ -5152,7 +5318,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:03Z"
   },
   {
@@ -5163,7 +5329,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 9,
+    "occurrences": 10,
     "lastChecked": "2026-10-25T01:22:29Z"
   },
   {
@@ -5174,7 +5340,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 24,
+    "occurrences": 27,
     "lastChecked": "2026-10-25T01:21:25Z"
   },
   {
@@ -5220,7 +5386,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:51Z"
   },
   {
@@ -5287,7 +5453,7 @@
       "github",
       "pom"
     ],
-    "occurrences": 74,
+    "occurrences": 78,
     "lastChecked": "2026-10-23T05:00:38Z"
   },
   {
@@ -5342,7 +5508,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 8,
+    "occurrences": 9,
     "lastChecked": "2026-10-25T21:58:53Z"
   },
   {
@@ -5388,6 +5554,17 @@
     "lastChecked": "2026-10-24T03:11:21Z"
   },
   {
+    "url": "https://storage.googleapis.com/download.flutter.io",
+    "capabilities": [
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:55:36Z"
+  },
+  {
     "url": "https://storage.googleapis.com/maven-central",
     "capabilities": [
       "metadata"
@@ -5406,8 +5583,19 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-24T03:11:08Z"
+  },
+  {
+    "url": "https://storage.googleapis.com/tensorflow/maven",
+    "capabilities": [
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:50:48Z"
   },
   {
     "url": "https://storage.zego.im/maven",
@@ -5417,7 +5605,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 115,
+    "occurrences": 125,
     "lastChecked": "2026-10-24T15:04:53Z"
   },
   {
@@ -5433,6 +5621,15 @@
     "lastChecked": "2026-10-25T06:22:54Z"
   },
   {
+    "url": "https://unityads.unity3d.com/unityads-maven",
+    "capabilities": [],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:37:21Z"
+  },
+  {
     "url": "https://webrtc.github.io/maven",
     "capabilities": [
       "metadata"
@@ -5442,6 +5639,17 @@
     ],
     "occurrences": 1,
     "lastChecked": "2026-10-24T03:11:55Z"
+  },
+  {
+    "url": "https://webrtc.github.io/webrtc-maven",
+    "capabilities": [
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:55:41Z"
   },
   {
     "url": "https://webrtc.github.io/webrtc-maven-repo",
@@ -5455,6 +5663,17 @@
     "lastChecked": "2026-10-25T06:22:44Z"
   },
   {
+    "url": "https://webrtc.github.io/webrtc-org/native-code/android",
+    "capabilities": [
+      "metadata"
+    ],
+    "discoveredBy": [
+      "github"
+    ],
+    "occurrences": 1,
+    "lastChecked": "2026-11-15T10:51:09Z"
+  },
+  {
     "url": "https://www.dcm4che.org/maven2",
     "capabilities": [
       "listing",
@@ -5463,7 +5682,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 7,
+    "occurrences": 8,
     "lastChecked": "2026-10-26T03:42:07Z"
   },
   {
@@ -5472,7 +5691,7 @@
     "discoveredBy": [
       "pom"
     ],
-    "occurrences": 5,
+    "occurrences": 6,
     "lastChecked": "2026-10-26T18:52:51Z"
   },
   {
@@ -5483,7 +5702,7 @@
     "discoveredBy": [
       "github"
     ],
-    "occurrences": 1807,
+    "occurrences": 1856,
     "lastChecked": "2026-10-23T05:00:41Z"
   },
   {
