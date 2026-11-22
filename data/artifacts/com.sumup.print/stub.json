@@ -12,6 +12,18 @@
         "javax.inject:javax.inject:1",
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0"
       ]
+    },
+    "7.2.0": {
+      "fetchedAt": "2026-11-22T13:48:30Z",
+      "sha256": "f6787387309dfee13a6ddfc97b9ab98a699c319495bca89ebb784dad9c147678",
+      "dependencies": [
+        "com.google.dagger:hilt-android:2.59.2",
+        "com.sumup.android:logging:2.4.1",
+        "com.sumup.print:api:7.2.0",
+        "javax.inject:javax.inject:1",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.21",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0"
+      ]
     }
   },
   "components": []

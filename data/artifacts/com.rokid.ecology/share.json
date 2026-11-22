@@ -254,6 +254,20 @@
         "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
       ]
     },
+    "1.17.7": {
+      "fetchedAt": "2026-11-22T13:31:24Z",
+      "sha256": "7240dd35b69f66aedc4e0f2bdc8013a84336760e08c2e61cabd0f966bd670f05",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.appcompat:appcompat:1.6.1",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "com.rokid.ecology:base:1.17.7",
+        "com.rokid.ecology:thirdparty:1.17.7",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
+    },
     "1.17.20": {
       "fetchedAt": "2026-10-25T19:54:59Z",
       "sha256": "7240dd35b69f66aedc4e0f2bdc8013a84336760e08c2e61cabd0f966bd670f05",
@@ -281,6 +295,76 @@
         "com.rokid.ecology:thirdparty:1.18.0",
         "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
       ]
+    },
+    "1.18.1": {
+      "fetchedAt": "2026-11-22T13:31:18Z",
+      "sha256": "7240dd35b69f66aedc4e0f2bdc8013a84336760e08c2e61cabd0f966bd670f05",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.appcompat:appcompat:1.6.1",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "com.rokid.ecology:base:1.18.1",
+        "com.rokid.ecology:thirdparty:1.18.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
+    },
+    "1.18.2": {
+      "fetchedAt": "2026-11-22T13:31:12Z",
+      "sha256": "7240dd35b69f66aedc4e0f2bdc8013a84336760e08c2e61cabd0f966bd670f05",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.appcompat:appcompat:1.6.1",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "com.rokid.ecology:base:1.18.2",
+        "com.rokid.ecology:thirdparty:1.18.2",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
+    },
+    "1.18.3": {
+      "fetchedAt": "2026-11-22T13:31:05Z",
+      "sha256": "7240dd35b69f66aedc4e0f2bdc8013a84336760e08c2e61cabd0f966bd670f05",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.appcompat:appcompat:1.6.1",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "com.rokid.ecology:base:1.18.3",
+        "com.rokid.ecology:thirdparty:1.18.3",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
+    },
+    "1.19.0": {
+      "fetchedAt": "2026-11-22T13:31:00Z",
+      "sha256": "7240dd35b69f66aedc4e0f2bdc8013a84336760e08c2e61cabd0f966bd670f05",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.appcompat:appcompat:1.6.1",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "com.rokid.ecology:base:1.19.0",
+        "com.rokid.ecology:thirdparty:1.19.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
+    },
+    "1.19.2": {
+      "fetchedAt": "2026-11-22T13:30:55Z",
+      "sha256": "7240dd35b69f66aedc4e0f2bdc8013a84336760e08c2e61cabd0f966bd670f05",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.appcompat:appcompat:1.6.1",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "com.rokid.ecology:base:1.19.2",
+        "com.rokid.ecology:thirdparty:1.19.2",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
     }
   },
   "components": [
@@ -290,7 +374,7 @@
       "versionRanges": [
         [
           "1.14.13",
-          "1.18.0"
+          "1.19.2"
         ]
       ],
       "exported": false,

@@ -313,6 +313,24 @@
         "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
       ]
     },
+    "1.17.7": {
+      "fetchedAt": "2026-11-22T13:32:11Z",
+      "sha256": "85df7bef6df928e76ad3a246831ad6cf6c33f54861c8d2f021c46ada9ce6b97c",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "androidx.window:window-java:1.5.1",
+        "com.rokid.ecology:base:1.17.7",
+        "com.rokid.ecology:deeplink:1.17.7",
+        "com.rokid.ecology:h5:1.17.7",
+        "com.rokid.ecology:share:1.17.7",
+        "com.rokid.ecology:shared-post:1.17.7",
+        "com.rokid.ecology:thirdparty:1.17.7",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
+    },
     "1.17.20": {
       "fetchedAt": "2026-10-25T19:56:47Z",
       "sha256": "85df7bef6df928e76ad3a246831ad6cf6c33f54861c8d2f021c46ada9ce6b97c",
@@ -348,6 +366,96 @@
         "com.rokid.ecology:thirdparty:1.18.0",
         "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
       ]
+    },
+    "1.18.1": {
+      "fetchedAt": "2026-11-22T13:32:04Z",
+      "sha256": "85df7bef6df928e76ad3a246831ad6cf6c33f54861c8d2f021c46ada9ce6b97c",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "androidx.window:window-java:1.5.1",
+        "com.rokid.ecology:base:1.18.1",
+        "com.rokid.ecology:deeplink:1.18.1",
+        "com.rokid.ecology:h5:1.18.1",
+        "com.rokid.ecology:share:1.18.1",
+        "com.rokid.ecology:shared-post:1.18.1",
+        "com.rokid.ecology:thirdparty:1.18.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
+    },
+    "1.18.2": {
+      "fetchedAt": "2026-11-22T13:31:58Z",
+      "sha256": "85df7bef6df928e76ad3a246831ad6cf6c33f54861c8d2f021c46ada9ce6b97c",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "androidx.window:window-java:1.5.1",
+        "com.rokid.ecology:base:1.18.2",
+        "com.rokid.ecology:deeplink:1.18.2",
+        "com.rokid.ecology:h5:1.18.2",
+        "com.rokid.ecology:share:1.18.2",
+        "com.rokid.ecology:shared-post:1.18.2",
+        "com.rokid.ecology:thirdparty:1.18.2",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
+    },
+    "1.18.3": {
+      "fetchedAt": "2026-11-22T13:31:52Z",
+      "sha256": "85df7bef6df928e76ad3a246831ad6cf6c33f54861c8d2f021c46ada9ce6b97c",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "androidx.window:window-java:1.5.1",
+        "com.rokid.ecology:base:1.18.3",
+        "com.rokid.ecology:deeplink:1.18.3",
+        "com.rokid.ecology:h5:1.18.3",
+        "com.rokid.ecology:share:1.18.3",
+        "com.rokid.ecology:shared-post:1.18.3",
+        "com.rokid.ecology:thirdparty:1.18.3",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
+    },
+    "1.19.0": {
+      "fetchedAt": "2026-11-22T13:31:46Z",
+      "sha256": "85df7bef6df928e76ad3a246831ad6cf6c33f54861c8d2f021c46ada9ce6b97c",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "androidx.window:window-java:1.5.1",
+        "com.rokid.ecology:base:1.19.0",
+        "com.rokid.ecology:deeplink:1.19.0",
+        "com.rokid.ecology:h5:1.19.0",
+        "com.rokid.ecology:share:1.19.0",
+        "com.rokid.ecology:shared-post:1.19.0",
+        "com.rokid.ecology:thirdparty:1.19.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
+    },
+    "1.19.2": {
+      "fetchedAt": "2026-11-22T13:31:41Z",
+      "sha256": "85df7bef6df928e76ad3a246831ad6cf6c33f54861c8d2f021c46ada9ce6b97c",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.3",
+        "androidx.compose:compose-bom:2025.02.00",
+        "androidx.core:core-ktx:1.12.0",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7",
+        "androidx.window:window-java:1.5.1",
+        "com.rokid.ecology:base:1.19.2",
+        "com.rokid.ecology:deeplink:1.19.2",
+        "com.rokid.ecology:h5:1.19.2",
+        "com.rokid.ecology:share:1.19.2",
+        "com.rokid.ecology:shared-post:1.19.2",
+        "com.rokid.ecology:thirdparty:1.19.2",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.20"
+      ]
     }
   },
   "components": [
@@ -357,7 +465,7 @@
       "versionRanges": [
         [
           "1.17.0",
-          "1.18.0"
+          "1.19.2"
         ]
       ],
       "exported": false,
@@ -378,7 +486,7 @@
       "versionRanges": [
         [
           "1.14.13",
-          "1.18.0"
+          "1.19.2"
         ]
       ],
       "exported": false,
@@ -399,7 +507,7 @@
       "versionRanges": [
         [
           "1.14.13",
-          "1.18.0"
+          "1.19.2"
         ]
       ],
       "exported": false,
@@ -420,7 +528,7 @@
       "versionRanges": [
         [
           "1.14.13",
-          "1.18.0"
+          "1.19.2"
         ]
       ],
       "exported": false,

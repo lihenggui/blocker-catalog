@@ -6,6 +6,11 @@
       "fetchedAt": "2026-10-25T20:34:25Z",
       "sha256": "4f26732940c394ad33d2c45b15e40e5b075668fe5929d9da8317ca00636012bc",
       "dependencies": []
+    },
+    "2.6.2-P": {
+      "fetchedAt": "2026-11-22T13:44:03Z",
+      "sha256": "4f26732940c394ad33d2c45b15e40e5b075668fe5929d9da8317ca00636012bc",
+      "dependencies": []
     }
   },
   "components": []

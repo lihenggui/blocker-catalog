@@ -10,6 +10,16 @@
         "com.google.code.gson:gson:2.9.1",
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0"
       ]
+    },
+    "7.2.0": {
+      "fetchedAt": "2026-11-22T13:47:37Z",
+      "sha256": "eb187867a0c7c399ae6d8f18077a95038d3e12564cb9084dc034d8d01bdc8930",
+      "dependencies": [
+        "androidx.annotation:annotation:1.8.0",
+        "com.google.code.gson:gson:2.9.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.21",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0"
+      ]
     }
   },
   "components": []

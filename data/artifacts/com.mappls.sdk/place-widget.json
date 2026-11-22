@@ -180,6 +180,16 @@
         "com.mappls.sdk:mappls-android-sdk:8.3.3"
       ]
     },
+    "2.4.4": {
+      "fetchedAt": "2026-11-22T13:24:38Z",
+      "sha256": "ddf2cd8b2fd78f7ce10ad2eca7046c053446d7686d0661cbee839423024155f9",
+      "dependencies": [
+        "androidx.lifecycle:lifecycle-livedata:2.9.1",
+        "androidx.lifecycle:lifecycle-viewmodel-android:2.9.1",
+        "androidx.room:room-runtime:2.7.1",
+        "com.mappls.sdk:mappls-android-sdk:8.3.4"
+      ]
+    },
     "3.0.0": {
       "fetchedAt": "2026-10-24T21:44:57Z",
       "sha256": "ddf2cd8b2fd78f7ce10ad2eca7046c053446d7686d0661cbee839423024155f9",

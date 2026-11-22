@@ -6,6 +6,13 @@
       "fetchedAt": "2026-10-26T05:59:56Z",
       "sha256": "d97119a1c47f4ad66ad887a0428125e68efa640aa4af77e9943d6a369de3465b",
       "dependencies": []
+    },
+    "7.2.0": {
+      "fetchedAt": "2026-11-22T13:48:36Z",
+      "sha256": "d97119a1c47f4ad66ad887a0428125e68efa640aa4af77e9943d6a369de3465b",
+      "dependencies": [
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.21"
+      ]
     }
   },
   "components": []

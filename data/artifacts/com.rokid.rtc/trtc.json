@@ -2,6 +2,22 @@
   "coordinate": "com.rokid.rtc:trtc",
   "repository": "https://maven.rokid.com/repository/maven-public",
   "versions": {
+    "1.0.1": {
+      "fetchedAt": "2026-11-22T13:41:04Z",
+      "sha256": "d6609316703b78659352b65512c97521f18f35b6df816ba401d16f130a9fd13d",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:2.1.0",
+        "com.rokid.rtc:base:0.0.8",
+        "com.tencent.liteav:LiteAVSDK_TRTC:10.3.0.11235",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
     "2.0.1-global": {
       "fetchedAt": "2026-10-25T20:31:40Z",
       "sha256": "da24a109be40a05b2a5db0bca6c1d0f50a00b5a697d625b1743f4d1d2fb6dc03",
@@ -94,7 +110,7 @@
       "type": "provider",
       "versionRanges": [
         [
-          "2.0.1-global",
+          "1.0.1",
           "4.0.1-global"
         ]
       ],
@@ -113,7 +129,7 @@
       "type": "activity",
       "versionRanges": [
         [
-          "2.0.1-global",
+          "1.0.1",
           "4.0.1-global"
         ]
       ],

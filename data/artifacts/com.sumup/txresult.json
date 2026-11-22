@@ -34,6 +34,44 @@
         "com.sumup:designbase:7.1.0",
         "com.sumup:eventbus-integration:7.1.0"
       ]
+    },
+    "7.2.0": {
+      "fetchedAt": "2026-11-22T13:49:37Z",
+      "sha256": "bf6f17aaeebb2ba9ec044c6af64a2375f07448ee550fbfb91e72bfd7d9f17262",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.1",
+        "androidx.appcompat:appcompat:1.7.0",
+        "androidx.compose:compose-bom:2024.09.00",
+        "androidx.constraintlayout:constraintlayout:2.1.4",
+        "androidx.databinding:viewbinding:9.2.1",
+        "androidx.lifecycle:lifecycle-runtime-compose:2.8.5",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.8.5",
+        "androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.5",
+        "androidx.viewpager2:viewpager2:1.0.0",
+        "com.airbnb.android:lottie:6.1.0",
+        "com.google.android.material:material:1.12.0",
+        "com.google.dagger:hilt-android:2.59.2",
+        "com.sumup.android:logging:2.4.1",
+        "com.sumup.coffeeshop:api:7.2.0",
+        "com.sumup.core:analytics:7.2.0",
+        "com.sumup.core:eventbus-integration:7.2.0",
+        "com.sumup.core:feature-flag:7.2.0",
+        "com.sumup.core:local-storage:7.2.0",
+        "com.sumup.core:system:7.2.0",
+        "com.sumup.core:tmp-bridge:7.2.0",
+        "com.sumup.core:ui:7.2.0",
+        "com.sumup.core:validators-formatters:7.2.0",
+        "com.sumup.designlib:circuit-ui:3.10.0",
+        "com.sumup.designlib:solo-ui:3.10.0",
+        "com.sumup.fiscalizationeventjournal:api:7.2.0",
+        "com.sumup.invoices:api:7.2.0",
+        "com.sumup.loyalty:api:7.2.0",
+        "com.sumup.print:api:7.2.0",
+        "com.sumup.receipt:api:7.2.0",
+        "com.sumup:base-common:7.2.0",
+        "com.sumup:designbase:7.2.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.21"
+      ]
     }
   },
   "components": []

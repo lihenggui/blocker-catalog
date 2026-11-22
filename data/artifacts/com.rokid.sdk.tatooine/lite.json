@@ -2,6 +2,176 @@
   "coordinate": "com.rokid.sdk.tatooine:lite",
   "repository": "https://maven.rokid.com/repository/maven-public",
   "versions": {
+    "0.0.1.20": {
+      "fetchedAt": "2026-11-22T13:42:36Z",
+      "sha256": "f13f49760e185bfcf3fe78d9c82748d57f84356068102aed245bd7f254f78795",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.2.0",
+        "androidx.constraintlayout:constraintlayout:1.1.3",
+        "androidx.databinding:viewbinding:7.1.3",
+        "com.google.android.material:material:1.0.0",
+        "com.google.code.gson:gson:2.2.4",
+        "com.rokid.sdk.tatooine.lite.rsceneform:sceneform:0.0.1.20",
+        "com.rokid.sdk.tatooine.lite:cacheWrapper:0.0.1.20",
+        "com.rokid.sdk.tatooine.lite:dataStorage:0.0.1.20",
+        "com.rokid.sdk.tatooine.lite:dynamicRes:0.0.1.20",
+        "com.rokid.sdk.tatooine.lite:micro-gltf:0.0.1.20",
+        "com.rokid.sdk.tatooine.lite:rbase:0.0.1.20",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1",
+        "top.zibin:Luban:1.1.8"
+      ]
+    },
+    "0.0.1.21": {
+      "fetchedAt": "2026-11-22T13:42:30Z",
+      "sha256": "f13f49760e185bfcf3fe78d9c82748d57f84356068102aed245bd7f254f78795",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.2.0",
+        "androidx.constraintlayout:constraintlayout:1.1.3",
+        "androidx.databinding:viewbinding:7.1.3",
+        "com.google.android.material:material:1.0.0",
+        "com.google.code.gson:gson:2.2.4",
+        "com.rokid.sdk.tatooine.lite.rsceneform:sceneform:0.0.1.21",
+        "com.rokid.sdk.tatooine.lite:cacheWrapper:0.0.1.21",
+        "com.rokid.sdk.tatooine.lite:dataStorage:0.0.1.21",
+        "com.rokid.sdk.tatooine.lite:dynamicRes:0.0.1.21",
+        "com.rokid.sdk.tatooine.lite:micro-gltf:0.0.1.21",
+        "com.rokid.sdk.tatooine.lite:rbase:0.0.1.21",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1",
+        "top.zibin:Luban:1.1.8"
+      ]
+    },
+    "0.0.1.22": {
+      "fetchedAt": "2026-11-22T13:42:24Z",
+      "sha256": "f13f49760e185bfcf3fe78d9c82748d57f84356068102aed245bd7f254f78795",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.2.0",
+        "androidx.constraintlayout:constraintlayout:1.1.3",
+        "androidx.databinding:viewbinding:7.1.3",
+        "com.google.android.material:material:1.0.0",
+        "com.google.code.gson:gson:2.2.4",
+        "com.rokid.sdk.tatooine.lite.rsceneform:sceneform:0.0.1.22",
+        "com.rokid.sdk.tatooine.lite:cacheWrapper:0.0.1.22",
+        "com.rokid.sdk.tatooine.lite:dataStorage:0.0.1.22",
+        "com.rokid.sdk.tatooine.lite:dynamicRes:0.0.1.22",
+        "com.rokid.sdk.tatooine.lite:micro-gltf:0.0.1.22",
+        "com.rokid.sdk.tatooine.lite:rbase:0.0.1.22",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1",
+        "top.zibin:Luban:1.1.8"
+      ]
+    },
+    "0.0.1.23": {
+      "fetchedAt": "2026-11-22T13:42:18Z",
+      "sha256": "f13f49760e185bfcf3fe78d9c82748d57f84356068102aed245bd7f254f78795",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.2.0",
+        "androidx.constraintlayout:constraintlayout:1.1.3",
+        "androidx.databinding:viewbinding:7.1.3",
+        "com.google.android.material:material:1.0.0",
+        "com.google.code.gson:gson:2.2.4",
+        "com.rokid.sdk.tatooine.lite.rsceneform:sceneform:0.0.1.23",
+        "com.rokid.sdk.tatooine.lite:cacheWrapper:0.0.1.23",
+        "com.rokid.sdk.tatooine.lite:dataStorage:0.0.1.23",
+        "com.rokid.sdk.tatooine.lite:dynamicRes:0.0.1.23",
+        "com.rokid.sdk.tatooine.lite:micro-gltf:0.0.1.23",
+        "com.rokid.sdk.tatooine.lite:rbase:0.0.1.23",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1",
+        "top.zibin:Luban:1.1.8"
+      ]
+    },
+    "0.5.16.11": {
+      "fetchedAt": "2026-11-22T13:42:12Z",
+      "sha256": "fd534a2019de11669bc6bfdaa247aadf1ecef9c43c07ef2c072448b70d746bed",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.2.0",
+        "androidx.constraintlayout:constraintlayout:1.1.3",
+        "androidx.databinding:viewbinding:7.1.3",
+        "com.google.android.material:material:1.0.0",
+        "com.google.code.gson:gson:2.2.4",
+        "com.rokid.sdk.tatooine.lite.rsceneform:sceneform:0.5.16.11",
+        "com.rokid.sdk.tatooine.lite:cacheWrapper:0.5.16.11",
+        "com.rokid.sdk.tatooine.lite:dynamicRes:0.5.16.11",
+        "com.rokid.sdk.tatooine.lite:rbase:0.5.16.11",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1",
+        "top.zibin:Luban:1.1.8"
+      ]
+    },
+    "0.5.16.12": {
+      "fetchedAt": "2026-11-22T13:42:06Z",
+      "sha256": "fd534a2019de11669bc6bfdaa247aadf1ecef9c43c07ef2c072448b70d746bed",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.2.0",
+        "androidx.constraintlayout:constraintlayout:1.1.3",
+        "androidx.databinding:viewbinding:7.1.3",
+        "com.google.android.material:material:1.0.0",
+        "com.google.code.gson:gson:2.2.4",
+        "com.rokid.sdk.tatooine.lite.rsceneform:sceneform:0.5.16.12",
+        "com.rokid.sdk.tatooine.lite:cacheWrapper:0.5.16.12",
+        "com.rokid.sdk.tatooine.lite:dynamicRes:0.5.16.12",
+        "com.rokid.sdk.tatooine.lite:rbase:0.5.16.12",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1",
+        "top.zibin:Luban:1.1.8"
+      ]
+    },
+    "0.5.16.14": {
+      "fetchedAt": "2026-11-22T13:42:00Z",
+      "sha256": "fd534a2019de11669bc6bfdaa247aadf1ecef9c43c07ef2c072448b70d746bed",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.2.0",
+        "androidx.constraintlayout:constraintlayout:1.1.3",
+        "androidx.databinding:viewbinding:7.1.3",
+        "com.google.android.material:material:1.0.0",
+        "com.google.code.gson:gson:2.2.4",
+        "com.rokid.sdk.tatooine.lite.rsceneform:sceneform:0.5.16.14",
+        "com.rokid.sdk.tatooine.lite:cacheWrapper:0.5.16.14",
+        "com.rokid.sdk.tatooine.lite:dynamicRes:0.5.16.14",
+        "com.rokid.sdk.tatooine.lite:rbase:0.5.16.14",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1",
+        "top.zibin:Luban:1.1.8"
+      ]
+    },
+    "0.5.17": {
+      "fetchedAt": "2026-11-22T13:41:54Z",
+      "sha256": "fd534a2019de11669bc6bfdaa247aadf1ecef9c43c07ef2c072448b70d746bed",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.2.0",
+        "androidx.constraintlayout:constraintlayout:1.1.3",
+        "androidx.databinding:viewbinding:7.1.3",
+        "com.google.android.material:material:1.0.0",
+        "com.google.code.gson:gson:2.2.4",
+        "com.rokid.sdk.tatooine.lite.rsceneform:sceneform:0.5.17",
+        "com.rokid.sdk.tatooine.lite:cacheWrapper:0.5.17",
+        "com.rokid.sdk.tatooine.lite:dynamicRes:0.5.17",
+        "com.rokid.sdk.tatooine.lite:rbase:0.5.17",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1",
+        "top.zibin:Luban:1.1.8"
+      ]
+    },
+    "0.5.17.1": {
+      "fetchedAt": "2026-11-22T13:41:49Z",
+      "sha256": "923f6adaf8d95a783977039603785cd853260058e2c3148904bff51072c546b6",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.2.0",
+        "androidx.constraintlayout:constraintlayout:1.1.3",
+        "androidx.databinding:viewbinding:7.1.3",
+        "com.google.android.material:material:1.0.0",
+        "com.google.code.gson:gson:2.2.4",
+        "com.rokid.sdk.tatooine.lite.rsceneform:sceneform:0.5.17.1",
+        "com.rokid.sdk.tatooine.lite:cacheWrapper:0.5.17.1",
+        "com.rokid.sdk.tatooine.lite:dynamicRes:0.5.17.1",
+        "com.rokid.sdk.tatooine.lite:rbase:0.5.17.1",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1",
+        "top.zibin:Luban:1.1.8"
+      ]
+    },
     "0.5.17.2": {
       "fetchedAt": "2026-10-25T20:33:21Z",
       "sha256": "923f6adaf8d95a783977039603785cd853260058e2c3148904bff51072c546b6",
@@ -220,7 +390,24 @@
       "type": "activity",
       "versionRanges": [
         [
-          "0.5.17.2",
+          "0.5.16.11",
+          "0.5.17"
+        ]
+      ],
+      "exported": true,
+      "process": ":rklite",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "com.rokid.sdk.tatooine.lite.H5Activity",
+      "type": "activity",
+      "versionRanges": [
+        [
+          "0.5.17.1",
           "0.5.18.2"
         ]
       ],
@@ -237,7 +424,7 @@
       "type": "activity",
       "versionRanges": [
         [
-          "0.5.17.2",
+          "0.0.1.20",
           "0.6.3"
         ]
       ],
@@ -254,7 +441,7 @@
       "type": "activity",
       "versionRanges": [
         [
-          "0.5.17.2",
+          "0.5.17.1",
           "0.5.18.2"
         ]
       ],
@@ -271,7 +458,11 @@
       "type": "activity",
       "versionRanges": [
         [
-          "0.5.17.2",
+          "0.0.1.20",
+          "0.0.1.23"
+        ],
+        [
+          "0.5.17.1",
           "0.6.3"
         ]
       ],
@@ -287,6 +478,10 @@
       "name": "com.rokid.sdk.tatooine.lite.ProcessSceneH5Activity",
       "type": "activity",
       "versionRanges": [
+        [
+          "0.0.1.20",
+          "0.0.1.23"
+        ],
         [
           "0.6.1.1",
           "0.6.3"
@@ -321,6 +516,10 @@
       "name": "com.rokid.sdk.tatooine.lite.ProcessWebARH5Activity",
       "type": "activity",
       "versionRanges": [
+        [
+          "0.0.1.20",
+          "0.0.1.23"
+        ],
         [
           "0.6.1.1",
           "0.6.3"
@@ -356,7 +555,28 @@
       "type": "activity",
       "versionRanges": [
         [
-          "0.5.17.2",
+          "0.5.16.11",
+          "0.5.17"
+        ]
+      ],
+      "exported": true,
+      "process": ":rklite",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "com.rokid.sdk.tatooine.lite.SceneActivity",
+      "type": "activity",
+      "versionRanges": [
+        [
+          "0.0.1.20",
+          "0.0.1.23"
+        ],
+        [
+          "0.5.17.1",
           "0.6.3"
         ]
       ],
@@ -372,6 +592,10 @@
       "name": "com.rokid.sdk.tatooine.lite.SceneH5Activity",
       "type": "activity",
       "versionRanges": [
+        [
+          "0.0.1.20",
+          "0.0.1.23"
+        ],
         [
           "0.6.1.1",
           "0.6.3"
@@ -406,6 +630,10 @@
       "name": "com.rokid.sdk.tatooine.lite.WebARH5Activity",
       "type": "activity",
       "versionRanges": [
+        [
+          "0.0.1.20",
+          "0.0.1.23"
+        ],
         [
           "0.6.1.1",
           "0.6.3"
@@ -441,7 +669,7 @@
       "type": "service",
       "versionRanges": [
         [
-          "0.5.17.2",
+          "0.5.16.11",
           "0.5.18.2"
         ]
       ],
@@ -458,7 +686,7 @@
       "type": "provider",
       "versionRanges": [
         [
-          "0.5.17.2",
+          "0.0.1.20",
           "0.6.3"
         ]
       ],

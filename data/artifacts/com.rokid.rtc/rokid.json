@@ -2,6 +2,246 @@
   "coordinate": "com.rokid.rtc:rokid",
   "repository": "https://maven.rokid.com/repository/maven-public",
   "versions": {
+    "4.2.0": {
+      "fetchedAt": "2026-11-22T13:39:28Z",
+      "sha256": "5821e6a8613a335514cc0b5c5c4d5657a8a3633a704d4c488856786e7219e7da",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.2.0",
+        "com.rokid.rtc:core:4.2.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.2.1": {
+      "fetchedAt": "2026-11-22T13:39:22Z",
+      "sha256": "5821e6a8613a335514cc0b5c5c4d5657a8a3633a704d4c488856786e7219e7da",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.2.1",
+        "com.rokid.rtc:core:4.2.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.2.5": {
+      "fetchedAt": "2026-11-22T13:39:17Z",
+      "sha256": "5821e6a8613a335514cc0b5c5c4d5657a8a3633a704d4c488856786e7219e7da",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.2.5",
+        "com.rokid.rtc:core:4.3.0-screenshare-SNAPSHOT",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.3.0": {
+      "fetchedAt": "2026-11-22T13:39:11Z",
+      "sha256": "b26dd314289a45756c751c9e254fbb7a7a3d37c9497eef05ee4ddcff71344c47",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.3.0",
+        "com.rokid.rtc:core:4.3.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.3.1": {
+      "fetchedAt": "2026-11-22T13:39:06Z",
+      "sha256": "59759109afbc07cddc52e970a6f1463dd5077cedaa70190eee656e467ac5e845",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.3.1",
+        "com.rokid.rtc:core:4.3.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.4.0": {
+      "fetchedAt": "2026-11-22T13:39:00Z",
+      "sha256": "59759109afbc07cddc52e970a6f1463dd5077cedaa70190eee656e467ac5e845",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.4.0",
+        "com.rokid.rtc:core:4.4.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.4.1": {
+      "fetchedAt": "2026-11-22T13:38:54Z",
+      "sha256": "59759109afbc07cddc52e970a6f1463dd5077cedaa70190eee656e467ac5e845",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.4.1",
+        "com.rokid.rtc:core:4.4.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.4.2": {
+      "fetchedAt": "2026-11-22T13:38:48Z",
+      "sha256": "59759109afbc07cddc52e970a6f1463dd5077cedaa70190eee656e467ac5e845",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.4.1",
+        "com.rokid.rtc:core:4.4.2",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.5.0": {
+      "fetchedAt": "2026-11-22T13:38:42Z",
+      "sha256": "5821e6a8613a335514cc0b5c5c4d5657a8a3633a704d4c488856786e7219e7da",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.5.0",
+        "com.rokid.rtc:core:4.5.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.5.1": {
+      "fetchedAt": "2026-11-22T13:38:36Z",
+      "sha256": "5821e6a8613a335514cc0b5c5c4d5657a8a3633a704d4c488856786e7219e7da",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.5.0",
+        "com.rokid.rtc:core:4.5.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.6.0": {
+      "fetchedAt": "2026-11-22T13:38:31Z",
+      "sha256": "5821e6a8613a335514cc0b5c5c4d5657a8a3633a704d4c488856786e7219e7da",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.6.0",
+        "com.rokid.rtc:core:4.6.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.1": {
+      "fetchedAt": "2026-11-22T13:38:26Z",
+      "sha256": "36b4422566dd0db6f6a2358124e2acabdadd691b1b94dc487d38e5d13252650b",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.7.1",
+        "com.rokid.rtc:core:4.7.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.2": {
+      "fetchedAt": "2026-11-22T13:38:20Z",
+      "sha256": "36b4422566dd0db6f6a2358124e2acabdadd691b1b94dc487d38e5d13252650b",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.7.2",
+        "com.rokid.rtc:core:4.7.2",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.3": {
+      "fetchedAt": "2026-11-22T13:38:14Z",
+      "sha256": "36b4422566dd0db6f6a2358124e2acabdadd691b1b94dc487d38e5d13252650b",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.7.3",
+        "com.rokid.rtc:core:4.7.3",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.5": {
+      "fetchedAt": "2026-11-22T13:38:09Z",
+      "sha256": "36b4422566dd0db6f6a2358124e2acabdadd691b1b94dc487d38e5d13252650b",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.7.5",
+        "com.rokid.rtc:core:4.7.5",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.7": {
+      "fetchedAt": "2026-11-22T13:38:03Z",
+      "sha256": "36b4422566dd0db6f6a2358124e2acabdadd691b1b94dc487d38e5d13252650b",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "androidx.startup:startup-runtime:1.0.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.rtc:api:4.7.7",
+        "com.rokid.rtc:core:4.7.7",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
     "4.7.9": {
       "fetchedAt": "2026-10-25T20:30:48Z",
       "sha256": "36b4422566dd0db6f6a2358124e2acabdadd691b1b94dc487d38e5d13252650b",
@@ -69,7 +309,7 @@
       "type": "provider",
       "versionRanges": [
         [
-          "4.7.9",
+          "4.2.0",
           "4.8.6"
         ]
       ],

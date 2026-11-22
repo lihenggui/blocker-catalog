@@ -466,6 +466,72 @@
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0",
         "org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3"
       ]
+    },
+    "6.3.5": {
+      "fetchedAt": "2026-11-22T13:48:15Z",
+      "sha256": "19803e8d5ad29bc7448c3d1da02c2c5cfde679e685ea035740e0412b0afa2324",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.7.0",
+        "androidx.browser:browser:1.8.0",
+        "androidx.datastore:datastore-preferences:1.1.2",
+        "androidx.startup:startup-runtime:1.2.0",
+        "com.squareup.okhttp3:okhttp:5.2.1",
+        "com.squareup.retrofit2:retrofit:2.9.0",
+        "com.sumup.android:logging:2.4.1",
+        "com.sumup.observability:observability-lib:3.1.0",
+        "io.insert-koin:koin-android:3.5.0",
+        "io.jsonwebtoken:jjwt-api:0.11.5",
+        "io.jsonwebtoken:jjwt-impl:0.11.5",
+        "io.jsonwebtoken:jjwt-orgjson:0.11.5",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.21",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3"
+      ]
+    },
+    "6.3.6": {
+      "fetchedAt": "2026-11-22T13:48:12Z",
+      "sha256": "a52e6485483af65336fd6e7b29a99ae4bb27246f727a14ba67e76fc44edc12af",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.7.0",
+        "androidx.browser:browser:1.8.0",
+        "androidx.datastore:datastore-preferences:1.1.2",
+        "androidx.startup:startup-runtime:1.2.0",
+        "com.squareup.okhttp3:okhttp:5.2.1",
+        "com.squareup.retrofit2:retrofit:2.9.0",
+        "com.sumup.android:logging:2.4.1",
+        "com.sumup.observability:observability-lib:3.1.0",
+        "io.insert-koin:koin-android:3.5.0",
+        "io.jsonwebtoken:jjwt-api:0.11.5",
+        "io.jsonwebtoken:jjwt-impl:0.11.5",
+        "io.jsonwebtoken:jjwt-orgjson:0.11.5",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.21",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3"
+      ]
+    },
+    "7.0.0": {
+      "fetchedAt": "2026-11-22T13:48:09Z",
+      "sha256": "ec1c5c55e134af2c101113d3d7e6e5d19a79f6b1d5b6dc3a01d37a8bce1a0ae0",
+      "dependencies": [
+        "androidx.appcompat:appcompat:1.7.0",
+        "androidx.browser:browser:1.8.0",
+        "androidx.datastore:datastore-preferences:1.1.2",
+        "androidx.startup:startup-runtime:1.2.0",
+        "com.squareup.okhttp3:okhttp:5.2.1",
+        "com.squareup.retrofit2:retrofit:2.9.0",
+        "com.sumup.android:logging:2.4.1",
+        "com.sumup.observability:observability-lib:3.1.0",
+        "io.insert-koin:koin-android:3.5.0",
+        "io.jsonwebtoken:jjwt-api:0.11.5",
+        "io.jsonwebtoken:jjwt-impl:0.11.5",
+        "io.jsonwebtoken:jjwt-orgjson:0.11.5",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.21",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3"
+      ]
     }
   },
   "components": [
@@ -475,7 +541,7 @@
       "versionRanges": [
         [
           "6.0.0",
-          "6.3.4"
+          "7.0.0"
         ]
       ],
       "exported": false,
@@ -487,12 +553,34 @@
       "metaData": []
     },
     {
+      "name": "com.sumup.identity.auth.oauth2.DcrRedirectActivity",
+      "type": "activity",
+      "versionRanges": [
+        [
+          "6.3.6",
+          "7.0.0"
+        ]
+      ],
+      "exported": true,
+      "process": null,
+      "permission": null,
+      "authorities": null,
+      "actions": [
+        "android.intent.action.VIEW"
+      ],
+      "categories": [
+        "android.intent.category.BROWSABLE",
+        "android.intent.category.DEFAULT"
+      ],
+      "metaData": []
+    },
+    {
       "name": "com.sumup.identity.auth.oauth2.OAuthRedirectActivity",
       "type": "activity",
       "versionRanges": [
         [
           "6.0.0",
-          "6.3.4"
+          "7.0.0"
         ]
       ],
       "exported": true,
@@ -514,7 +602,7 @@
       "versionRanges": [
         [
           "6.0.0",
-          "6.3.4"
+          "6.3.6"
         ]
       ],
       "exported": true,

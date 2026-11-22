@@ -421,6 +421,90 @@
         "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0",
         "org.jetbrains.kotlinx:kotlinx-serialization-protobuf:1.6.0"
       ]
+    },
+    "11.14.1": {
+      "fetchedAt": "2026-11-22T13:50:12Z",
+      "sha256": "3a24ae1d40bb5c98266fe6c0113d710ad2e396825c69999d1e24f96842954371",
+      "dependencies": [
+        "androidx.annotation:annotation:1.7.0",
+        "androidx.appcompat:appcompat:1.7.1",
+        "androidx.core:core-ktx:1.17.0",
+        "androidx.media3:media3-exoplayer-dash:1.9.2",
+        "androidx.media3:media3-exoplayer-hls:1.9.2",
+        "androidx.media3:media3-exoplayer:1.9.2",
+        "androidx.mediarouter:mediarouter:1.7.0",
+        "com.google.android.gms:play-services-cast-framework:21.5.0",
+        "com.google.code.gson:gson:2.12.1",
+        "org.jetbrains.kotlin:kotlin-parcelize-runtime:2.2.10",
+        "org.jetbrains.kotlin:kotlin-reflect:2.2.10",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.10",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0",
+        "org.jetbrains.kotlinx:kotlinx-serialization-protobuf:1.6.0"
+      ]
+    },
+    "11.15.0": {
+      "fetchedAt": "2026-11-22T13:50:10Z",
+      "sha256": "0af8d6abb4132343a5a2ab1161147f14b7c07468cc7a1c565bce773b6976c184",
+      "dependencies": [
+        "androidx.annotation:annotation:1.7.0",
+        "androidx.appcompat:appcompat:1.7.1",
+        "androidx.core:core-ktx:1.17.0",
+        "androidx.media3:media3-exoplayer-dash:1.9.2",
+        "androidx.media3:media3-exoplayer-hls:1.9.2",
+        "androidx.media3:media3-exoplayer:1.9.2",
+        "androidx.mediarouter:mediarouter:1.7.0",
+        "com.google.android.gms:play-services-cast-framework:21.5.0",
+        "com.google.code.gson:gson:2.12.1",
+        "org.jetbrains.kotlin:kotlin-parcelize-runtime:2.2.10",
+        "org.jetbrains.kotlin:kotlin-reflect:2.2.10",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.10",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0",
+        "org.jetbrains.kotlinx:kotlinx-serialization-protobuf:1.6.0"
+      ]
+    },
+    "11.15.1": {
+      "fetchedAt": "2026-11-22T13:50:08Z",
+      "sha256": "a7d59eb84d7337c12428949bba2812efac706aded7e431abfaa12e2939434467",
+      "dependencies": [
+        "androidx.annotation:annotation:1.7.0",
+        "androidx.appcompat:appcompat:1.7.1",
+        "androidx.core:core-ktx:1.17.0",
+        "androidx.media3:media3-exoplayer-dash:1.9.2",
+        "androidx.media3:media3-exoplayer-hls:1.9.2",
+        "androidx.media3:media3-exoplayer:1.9.2",
+        "androidx.mediarouter:mediarouter:1.7.0",
+        "com.google.android.gms:play-services-cast-framework:21.5.0",
+        "com.google.code.gson:gson:2.12.1",
+        "org.jetbrains.kotlin:kotlin-parcelize-runtime:2.2.10",
+        "org.jetbrains.kotlin:kotlin-reflect:2.2.10",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.10",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0",
+        "org.jetbrains.kotlinx:kotlinx-serialization-protobuf:1.6.0"
+      ]
+    },
+    "11.16.0": {
+      "fetchedAt": "2026-11-22T13:50:06Z",
+      "sha256": "78320f4a1866d889d85c523f245af195c73958501e2fbb52824b56a0018429f1",
+      "dependencies": [
+        "androidx.annotation:annotation:1.7.0",
+        "androidx.appcompat:appcompat:1.7.1",
+        "androidx.core:core-ktx:1.17.0",
+        "androidx.media3:media3-exoplayer-dash:1.9.2",
+        "androidx.media3:media3-exoplayer-hls:1.9.2",
+        "androidx.media3:media3-exoplayer:1.9.2",
+        "androidx.mediarouter:mediarouter:1.7.0",
+        "com.google.android.gms:play-services-cast-framework:21.5.0",
+        "com.google.code.gson:gson:2.12.1",
+        "org.jetbrains.kotlin:kotlin-parcelize-runtime:2.2.10",
+        "org.jetbrains.kotlin:kotlin-reflect:2.2.10",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.10",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0",
+        "org.jetbrains.kotlinx:kotlinx-serialization-protobuf:1.6.0"
+      ]
     }
   },
   "components": [
@@ -430,7 +514,7 @@
       "versionRanges": [
         [
           "11.5.0",
-          "11.14.0"
+          "11.16.0"
         ]
       ],
       "exported": null,
@@ -447,7 +531,7 @@
       "versionRanges": [
         [
           "11.5.0",
-          "11.14.0"
+          "11.16.0"
         ]
       ],
       "exported": false,
@@ -464,7 +548,7 @@
       "versionRanges": [
         [
           "11.5.0",
-          "11.14.0"
+          "11.16.0"
         ]
       ],
       "exported": null,

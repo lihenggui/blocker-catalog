@@ -1,19 +1,19 @@
 # Component coverage
 
-Repositories: 530
+Repositories: 535
 
 | Capability | Repositories |
 | --- | ---: |
 | central-search | 1 |
 | google-index | 1 |
-| listing | 68 |
-| metadata | 386 |
+| listing | 69 |
+| metadata | 390 |
 | mirror | 48 |
-| nexus3 | 31 |
+| nexus3 | 32 |
 
-Artifacts: 33806
-Artifacts with components: 6034
-Components: 28104
+Artifacts: 33820
+Artifacts with components: 6038
+Components: 28124
 
 Components are unique (name, type) pairs per artifact, across fetched versions.
 
@@ -26,8 +26,8 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | cn.jiguang.sdk.ad.third | 484 | 251 | 233 | cn.haorui.sdk (19), com.byazt.ox (8), com.byazt.cio (7), com.byazt.fk (7), com.byazt.mw (7), com.byazt.qhj (7), com.byazt.rp (7), com.byazt.wq (7), com.byazt.at (6), com.byazt.c (4) | 1, 15, 16, 19, 458, 476, 479, 480, 8 |
 | io.github.mhqz | 230 | 0 | 230 | org.mozilla.gecko (230) |  |
 | io.github.safe-ending | 225 | 0 | 225 | com.nekteck.common (224), com.nekteck.baselib (1) |  |
+| org.mozilla.geckoview | 182 | 0 | 182 | org.mozilla.gecko (182) |  |
 | com.oustme | 181 | 0 | 181 | com.oustme.oustsdk (179), androidx.core.content (1), com.amazonaws.mobileconnectors (1) |  |
-| org.mozilla.geckoview | 180 | 0 | 180 | org.mozilla.gecko (180) |  |
 | com.qiyukf.unicorn | 171 | 0 | 171 | com.qiyukf.unicorn (75), com.qiyukf.uikit (40), com.qiyukf.nimlib (37), com.qiyukf.videomodule (11), com.qiyukf.android (5), com.qiyukf.module (3) |  |
 | by.skz | 168 | 0 | 168 | com.ziggeo.androidsdk (156), androidx.core.content (12) |  |
 | com.ziggeo | 168 | 0 | 168 | com.ziggeo.androidsdk (156), androidx.core.content (12) |  |
@@ -171,6 +171,7 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | com.glia | 24 | 0 | 24 | com.glia.widgets (23), com.glia.androidsdk (1) |  |
 | com.mercadopago | 24 | 0 | 24 | com.mercadopago (23), com.mercadopago.mpconnect (1) |  |
 | com.rokid.cooperation | 24 | 0 | 24 | com.rokid.glass (22), androidx.core.content (1), com.justalk.cloud (1) |  |
+| com.sumup | 24 | 0 | 24 | com.sumup.merchant (22), com.sumup.identity (1), net.openid.appauth (1) |  |
 | com.taptap.android.payment | 24 | 0 | 24 | com.taptap.payment (24) |  |
 | com.tencent.imsdk | 24 | 0 | 24 | com.tencent.qcloud (21), com.tencent.liteav (3) |  |
 | com.toast.android.gamebase | 24 | 0 | 24 | com.toast.android (19), com.sina.weibo (2), androidx.core.content (1), com.google.android (1), com.nhncloud.android (1) |  |
@@ -414,7 +415,6 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | com.rokid.sdk.tatooine | 11 | 0 | 11 | com.rokid.sdk (11) |  |
 | com.scandit.datacapture | 18 | 7 | 11 | com.microblink.activity (8), com.microblink.blinkinput (3) | 113 |
 | com.snap.camerakit | 11 | 0 | 11 | com.snap.camerakit (6), androidx.startup (5) |  |
-| com.sumup | 11 | 0 | 11 | com.sumup.merchant (11) |  |
 | com.tencent.klevin | 23 | 12 | 11 | com.tencent.klevinadtest (6), com.tencent.klevin (5) | 8 |
 | com.xsolla.android | 11 | 0 | 11 | com.xsolla.android (7), androidx.core.content (1), androidx.startup (1), com.tencent.connect (1), com.tencent.tauth (1) |  |
 | com.yxt.opensdk | 11 | 0 | 11 | com.yxt.sdk (10), com.yalantis.ucrop (1) |  |
@@ -970,6 +970,7 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | com.shepeliev | 4 | 0 | 4 | androidx.startup (2), com.shepeliev.webrtckmp (2) |  |
 | com.smartydroid | 4 | 0 | 4 | tech.qiji.android (4) |  |
 | com.stanfy.enroscar | 4 | 0 | 4 | com.stanfy.enroscar (4) |  |
+| com.sumup.identity.auth | 4 | 0 | 4 | com.sumup.identity (3), net.openid.appauth (1) |  |
 | com.tanx | 4 | 0 | 4 | com.alimm.tanx (4) |  |
 | com.taptap.android | 4 | 0 | 4 | com.taptap.sdk (3), com.tds.common (1) |  |
 | com.tencent.liteav.customize | 4 | 0 | 4 | com.tencent.liteav (2), com.tencent.rtmp (2) |  |
@@ -1215,7 +1216,6 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | com.smartsupp.android | 3 | 0 | 3 | com.smartsupp.mobile (2), androidx.core.content (1) |  |
 | com.spotify.android | 3 | 0 | 3 | com.spotify.sdk (3) |  |
 | com.strivacity | 3 | 0 | 3 | com.strivacity.android (2), net.openid.appauth (1) |  |
-| com.sumup.identity.auth | 3 | 0 | 3 | com.sumup.identity (2), net.openid.appauth (1) |  |
 | com.sunmi | 3 | 0 | 3 | com.sunmi.aidlwrappersdk (1), com.sunmi.posrouter (1), com.sunmi.thingadapterlib (1) |  |
 | com.syn.ad | 3 | 0 | 3 | com.syn.ad (3) |  |
 | com.talobin | 3 | 0 | 3 | com.talobin.cardentry (3) |  |
@@ -1570,6 +1570,7 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | com.refinery89.androidsdk | 2 | 0 | 2 | com.refinery89.sharedcore (2) |  |
 | com.revolut.utils | 2 | 0 | 2 | io.card.payment (2) |  |
 | com.ringcentral.video | 2 | 0 | 2 | com.ringcentral.audioroutemanager (1), net.gotev.uploadservice (1) |  |
+| com.rokid.appcenter | 2 | 0 | 2 | com.rokid.appcenter (2) |  |
 | com.rokid.arexperts | 2 | 0 | 2 | com.rokid.arexperts (2) |  |
 | com.rokid.glass | 2 | 0 | 2 | com.rokid.glass (2) |  |
 | com.rokid.mobile.account | 2 | 0 | 2 | com.rokid.account (1), com.rokid.erbox (1) |  |
@@ -2163,6 +2164,7 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | com.ricoh360.thetableclient | 1 | 0 | 1 | androidx.startup (1) |  |
 | com.robertlevonyan.view | 1 | 0 | 1 | androidx.core.content (1) |  |
 | com.rokid.alliance.base | 1 | 0 | 1 | com.rokid.alliance (1) |  |
+| com.rokid.alliance.record | 1 | 0 | 1 | com.rokid.alliance (1) |  |
 | com.rokid.github.DylanCaiCoding | 1 | 0 | 1 | com.dylanc.activityresult (1) |  |
 | com.rokid.glass.firmware | 1 | 0 | 1 | com.rokid.glass (1) |  |
 | com.rokid.media | 1 | 0 | 1 | com.rokid.glass (1) |  |
@@ -2206,6 +2208,7 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | com.tencent.bugly | 60 | 59 | 1 | com.tencent.rmonitor (1) | 11, 12 |
 | com.tencent.bugly.dynamic | 1 | 0 | 1 | com.tencent.rmonitor (1) |  |
 | com.tencent.bugly.oversea | 1 | 0 | 1 | com.tencent.rmonitor (1) |  |
+| com.tencent.shiply | 1 | 0 | 1 | com.tencent.upgrade (1) |  |
 | com.tencent.tdos-diagnose | 1 | 0 | 1 | com.tencent.tddiag (1) |  |
 | com.theagilemonkeys.meets | 1 | 0 | 1 | com.theagilemonkeys.meets (1) |  |
 | com.ti-net.mqtt | 1 | 0 | 1 | org.tinet.paho (1) |  |
@@ -6066,6 +6069,7 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | com.rokid.ai.glass | 0 | 0 | 0 |  |  |
 | com.rokid.alliance | 0 | 0 | 0 |  |  |
 | com.rokid.alliance.glasssdk | 0 | 0 | 0 |  |  |
+| com.rokid.alliance.glassui | 0 | 0 | 0 |  |  |
 | com.rokid.alliance.usbcamera | 0 | 0 | 0 |  |  |
 | com.rokid.alliance.usbcamera2 | 0 | 0 | 0 |  |  |
 | com.rokid.alliance.voicecommand | 0 | 0 | 0 |  |  |
@@ -8380,6 +8384,7 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | io.github.romansj.tools | 0 | 0 | 0 |  |  |
 | io.github.rongjianrun | 0 | 0 | 0 |  |  |
 | io.github.rool78 | 0 | 0 | 0 |  |  |
+| io.github.rosemoe | 0 | 0 | 0 |  |  |
 | io.github.routis | 0 | 0 | 0 |  |  |
 | io.github.rqrjc | 0 | 0 | 0 |  |  |
 | io.github.rroohit | 0 | 0 | 0 |  |  |
@@ -8838,6 +8843,7 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 | io.nativeblocks | 0 | 0 | 0 |  |  |
 | io.naviar | 0 | 0 | 0 |  |  |
 | io.nbos | 0 | 0 | 0 |  |  |
+| io.nightfish.lightnovelreader | 0 | 0 | 0 |  |  |
 | io.nlopez.clusterer | 0 | 0 | 0 |  |  |
 | io.nlopez.drebin | 0 | 0 | 0 |  |  |
 | io.nlopez.smartadapers | 0 | 0 | 0 |  |  |
@@ -10288,6 +10294,7 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 - http://timefire-repository.googlecode.com/svn/mavenrepo
 - http://www.ibiblio.org/maven2
 - http://www.sparkjava.com/nexus/content/repositories/spark
+- https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases
 - https://artifacts.unidata.ucar.edu/repository/unidata-3rdparty
 - https://artifacts.unidata.ucar.edu/repository/unidata-all
 - https://artifacts.unidata.ucar.edu/repository/unidata-geotoolkit
@@ -10303,17 +10310,13 @@ Components are unique (name, type) pairs per artifact, across fetched versions.
 - https://jipipe.hki-jena.de/nexus/repository/jipipe-releases
 - https://jipipe.hki-jena.de/nexus/repository/jipipe-snapshots
 - https://maven.pkg.github.com/saalfeldlab/*
-- https://mirrors.cloud.tencent.com/gradle/android
 - https://packages.jetbrains.team/maven/p/grazi/grazie-platform
 - https://raw.github.com/jug6ernaut/mvn-repo/mvn-repo
 - https://raw.githubusercontent.com/nroduit/mvn-repo/master
 - https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master
 - https://raw.githubusercontent.com/sendbird/sendbird-syncmanager-android/master
-- https://raw.githubusercontent.com/yuriy-budiyev/code-scanner/mvn-repo
 - https://repo.typesafe.com/typesafe/releases
 - https://repo.typesafe.com/typesafe/snapshots
 - https://repository.jboss.org/nexus
 - https://saalfeldlab.github.io/maven
 - https://storage.googleapis.com/devan-maven
-- https://storage.googleapis.com/download.flutter.io
-- https://webrtc.github.io/webrtc-org/native-code/android

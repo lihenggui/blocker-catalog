@@ -10,6 +10,17 @@
         "com.sumup:reader-offline-contract:7.1.0",
         "com.sumup:reader:7.1.0"
       ]
+    },
+    "7.2.0": {
+      "fetchedAt": "2026-11-22T13:49:31Z",
+      "sha256": "25fb6413562115e7e337697853f4e93f57fd815f55c8fd8fe1372773f14a130f",
+      "dependencies": [
+        "com.google.dagger:hilt-android:2.59.2",
+        "com.sumup:reader-offline-contract:7.2.0",
+        "com.sumup:reader-offline:7.2.0",
+        "com.sumup:reader:7.2.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.21"
+      ]
     }
   },
   "components": []

@@ -83,7 +83,7 @@
   },
   {
     "prefix": "org.mozilla.gecko",
-    "components": 90,
+    "components": 91,
     "groups": [
       "ie.equalit.ouinet",
       "io.github.mhqz",
@@ -15633,6 +15633,22 @@
     "cooccursWith": []
   },
   {
+    "prefix": "com.rokid.appcenter",
+    "components": 4,
+    "groups": [
+      "com.rokid.appcenter",
+      "com.rokid.lite"
+    ],
+    "examples": [
+      "com.rokid.appcenter.rcebridge.screen.MediaProjectionActivity",
+      "com.rokid.appcenter.rcebridge.screen.RKMediaProjectionService",
+      "com.rokid.appcenter.scaffolding.screen.MediaProjectionActivity",
+      "com.rokid.appcenter.scaffolding.screen.RKMediaProjectionService"
+    ],
+    "coveredBy": [],
+    "cooccursWith": []
+  },
+  {
     "prefix": "com.rokid.rkfilereader",
     "components": 4,
     "groups": [
@@ -20889,6 +20905,21 @@
       "com.sobot.widget.ui.base.picandroidvideo.SobotSelectPicAndVideoActivity",
       "com.sobot.widget.ui.provider.SobotFileProvider",
       "com.sobot.widget.ui.webview.SobotWebViewActivity"
+    ],
+    "coveredBy": [],
+    "cooccursWith": []
+  },
+  {
+    "prefix": "com.sumup.identity",
+    "components": 3,
+    "groups": [
+      "com.sumup",
+      "com.sumup.identity.auth"
+    ],
+    "examples": [
+      "com.sumup.identity.auth.oauth2.AuthorizationManagementActivity",
+      "com.sumup.identity.auth.oauth2.DcrRedirectActivity",
+      "com.sumup.identity.auth.oauth2.OAuthRedirectActivity"
     ],
     "coveredBy": [],
     "cooccursWith": []
@@ -28617,14 +28648,15 @@
     "cooccursWith": []
   },
   {
-    "prefix": "com.rokid.appcenter",
+    "prefix": "com.rokid.alliance",
     "components": 2,
     "groups": [
-      "com.rokid.lite"
+      "com.rokid.alliance.base",
+      "com.rokid.alliance.record"
     ],
     "examples": [
-      "com.rokid.appcenter.rcebridge.screen.MediaProjectionActivity",
-      "com.rokid.appcenter.rcebridge.screen.RKMediaProjectionService"
+      "com.rokid.alliance.base.music.MusicPlayService",
+      "com.rokid.alliance.record.RKMediaService"
     ],
     "coveredBy": [],
     "cooccursWith": []
@@ -29042,19 +29074,6 @@
     "examples": [
       "com.suifeng.sdk.permission.widget.AppSettingsHolderActivity",
       "com.suifeng.sdk.permission.widget.PermissionActivity"
-    ],
-    "coveredBy": [],
-    "cooccursWith": []
-  },
-  {
-    "prefix": "com.sumup.identity",
-    "components": 2,
-    "groups": [
-      "com.sumup.identity.auth"
-    ],
-    "examples": [
-      "com.sumup.identity.auth.oauth2.AuthorizationManagementActivity",
-      "com.sumup.identity.auth.oauth2.OAuthRedirectActivity"
     ],
     "coveredBy": [],
     "cooccursWith": []
@@ -31713,6 +31732,7 @@
       "com.kinde",
       "com.liferay.mobile",
       "com.strivacity",
+      "com.sumup",
       "com.sumup.identity.auth",
       "io.gamedock.sdk",
       "io.github.sumedhe",
@@ -45735,18 +45755,6 @@
     "cooccursWith": []
   },
   {
-    "prefix": "com.rokid.alliance",
-    "components": 1,
-    "groups": [
-      "com.rokid.alliance.base"
-    ],
-    "examples": [
-      "com.rokid.alliance.base.music.MusicPlayService"
-    ],
-    "coveredBy": [],
-    "cooccursWith": []
-  },
-  {
     "prefix": "com.rokid.camera",
     "components": 1,
     "groups": [
@@ -47252,6 +47260,18 @@
     ],
     "examples": [
       "com.tencent.tmdownloader.TMAssistantDownloadService"
+    ],
+    "coveredBy": [],
+    "cooccursWith": []
+  },
+  {
+    "prefix": "com.tencent.upgrade",
+    "components": 1,
+    "groups": [
+      "com.tencent.shiply"
+    ],
+    "examples": [
+      "com.tencent.upgrade.download.UpdateFileProvider"
     ],
     "coveredBy": [],
     "cooccursWith": []

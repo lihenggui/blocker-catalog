@@ -401,6 +401,86 @@
         "org.jetbrains.kotlin:kotlin-stdlib:2.4.20",
         "org.yaml:snakeyaml:2.2"
       ]
+    },
+    "159.0.20261022150525": {
+      "fetchedAt": "2026-11-22T14:40:23Z",
+      "sha256": "d8da367874ed883f8ea652020f22794637f6911cd0b908293f4087971454333b",
+      "dependencies": [
+        "androidx.annotation:annotation-experimental:1.6.0",
+        "androidx.annotation:annotation:1.11.0",
+        "androidx.collection:collection:1.6.0",
+        "androidx.core:core:1.19.1",
+        "androidx.lifecycle:lifecycle-common:2.11.0",
+        "androidx.lifecycle:lifecycle-process:2.11.0",
+        "androidx.media3:media3-common:1.11.1",
+        "androidx.media3:media3-datasource:1.11.1",
+        "androidx.media3:media3-decoder:1.11.1",
+        "androidx.media3:media3-exoplayer-hls:1.11.1",
+        "androidx.media3:media3-exoplayer:1.11.1",
+        "com.google.android.gms:play-services-fido:21.3.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.4.20",
+        "org.yaml:snakeyaml:2.2"
+      ]
+    },
+    "159.0.20261102144711": {
+      "fetchedAt": "2026-11-22T14:40:21Z",
+      "sha256": "d8da367874ed883f8ea652020f22794637f6911cd0b908293f4087971454333b",
+      "dependencies": [
+        "androidx.annotation:annotation-experimental:1.6.0",
+        "androidx.annotation:annotation:1.11.0",
+        "androidx.collection:collection:1.6.0",
+        "androidx.core:core:1.19.1",
+        "androidx.lifecycle:lifecycle-common:2.11.0",
+        "androidx.lifecycle:lifecycle-process:2.11.0",
+        "androidx.media3:media3-common:1.11.1",
+        "androidx.media3:media3-datasource:1.11.1",
+        "androidx.media3:media3-decoder:1.11.1",
+        "androidx.media3:media3-exoplayer-hls:1.11.1",
+        "androidx.media3:media3-exoplayer:1.11.1",
+        "com.google.android.gms:play-services-fido:21.3.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.4.20",
+        "org.yaml:snakeyaml:2.2"
+      ]
+    },
+    "160.0.20261104181552": {
+      "fetchedAt": "2026-11-22T14:40:18Z",
+      "sha256": "081afe737307fdfed2bf3c2a976f27222e66fa6a773a83b81c2c430761becf1b",
+      "dependencies": [
+        "androidx.annotation:annotation-experimental:1.6.0",
+        "androidx.annotation:annotation:1.11.0",
+        "androidx.collection:collection:1.7.0",
+        "androidx.core:core:1.19.1",
+        "androidx.lifecycle:lifecycle-common:2.11.0",
+        "androidx.lifecycle:lifecycle-process:2.11.0",
+        "androidx.media3:media3-common:1.11.1",
+        "androidx.media3:media3-datasource:1.11.1",
+        "androidx.media3:media3-decoder:1.11.1",
+        "androidx.media3:media3-exoplayer-hls:1.11.1",
+        "androidx.media3:media3-exoplayer:1.11.1",
+        "com.google.android.gms:play-services-fido:21.3.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.4.21",
+        "org.yaml:snakeyaml:2.2"
+      ]
+    },
+    "160.0.20261116130455": {
+      "fetchedAt": "2026-11-22T14:40:16Z",
+      "sha256": "081afe737307fdfed2bf3c2a976f27222e66fa6a773a83b81c2c430761becf1b",
+      "dependencies": [
+        "androidx.annotation:annotation-experimental:1.6.0",
+        "androidx.annotation:annotation:1.11.0",
+        "androidx.collection:collection:1.7.0",
+        "androidx.core:core:1.19.1",
+        "androidx.lifecycle:lifecycle-common:2.11.0",
+        "androidx.lifecycle:lifecycle-process:2.11.0",
+        "androidx.media3:media3-common:1.11.1",
+        "androidx.media3:media3-datasource:1.11.1",
+        "androidx.media3:media3-decoder:1.11.1",
+        "androidx.media3:media3-exoplayer-hls:1.11.1",
+        "androidx.media3:media3-exoplayer:1.11.1",
+        "com.google.android.gms:play-services-fido:21.3.1",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.4.21",
+        "org.yaml:snakeyaml:2.2"
+      ]
     }
   },
   "components": [
@@ -410,7 +490,7 @@
       "versionRanges": [
         [
           "158.0.20261007201254",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -444,7 +524,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -461,7 +541,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -478,7 +558,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -495,7 +575,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -512,11 +592,28 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
       "process": ":ipdlunittest_disable_art_image_",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$isolatedGmplugin",
+      "type": "service",
+      "versionRanges": [
+        [
+          "160.0.20261104181552",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":isolatedGmplugin_disable_art_image_",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -529,7 +626,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -546,7 +643,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -563,7 +660,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -580,7 +677,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -597,7 +694,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -614,7 +711,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -631,7 +728,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -648,7 +745,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -665,7 +762,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -682,7 +779,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -699,7 +796,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -716,7 +813,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -733,7 +830,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -750,7 +847,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -767,7 +864,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -784,7 +881,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -801,7 +898,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -818,7 +915,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -835,7 +932,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -852,7 +949,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -869,7 +966,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -886,7 +983,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -903,7 +1000,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -920,7 +1017,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -937,7 +1034,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -954,7 +1051,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -971,7 +1068,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -988,7 +1085,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1005,7 +1102,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1022,7 +1119,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1039,7 +1136,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1056,7 +1153,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1073,7 +1170,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1090,7 +1187,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1107,7 +1204,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1124,7 +1221,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1141,7 +1238,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1158,7 +1255,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1175,7 +1272,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1192,7 +1289,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1209,7 +1306,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1226,11 +1323,28 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
       "process": ":socket_disable_art_image_",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab0",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_0",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1259,12 +1373,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_1",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab1",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_1",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab10",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_10",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1293,12 +1441,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_11",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab11",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_11",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab12",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_12",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1327,12 +1509,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_13",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab13",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_13",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab14",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_14",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1361,12 +1577,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_15",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab15",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_15",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab16",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_16",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1395,12 +1645,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_17",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab17",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_17",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab18",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_18",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1429,12 +1713,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_19",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab19",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_19",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab2",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_2",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1463,12 +1781,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_20",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab20",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_20",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab21",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_21",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1497,12 +1849,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_22",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab22",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_22",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab23",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_23",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1531,12 +1917,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_24",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab24",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_24",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab25",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_25",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1565,12 +1985,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_26",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab26",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_26",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab27",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_27",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1599,12 +2053,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_28",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab28",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_28",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab29",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_29",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1633,12 +2121,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_3",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab3",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_3",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab30",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_30",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1667,12 +2189,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_31",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab31",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_31",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab32",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_32",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1701,12 +2257,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_33",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab33",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_33",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab34",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_34",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1735,12 +2325,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_35",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab35",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_35",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab36",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_36",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1769,12 +2393,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_37",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab37",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_37",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab38",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_38",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1803,12 +2461,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_39",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab39",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_39",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab4",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_4",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1837,12 +2529,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_5",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab5",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_5",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab6",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_6",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1871,6 +2597,23 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_7",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab7",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
@@ -1888,12 +2631,46 @@
       "type": "service",
       "versionRanges": [
         [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_8",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab8",
+      "type": "service",
+      "versionRanges": [
+        [
           "152.0.20260617213557",
           "158.0.20261021001945"
         ]
       ],
       "exported": false,
       "process": ":tab_disable_art_image_8",
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    },
+    {
+      "name": "org.mozilla.gecko.process.GeckoChildProcessServices$tab9",
+      "type": "service",
+      "versionRanges": [
+        [
+          "159.0.20261022150525",
+          "160.0.20261116130455"
+        ]
+      ],
+      "exported": false,
+      "process": ":sandboxed_tab_disable_art_image_9",
       "permission": null,
       "authorities": null,
       "actions": [],
@@ -1923,7 +2700,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,
@@ -1940,7 +2717,7 @@
       "versionRanges": [
         [
           "152.0.20260617213557",
-          "158.0.20261021001945"
+          "160.0.20261116130455"
         ]
       ],
       "exported": false,

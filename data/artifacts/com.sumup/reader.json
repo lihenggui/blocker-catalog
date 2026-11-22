@@ -270,6 +270,88 @@
         "org.jetbrains.kotlin:kotlin-stdlib:1.9.0",
         "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0"
       ]
+    },
+    "7.2.0": {
+      "fetchedAt": "2026-11-22T13:49:24Z",
+      "sha256": "a831238531be7db02dc359a401e5bf33c38d81ad3f9cd0aa2f373b33f4653354",
+      "dependencies": [
+        "androidx.activity:activity-compose:1.9.1",
+        "androidx.activity:activity:1.9.1",
+        "androidx.appcompat:appcompat:1.7.0",
+        "androidx.cardview:cardview:1.0.0",
+        "androidx.compose:compose-bom:2024.09.00",
+        "androidx.constraintlayout:constraintlayout:2.1.4",
+        "androidx.databinding:viewbinding:9.2.1",
+        "androidx.datastore:datastore-preferences:1.1.2",
+        "androidx.fragment:fragment-ktx:1.8.3",
+        "androidx.fragment:fragment:1.8.3",
+        "androidx.hilt:hilt-work:1.0.0",
+        "androidx.lifecycle:lifecycle-runtime-compose:2.8.5",
+        "androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.5",
+        "androidx.room:room-ktx:2.8.4",
+        "androidx.room:room-runtime:2.8.4",
+        "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0",
+        "androidx.work:work-runtime-ktx:2.9.1",
+        "com.google.android.material:material:1.12.0",
+        "com.google.code.gson:gson:2.9.1",
+        "com.google.dagger:hilt-android:2.59.2",
+        "com.squareup.okhttp3:okhttp:5.3.2",
+        "com.sumup.android:logging:2.4.1",
+        "com.sumup.appsflyer:api:7.2.0",
+        "com.sumup.coffeeshop:api:7.2.0",
+        "com.sumup.common:api:7.2.0",
+        "com.sumup.core:analytics:7.2.0",
+        "com.sumup.core:base-activity:7.2.0",
+        "com.sumup.core:bluetooth:7.2.0",
+        "com.sumup.core:datetime:7.2.0",
+        "com.sumup.core:deeplink:7.2.0",
+        "com.sumup.core:eventbus-integration:7.2.0",
+        "com.sumup.core:feature-flag:7.2.0",
+        "com.sumup.core:local-storage:7.2.0",
+        "com.sumup.core:network:7.2.0",
+        "com.sumup.core:system:7.2.0",
+        "com.sumup.core:tmp-bridge:7.2.0",
+        "com.sumup.core:ui:7.2.0",
+        "com.sumup.core:validators-formatters:7.2.0",
+        "com.sumup.designlib:circuit-ui-compose:3.10.0",
+        "com.sumup.designlib:circuit-ui:3.10.0",
+        "com.sumup.fiscalizationeventjournal:api:7.2.0",
+        "com.sumup.fiscalizationeventjournal:stub:7.2.0",
+        "com.sumup.identity.auth:auth-sdk:6.3.4",
+        "com.sumup.identity:login:7.2.0",
+        "com.sumup.invoices:api:7.2.0",
+        "com.sumup.loyalty:api:7.2.0",
+        "com.sumup.observability:observability-lib-instrumentation:3.11.0",
+        "com.sumup.observability:observability-lib:3.11.0",
+        "com.sumup.payments-self-service:receipts-core:7.2.0",
+        "com.sumup.permissions:api:7.2.0",
+        "com.sumup.print:api:7.2.0",
+        "com.sumup.print:stub:7.2.0",
+        "com.sumup.receipt:api:7.2.0",
+        "com.sumup.receipt:stub:7.2.0",
+        "com.sumup.staff:api:7.2.0",
+        "com.sumup:affiliate:7.2.0",
+        "com.sumup:base-common:7.2.0",
+        "com.sumup:checkout-core:7.2.0",
+        "com.sumup:designbase:7.2.0",
+        "com.sumup:mvp-base:7.2.0",
+        "com.sumup:reader-api:7.2.0",
+        "com.sumup:reader-core:7.2.0",
+        "com.sumup:reader-offline-contract:7.2.0",
+        "com.sumup:reader-offline:7.2.0",
+        "com.sumup:serverdriven-cube:7.2.0",
+        "com.sumup:text-to-speech:7.2.0",
+        "com.sumup:txresult:7.2.0",
+        "io.coil-kt:coil-compose:2.6.0",
+        "io.opentelemetry.instrumentation:opentelemetry-okhttp-3.0:2.26.1-alpha",
+        "io.opentelemetry:opentelemetry-api:1.60.1",
+        "io.opentelemetry:opentelemetry-exporter-otlp:1.60.1",
+        "io.opentelemetry:opentelemetry-sdk:1.60.1",
+        "net.sf.smc:smc:6.6.0",
+        "net.zetetic:sqlcipher-android:4.10.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.21",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0"
+      ]
     }
   },
   "components": [
@@ -279,7 +361,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": null,
@@ -296,7 +378,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": false,
@@ -313,7 +395,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": false,
@@ -330,7 +412,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": false,
@@ -347,7 +429,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": null,
@@ -364,7 +446,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": null,
@@ -381,7 +463,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": null,
@@ -398,7 +480,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": null,
@@ -415,7 +497,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": null,
@@ -432,7 +514,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": null,
@@ -449,7 +531,7 @@
       "versionRanges": [
         [
           "6.0.0-beta-RC3",
-          "7.1.0"
+          "7.2.0"
         ]
       ],
       "exported": null,

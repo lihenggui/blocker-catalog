@@ -8,6 +8,14 @@
       "dependencies": [
         "com.google.dagger:hilt-android:2.51.1"
       ]
+    },
+    "7.2.0": {
+      "fetchedAt": "2026-11-22T13:48:34Z",
+      "sha256": "91759ac92bf5a74d21e82edbf90341d39392b82e788fdb3b42eb02d72bf0b095",
+      "dependencies": [
+        "com.google.dagger:hilt-android:2.59.2",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.2.21"
+      ]
     }
   },
   "components": []

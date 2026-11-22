@@ -2,6 +2,244 @@
   "coordinate": "com.rokid.rtc:rtc",
   "repository": "https://maven.rokid.com/repository/maven-public",
   "versions": {
+    "4.2.1": {
+      "fetchedAt": "2026-11-22T13:40:58Z",
+      "sha256": "4035d49ed1062292237da14755ece186bfffc969a09e907cfa6142bc57ebd6d2",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.2.1",
+        "com.rokid.rtc:rokid:4.2.1",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.3.0": {
+      "fetchedAt": "2026-11-22T13:40:51Z",
+      "sha256": "4035d49ed1062292237da14755ece186bfffc969a09e907cfa6142bc57ebd6d2",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.3.0",
+        "com.rokid.rtc:rokid:4.3.0",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.3.1": {
+      "fetchedAt": "2026-11-22T13:40:44Z",
+      "sha256": "b6537e3e3885678fc386f0ecc164c937d82c2dbadebfe7fed14d767cdacf9e2f",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.3.1",
+        "com.rokid.rtc:rokid:4.3.1",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.4.0": {
+      "fetchedAt": "2026-11-22T13:40:39Z",
+      "sha256": "b6537e3e3885678fc386f0ecc164c937d82c2dbadebfe7fed14d767cdacf9e2f",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.4.1",
+        "com.rokid.rtc:rokid:4.4.1",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.4.1": {
+      "fetchedAt": "2026-11-22T13:40:31Z",
+      "sha256": "b6537e3e3885678fc386f0ecc164c937d82c2dbadebfe7fed14d767cdacf9e2f",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.4.1",
+        "com.rokid.rtc:rokid:4.4.2",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.5.0": {
+      "fetchedAt": "2026-11-22T13:40:25Z",
+      "sha256": "4035d49ed1062292237da14755ece186bfffc969a09e907cfa6142bc57ebd6d2",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.5.0",
+        "com.rokid.rtc:rokid:4.5.0",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.5.1": {
+      "fetchedAt": "2026-11-22T13:40:18Z",
+      "sha256": "4035d49ed1062292237da14755ece186bfffc969a09e907cfa6142bc57ebd6d2",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.5.0",
+        "com.rokid.rtc:rokid:4.5.1",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.6.0": {
+      "fetchedAt": "2026-11-22T13:40:13Z",
+      "sha256": "4035d49ed1062292237da14755ece186bfffc969a09e907cfa6142bc57ebd6d2",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.6.0",
+        "com.rokid.rtc:rokid:4.6.0",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.1": {
+      "fetchedAt": "2026-11-22T13:40:08Z",
+      "sha256": "a4fdd343d2dca09fac6bee558a66faf073ba353c553d2093bc0061091eff4283",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.7.1",
+        "com.rokid.rtc:rokid:4.7.1",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.2": {
+      "fetchedAt": "2026-11-22T13:40:03Z",
+      "sha256": "a4fdd343d2dca09fac6bee558a66faf073ba353c553d2093bc0061091eff4283",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.7.2",
+        "com.rokid.rtc:rokid:4.7.2",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.3": {
+      "fetchedAt": "2026-11-22T13:39:57Z",
+      "sha256": "a4fdd343d2dca09fac6bee558a66faf073ba353c553d2093bc0061091eff4283",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.7.3",
+        "com.rokid.rtc:rokid:4.7.3",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.5": {
+      "fetchedAt": "2026-11-22T13:39:52Z",
+      "sha256": "a4fdd343d2dca09fac6bee558a66faf073ba353c553d2093bc0061091eff4283",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.7.5",
+        "com.rokid.rtc:rokid:4.7.5",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.7": {
+      "fetchedAt": "2026-11-22T13:39:45Z",
+      "sha256": "a4fdd343d2dca09fac6bee558a66faf073ba353c553d2093bc0061091eff4283",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.7.7",
+        "com.rokid.rtc:rokid:4.7.7",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
+    "4.7.9": {
+      "fetchedAt": "2026-11-22T13:39:39Z",
+      "sha256": "a4fdd343d2dca09fac6bee558a66faf073ba353c553d2093bc0061091eff4283",
+      "dependencies": [
+        "androidx.core:core-ktx:1.5.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:1.1.9",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:4.7.9",
+        "com.rokid.rtc:rokid:4.7.9",
+        "com.rokid.utils:rkutils:1.0.1",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
+    },
     "4.8.4": {
       "fetchedAt": "2026-10-25T20:31:12Z",
       "sha256": "a4fdd343d2dca09fac6bee558a66faf073ba353c553d2093bc0061091eff4283",
@@ -88,6 +326,24 @@
         "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
       ]
+    },
+    "6.0.4": {
+      "fetchedAt": "2026-11-22T13:39:34Z",
+      "sha256": "6b262bb68b83ba87dd88808e35110885dda396ef4f6b7e835a1580c0e8b51630",
+      "dependencies": [
+        "androidx.core:core-ktx:1.12.0",
+        "com.google.code.gson:gson:2.8.6",
+        "com.rokid.logger:rklogger:3.0.7",
+        "com.rokid.network:rknetwork:0.9.12-rc1",
+        "com.rokid.rtc:api:6.0.4",
+        "com.rokid.rtc:base:0.0.9",
+        "com.rokid.rtc:livekit:6.0.4",
+        "com.rokid.utils:rkutils:1.0.2",
+        "com.squareup.okhttp3:okhttp:4.7.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.1.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+      ]
     }
   },
   "components": [
@@ -97,7 +353,7 @@
       "versionRanges": [
         [
           "4.8.6",
-          "6.0.1"
+          "6.0.4"
         ]
       ],
       "exported": false,
@@ -113,7 +369,7 @@
       "type": "provider",
       "versionRanges": [
         [
-          "4.8.4",
+          "4.2.1",
           "4.8.5"
         ]
       ],
