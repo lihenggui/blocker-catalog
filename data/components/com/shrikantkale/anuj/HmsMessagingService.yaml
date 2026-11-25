@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T21:45:50Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: Tapasya99’s ToastLibrary includes a Huawei Push Kit service that receives push messages

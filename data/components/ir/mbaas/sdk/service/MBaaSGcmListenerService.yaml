@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T02:27:06Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: MBaaS.ir receives Google Cloud Messaging pushes, forwards them to the app's listener,

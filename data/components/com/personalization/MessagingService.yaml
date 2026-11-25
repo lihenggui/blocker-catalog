@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T21:19:56Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: PersonaClick and REES46 use this Firebase messaging Service to receive push data and

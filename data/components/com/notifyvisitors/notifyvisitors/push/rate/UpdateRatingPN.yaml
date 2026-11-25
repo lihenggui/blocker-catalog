@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T20:58:11Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: When a rating-style push arrives, this service creates its interactive star-rating notification

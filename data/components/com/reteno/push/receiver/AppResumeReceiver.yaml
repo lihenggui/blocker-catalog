@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T21:33:17Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: When Reteno's app-resume broadcast is sent as the app returns to the foreground, this

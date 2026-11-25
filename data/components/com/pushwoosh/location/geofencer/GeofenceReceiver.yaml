@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T21:24:28Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: When Google Play services reports that the device entered or left a configured area,

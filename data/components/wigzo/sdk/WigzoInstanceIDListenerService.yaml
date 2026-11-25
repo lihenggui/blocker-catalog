@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T19:04:42Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: Google Play services starts this Wigzo Service when the push registration token changes;

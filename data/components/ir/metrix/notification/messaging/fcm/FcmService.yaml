@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T02:32:52Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: When Firebase delivers a push or refreshes its registration token, this Metrix Notification

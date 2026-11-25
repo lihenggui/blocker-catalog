@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T18:26:36Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: CleverTap uses this receiver for Xiaomi push messages; it displays pass-through messages

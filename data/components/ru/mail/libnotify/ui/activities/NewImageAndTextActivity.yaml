@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T03:16:33Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: When Mail.ru libnotify has an image-and-text landing ready, it opens this screen to display

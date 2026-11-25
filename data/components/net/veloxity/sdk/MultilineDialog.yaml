@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T02:50:35Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: Veloxity opens this Activity for a multi-line push message; it displays the supplied

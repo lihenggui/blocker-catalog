@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T21:12:20Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: Firebase Job Dispatcher runs this service to save the app's Firebase Cloud Messaging

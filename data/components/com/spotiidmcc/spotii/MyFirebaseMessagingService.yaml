@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T01:31:15Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: The Spotii app Netcore Smartech push integration runs when Firebase supplies a device

@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T22:24:51Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: On Xiaomi Mi Push's internal timer broadcast, this receiver starts the push connection
