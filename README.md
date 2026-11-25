@@ -4,7 +4,7 @@ This repository is the canonical catalog of Android SDK rules and component
 descriptions used by Blocker. Manual edits, Exodus sync updates, crawler
 evidence, and generated descriptions arrive through pull requests. The
 `main` branch holds reviewed sources and evidence. Builds generate app data
-under the gitignored `out/` directory. Generated app files are never committed.
+under the gitignored `out/` directory.
 
 Published app data will come from this repository's releases, and
 `blocker-general-rules` remains the endpoint for older app versions.
@@ -23,7 +23,12 @@ Published app data will come from this repository's releases, and
 | `scripts/rules/` | Build, validation, Exodus sync and linking, and tests |
 | `scripts/crawl/` | Resumable crawler, fixtures, and tests |
 | `.github/workflows/` | Validation, weekly crawler, and weekly Exodus sync |
-| `out/` | Generated `rules/<lang>/general.json`, `components/<lang>/**/*.json`, `component-details/<lang>.json`, and `icon/` |
+| `legacy/` | Frozen English and Chinese components and their SHA-256 checksums |
+| `out/legacy/` | Current `rules/<lang>/general.json`, frozen `components/<lang>/**/*.json`, and `icon/` |
+| `out/v2/` | Uncompressed catalog, rules, components, and icons |
+| `out/release/` | Catalog manifest, gzipped rules and components, and icon ZIP |
+
+See [the v2 format](schema/v2.md) and [the frozen snapshot](legacy/README.md).
 
 ## Edit SDK rules
 
@@ -42,9 +47,9 @@ was retained under Gigya (168) and AppLovin (101). Keep 467 reserved.
 
 Store `name`, `description`, `sideEffect`, and `company` under
 `i18n.<lang>`. Use a nonempty rendered English name. Local English text
-takes precedence over text from the linked tracker, and missing Chinese
-text falls back to English. `safeToBlock` and `sideEffect` are local
-decisions. Company names use their original translations. Exodus supplies
+takes precedence over text from the linked tracker. The v2 client falls back
+to English for each missing Chinese field. `safeToBlock` and `sideEffect` are
+local decisions. Company names use their original translations. Exodus supplies
 no company field. Language-neutral fields use the same values for both
 languages. Where contributor names are combined, retain the English order
 and append Chinese-only contributors.
@@ -57,7 +62,7 @@ The app uses case-insensitive substring search for literal keywords, so a local
 `com.google.android.gms.ads.AdView`. Local keywords are retained and
 `excludeKeywords` uses the same normalization. Network signatures use exact
 deduplication and exact `excludeNetworkSignatures`, including trailing dots.
-Empty search signatures produce a validation warning.
+Empty search signatures produce a validation warning. Legacy
 `useRegexSearch: true` requires every rendered signature to compile.
 
 ## Edit component descriptions
@@ -81,16 +86,12 @@ i18n:
 `contributor`, `lastUpdateTime`, `disableEffect`, and Chinese text are
 optional. Use only the fields shown above. Quote `lastUpdateTime` to preserve
 the ISO instant and fractional digits. Use Java identifiers for path segments,
-including `$` for nested classes. The build derives `name` from the path and
-computes `sdkName` from the rendered rules.
-
-The build generates `en` and `zh-CN` files for every component. Missing Chinese
-descriptions and effects fall back to English independently, while explicit
-empty strings remain empty. Both languages share the same metadata.
-The longest case-insensitive literal keyword match gives the localized
-`sdkName`, with the lowest rule ID breaking ties. With no match, the field
-is omitted. The `component-details/<lang>.json` bundle contains the same
-objects as the per-component files, sorted by name.
+including `$` for nested classes. The build derives `name` from the path.
+It selects `sdkRuleId` by the longest case-insensitive literal keyword match,
+with the lowest rule ID breaking ties. With no match, it omits `sdkRuleId`.
+The v2 client falls back to English separately for each missing translation.
+Explicit empty strings remain empty. Older apps receive the snapshot in
+`legacy/`, which must remain unedited.
 
 ## Build and validate
 
@@ -105,11 +106,13 @@ python3 scripts/rules/build.py --check
 python3 scripts/rules/validate.py --check
 ```
 
-The build runs offline. Rule JSON is sorted by app ID, and outputs omit absent
-optional fields. The build copies icons unchanged. `build.py --check` checks
-the existing files in `out/` without writing to them. `validate.py` checks
-the sources, and `validate.py --check` also compares two clean builds byte
-for byte. Validation runs on pull requests and pushes to `main`.
+The offline build accepts `--sequence` (non-negative integer, default `0`),
+`--source-commit` (default empty), and `--published-at` (UTC ISO instant
+ending in `Z`, default `1970-01-01T00:00:00Z`). Use the same options with
+`build.py --check` to verify the existing outputs without writing to them.
+`validate.py` checks sources and frozen checksums. `validate.py --check` also
+compares two clean builds byte for byte and verifies the v2 catalog.
+Validation runs on pull requests and pushes to `main`.
 
 ## Exodus updates
 

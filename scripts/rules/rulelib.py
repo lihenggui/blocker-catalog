@@ -275,20 +275,24 @@ def load_sources(root=ROOT):
     return sorted(result, key=lambda pair: pair[1]["id"])
 
 
+def localized_text(i18n, lang):
+    return i18n["en"] | i18n.get(lang, {})
+
+
+def defined_text(i18n):
+    return {lang: i18n[lang] for lang in LANGUAGES if i18n.get(lang)}
+
+
+def rule_i18n(rule, tracker):
+    upstream_en = {field: tracker[field] for field in ("name", "description") if field in tracker}
+    return rule["i18n"] | {"en": upstream_en | rule["i18n"]["en"]}
+
+
 def render_rule(rule, lang, trackers):
-    tracker_id = rule.get("upstream", {}).get("exodus")
-    tracker = trackers.get(tracker_id, {})
-    en = rule["i18n"]["en"]
-    localized = rule["i18n"].get(lang, {})
+    tracker = trackers.get(rule.get("upstream", {}).get("exodus"), {})
+    text = localized_text(rule_i18n(rule, tracker), lang)
     result = {"id": rule["id"]}
-    for field in TEXT_FIELDS:
-        if field in localized:
-            result[field] = localized[field]
-        elif field in en:
-            result[field] = en[field]
-        elif field in ("name", "description") and field in tracker:
-            # This is the English value; other locales fall back to it.
-            result[field] = tracker[field]
+    result.update({field: text[field] for field in TEXT_FIELDS if field in text})
     for field in ("iconUrl", "website", "contributors",
                   "safeToBlock", "useRegexSearch"):
         if field in rule and field not in result:
@@ -313,6 +317,23 @@ def render_all(sources, trackers):
         lang: [render_rule(rule, lang, trackers) for _, rule in sources]
         for lang in LANGUAGES
     }
+
+
+def render_v2_rule(rule, trackers):
+    legacy = render_rule(rule, "en", trackers)
+    result = {"id": legacy["id"]}
+    # An empty legacy icon URL denotes a rule without an icon.
+    if legacy.get("iconUrl"):
+        result["icon"] = legacy["iconUrl"]
+    if "website" in legacy:
+        result["website"] = legacy["website"]
+    result["keywords"] = legacy.get("searchKeyword", [])
+    if "safeToBlock" in legacy:
+        result["safeToBlock"] = legacy["safeToBlock"]
+    result["contributors"] = legacy.get("contributors", [])
+    tracker = trackers.get(rule.get("upstream", {}).get("exodus"), {})
+    result["i18n"] = defined_text(rule_i18n(rule, tracker))
+    return result
 
 
 def check_rules(sources, trackers):
@@ -349,12 +370,6 @@ def prepared(root=ROOT):
     trackers = load_snapshot(root)
     warnings = check_rules(sources, trackers)
     return sources, trackers, render_all(sources, trackers), warnings
-
-
-def stale_outputs(root, rendered):
-    return [f"rules/{lang}/general.json" for lang, data in rendered.items()
-            if not (Path(root) / f"rules/{lang}/general.json").is_file()
-            or (Path(root) / f"rules/{lang}/general.json").read_bytes() != json_text(data).encode("utf-8")]
 
 
 def _java_identifier(value):
@@ -426,75 +441,63 @@ def load_component_sources(root=ROOT):
     return result
 
 
-def render_component(name, component, lang, rules):
-    """Use only published rules, with the app's literal substring matching."""
-    matches = [(len(keyword), -rule["id"], rule["name"])
-               for rule in rules for keyword in rule.get("searchKeyword", [])
-               if keyword.lower() in name.lower()]
+def ranked_sdk_keywords(rules):
+    keywords = ((keyword, rule["id"]) for rule in rules for keyword in rule.get("searchKeyword", []))
+    return [(keyword.lower(), rule_id) for keyword, rule_id in
+            sorted(keywords, key=lambda entry: (-len(entry[0]), entry[1]))]
+
+
+def match_sdk_rule(name, keywords):
+    """Use the longest case-insensitive literal match, with the lowest ID on ties."""
+    lower_name = name.lower()
+    return next((rule_id for keyword, rule_id in keywords if keyword in lower_name), None)
+
+
+def render_component(name, component, lang, rules, *, keywords=None):
+    if keywords is None:
+        keywords = ranked_sdk_keywords(rules)
+    rule_id = match_sdk_rule(name, keywords)
     result = {"name": name}
-    if matches:
-        result["sdkName"] = max(matches)[2]
-    en = component["i18n"]["en"]
-    localized = component["i18n"].get(lang, {})
-    for field in COMPONENT_TEXT_FIELDS:
-        if field in localized:
-            result[field] = localized[field]
-        elif field in en:
-            result[field] = en[field]
+    if rule_id is not None:
+        result["sdkName"] = next(rule["name"] for rule in rules if rule["id"] == rule_id)
+    text = localized_text(component["i18n"], lang)
+    result.update({field: text[field] for field in COMPONENT_TEXT_FIELDS if field in text})
     result.update({field: component[field] for field in COMPONENT_METADATA_TYPES if field in component})
     return {key: result[key] for key in COMPONENT_OUTPUT_TYPES if key in result}
 
 
 def render_components(sources, rules):
-    return {
-        lang: {path.with_suffix(".json").as_posix():
-               render_component(component_name(path), component, lang, rules[lang])
-               for path, component in sources}
-        for lang in LANGUAGES
-    }
+    result = {}
+    for lang in LANGUAGES:
+        keywords = ranked_sdk_keywords(rules[lang])
+        result[lang] = {
+            path.with_suffix(".json").as_posix():
+            render_component(component_name(path), component, lang, rules[lang], keywords=keywords)
+            for path, component in sources
+        }
+    return result
+
+
+def render_v2_components(sources, rules):
+    keywords = ranked_sdk_keywords(rules)
+    result = []
+    for path, component in sources:
+        name = component_name(path)
+        row = {"name": name}
+        rule_id = match_sdk_rule(name, keywords)
+        if rule_id is not None:
+            row["sdkRuleId"] = rule_id
+        row["recommendToBlock"] = component["recommendToBlock"]
+        if "contributor" in component:
+            row["contributor"] = component["contributor"]
+        if "lastUpdateTime" in component:
+            row["updatedAt"] = component["lastUpdateTime"]
+        row["i18n"] = defined_text(component["i18n"])
+        result.append(row)
+    return sorted(result, key=lambda row: row["name"])
 
 
 def component_json_text(value):
     # Legacy component files have no trailing newline; keep unaffected English
     # files byte-for-byte identical, independently of the rule JSON style.
     return json.dumps(value, ensure_ascii=False, indent=4)
-
-
-def component_bundle_text(rendered):
-    return "[\n" + ",\n".join(
-        json.dumps(data, ensure_ascii=False, separators=(",", ":"))
-        for data in sorted(rendered.values(), key=lambda item: item["name"])
-    ) + "\n]\n"
-
-
-def component_orphans(root, rendered):
-    # Never inspect or remove components in any other locale (e.g. zh_CN).
-    orphans = [path for lang in LANGUAGES
-               for path in (Path(root) / f"components/{lang}").rglob("*.json")
-               if path.relative_to(Path(root) / f"components/{lang}").as_posix() not in rendered[lang]]
-    # The bundle directory contains generated JSON only.
-    bundles = Path(root) / "component-details"
-    expected = {bundles / f"{lang}.json" for lang in LANGUAGES}
-    return sorted(orphans + [path for path in bundles.rglob("*.json") if path not in expected])
-
-
-def stale_component_outputs(root, rendered):
-    stale = []
-    for lang in LANGUAGES:
-        for relative, data in rendered[lang].items():
-            path = Path(root) / f"components/{lang}" / relative
-            if not path.is_file() or path.read_bytes() != component_json_text(data).encode("utf-8"):
-                stale.append(path.relative_to(root).as_posix())
-        bundle = Path(root) / f"component-details/{lang}.json"
-        if not bundle.is_file() or bundle.read_bytes() != component_bundle_text(rendered[lang]).encode("utf-8"):
-            stale.append(bundle.relative_to(root).as_posix())
-    return stale + [path.relative_to(root).as_posix() for path in component_orphans(root, rendered)]
-
-
-def write_component_outputs(root, rendered):
-    for lang in LANGUAGES:
-        for relative, data in rendered[lang].items():
-            write_text(Path(root) / f"components/{lang}" / relative, component_json_text(data))
-        write_text(Path(root) / f"component-details/{lang}.json", component_bundle_text(rendered[lang]))
-    for path in component_orphans(root, rendered):
-        path.unlink()
