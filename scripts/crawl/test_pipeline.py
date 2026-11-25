@@ -1,0 +1,133 @@
+from unittest.mock import patch
+from pathlib import Path
+import yaml
+from crawl import STAGES, run
+from indexlib.evidence import components_at
+from indexlib.http import DeadlineReached, HttpClient
+from indexlib.parsing import BUILTINS
+from indexlib.repositories import metadata_url
+from indexlib.storage import Store
+from test_http import Clock
+from test_support import FixtureClient, FixtureTest, aar, metadata_fixture, response
+
+
+class PipelineTests(FixtureTest):
+    def test_given_fixture_repositories_when_all_stages_run_then_evidence_and_coverage_are_generated_offline(self):
+        google, central = BUILTINS
+
+        def handler(url, **kwargs):
+            if url.endswith("/junit/junit/maven-metadata.xml"):
+                return response(status=404)
+            if url == google + "/master-index.xml":
+                return response("<metadata><org.example/></metadata>")
+            if url == central + "/master-index.xml":
+                return response(status=404)
+            if url == google + "/org/example/group-index.xml":
+                return response('<org.example><sdk versions="1,2,3"/></org.example>')
+            if url == metadata_url(google, "org.example:sdk"):
+                return response(metadata_fixture())
+            if url.startswith("https://search.maven.org/solrsearch/select?"):
+                return response({"response": {"numFound": 0, "docs": []}})
+            if url.endswith(".pom"):
+                return response("<project><packaging>aar</packaging><dependencies/></project>")
+            if url.endswith(".aar"):
+                return response(aar(b"<manifest><application/></manifest>" if "/2/" in url else None))
+            raise AssertionError(url)
+        client = FixtureClient(handler=handler)
+        self.write_rule(42, ["provider"])
+        state_dir = self.root / "custom-state"
+        store = Store(self.root, state_dir=state_dir)
+        self.assertEqual(run(store, client, "all"), 0)
+        evidence = store.evidence("org.example:sdk")
+        self.assertEqual(list(evidence["versions"]), ["1", "2", "3"])
+        self.assertEqual(len(components_at(evidence, "1")), 5)
+        self.assertEqual(len(components_at(evidence, "2")), 0)
+        self.assertTrue((self.root / "evidence/reports/coverage.md").exists())
+        self.assertTrue((self.root / "evidence/prefixes.json").exists())
+        self.assertTrue((state_dir / "artifacts/org.example/sdk.json").exists())
+        self.assertTrue((state_dir / "repositories.json").exists())
+        self.assertEqual(Store(self.root, state_dir=state_dir).state["completed"], [])
+        self.assertFalse(self.store.state_dir.exists())
+
+    def test_given_time_budget_exhausted_mid_pipeline_when_resumed_then_completed_stages_are_skipped(self):
+        calls = []
+
+        def stage(name, stop=False):
+            def execute(*args, **kwargs):
+                calls.append(name)
+                if stop:
+                    raise DeadlineReached()
+                return True
+            return execute
+        with patch.dict(STAGES, {name: stage(name, name == "fetch") for name in STAGES}):
+            self.assertEqual(run(self.store, FixtureClient(), "all"), 0)
+        self.assertEqual(Store(self.root).state["completed"], ["discover", "probe", "enumerate"])
+        calls.clear()
+        with patch.dict(STAGES, {name: stage(name) for name in STAGES}):
+            self.assertEqual(run(Store(self.root), FixtureClient(), "all"), 0)
+        self.assertEqual(calls, ["discover", "fetch", "extract", "group", "prefixes", "report"])
+
+    def test_given_saved_prefix_stage_when_resumed_without_its_snapshot_then_prefixes_are_rebuilt(self):
+        self.rules()
+        self.store.state["completed"] = list(STAGES)[:-1]
+        self.store.save()
+        store = Store(self.root)
+        with patch.dict(STAGES, {"discover": lambda *args, **kwargs: True}):
+            self.assertEqual(run(store, FixtureClient(), "all"), 0)
+        self.assertTrue((self.root / "evidence/prefixes.json").is_file())
+        self.assertTrue((self.root / "evidence/reports/coverage.md").is_file())
+        self.assertEqual(Store(self.root).state["completed"], [])
+
+    def test_given_partial_upstream_stage_when_pipeline_runs_then_later_stages_remain_eligible_for_next_run(self):
+        stages = {name: (lambda *args, **kwargs: True) for name in STAGES}
+        stages["enumerate"] = lambda *args, **kwargs: False
+        with patch.dict(STAGES, stages):
+            self.assertEqual(run(self.store, FixtureClient(), "all"), 0)
+        self.assertEqual(Store(self.root).state["completed"], ["discover", "probe"])
+
+    def test_given_discovery_search_wait_exceeds_one_third_budget_when_all_runs_then_remaining_stages_run_with_original_deadline(self):
+        clock = Clock()
+        requests = []
+
+        def transport(url, headers, limit, timeout):
+            requests.append(url)
+            return response(status=429, headers={"Retry-After": "61"})
+        client = HttpClient(deadline=180, clock=clock, wall=clock, sleep=clock.sleep, transport=transport, token="fixture")
+        calls = []
+
+        def stage(name):
+            def execute(store, client, **kwargs):
+                self.assertEqual(client.deadline, 180)
+                calls.append(name)
+                return True
+            return execute
+        with patch.dict(STAGES, {name: stage(name) for name in STAGES if name != "discover"}):
+            self.assertEqual(run(self.store, client, "all", max_minutes=3), 0)
+        self.assertEqual(calls, ["probe", "enumerate", "fetch", "extract", "group", "prefixes", "report"])
+        self.assertEqual(len(requests), 1)
+        self.assertEqual(clock.sleeps, [])
+        self.assertEqual(len(Store(self.root).state["discover"]["queue"]), 16)
+        self.assertEqual(Store(self.root).state["completed"], [])
+
+    def test_given_weekly_workflow_when_loaded_then_cache_action_is_pinned_and_only_manifests_are_cached(self):
+        path = Path(__file__).resolve().parents[2] / ".github/workflows/crawl.yml"
+        workflow = yaml.load(path.read_text(), Loader=yaml.BaseLoader)
+        caches = [step for step in workflow["jobs"]["crawl"]["steps"] if step.get("uses", "").startswith("actions/cache@")]
+        self.assertEqual(len(caches), 1)
+        self.assertEqual(caches[0]["uses"], "actions/cache@v4.2.3")
+        self.assertEqual(caches[0]["with"]["path"], ".cache/manifests/")
+
+    def test_given_discovery_search_denied_when_all_runs_then_later_stages_still_run_and_exit_is_nonzero(self):
+        calls = []
+
+        def denied(*args, **kwargs):
+            raise OSError("GitHub search HTTP 403")
+
+        stages = {name: (lambda *args, name=name, **kwargs: calls.append(name) or True) for name in STAGES}
+        stages["discover"] = denied
+        with patch.dict(STAGES, stages):
+            self.assertEqual(run(self.store, FixtureClient(), "all"), 1)
+        self.assertEqual(calls, [name for name in STAGES if name != "discover"])
+
+    def test_given_crawl_stages_when_ordered_then_prefix_attribution_runs_between_group_and_report(self):
+        self.assertEqual(list(STAGES), ["discover", "probe", "enumerate", "fetch", "extract", "group", "prefixes", "report"])
