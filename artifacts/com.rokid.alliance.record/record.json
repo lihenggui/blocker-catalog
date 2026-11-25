@@ -1,0 +1,105 @@
+{
+  "coordinate": "com.rokid.alliance.record:record",
+  "repository": "https://maven.rokid.com/repository/maven-public",
+  "versions": {
+    "1.1.10": {
+      "fetchedAt": "2026-11-22T13:26:50Z",
+      "sha256": "f1c8f6bc35c81be401ade369c8b4ff5462de69ce738629b82e2b594fcdc4b7a9",
+      "dependencies": [
+        "android.arch.persistence.room:runtime:1.1.1",
+        "com.android.support:appcompat-v7:28.0.0",
+        "com.rokid.alliance.base:base:1.1.11",
+        "com.rokid.alliance.usbcamera:usbcamera:1.1.11"
+      ]
+    },
+    "1.1.11": {
+      "fetchedAt": "2026-11-22T13:26:45Z",
+      "sha256": "d0c6eede1b4f1e0b79144136b3a715c754ab45ccf47e0748dff622ade213645d",
+      "dependencies": [
+        "android.arch.persistence.room:runtime:1.1.1",
+        "com.android.support:appcompat-v7:28.0.0",
+        "com.rokid.alliance.base:base:1.1.12",
+        "com.rokid.alliance.usbcamera:usbcamera:1.1.13"
+      ]
+    },
+    "1.1.12": {
+      "fetchedAt": "2026-11-22T13:26:41Z",
+      "sha256": "d0c6eede1b4f1e0b79144136b3a715c754ab45ccf47e0748dff622ade213645d",
+      "dependencies": [
+        "android.arch.persistence.room:runtime:1.1.1",
+        "com.android.support:appcompat-v7:28.0.0",
+        "com.rokid.alliance.base:base:1.1.12",
+        "com.rokid.alliance.usbcamera:usbcamera:1.1.14"
+      ]
+    },
+    "1.1.13": {
+      "fetchedAt": "2026-11-22T13:26:36Z",
+      "sha256": "d0c6eede1b4f1e0b79144136b3a715c754ab45ccf47e0748dff622ade213645d",
+      "dependencies": [
+        "android.arch.persistence.room:runtime:1.1.1",
+        "com.android.support:appcompat-v7:28.0.0",
+        "com.rokid.alliance.base:base:1.1.12",
+        "com.rokid.alliance.usbcamera:usbcamera:1.1.16"
+      ]
+    },
+    "1.1.14": {
+      "fetchedAt": "2026-11-22T13:26:30Z",
+      "sha256": "d0c6eede1b4f1e0b79144136b3a715c754ab45ccf47e0748dff622ade213645d",
+      "dependencies": [
+        "android.arch.persistence.room:runtime:1.1.1",
+        "com.android.support:appcompat-v7:28.0.0",
+        "com.rokid.alliance.base:base:1.1.13",
+        "com.rokid.alliance.usbcamera:usbcamera:1.1.17"
+      ]
+    },
+    "1.1.15": {
+      "fetchedAt": "2026-11-22T13:26:26Z",
+      "sha256": "bc620abb7f22278397b9e0c4235c4277837857e1d41539cfe4671d8e6be0e127",
+      "dependencies": [
+        "android.arch.persistence.room:runtime:1.1.1",
+        "com.android.support:appcompat-v7:28.0.0",
+        "com.rokid.alliance.base:base:1.1.13",
+        "com.rokid.alliance.usbcamera:usbcamera:1.1.18"
+      ]
+    },
+    "1.2.0": {
+      "fetchedAt": "2026-11-22T13:26:21Z",
+      "sha256": "bc620abb7f22278397b9e0c4235c4277837857e1d41539cfe4671d8e6be0e127",
+      "dependencies": [
+        "android.arch.persistence.room:runtime:1.1.1",
+        "com.android.support:appcompat-v7:28.0.0",
+        "com.rokid.alliance.base:base:1.1.14",
+        "com.rokid.alliance.usbcamera:usbcamera:1.1.18"
+      ]
+    },
+    "1.2.1": {
+      "fetchedAt": "2026-11-22T13:26:15Z",
+      "sha256": "bc620abb7f22278397b9e0c4235c4277837857e1d41539cfe4671d8e6be0e127",
+      "dependencies": [
+        "android.arch.persistence.room:runtime:1.1.1",
+        "com.android.support:appcompat-v7:28.0.0",
+        "com.rokid.alliance.base:base:1.1.14",
+        "com.rokid.alliance.usbcamera2:usbcamera:2.0.6"
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "com.rokid.alliance.record.RKMediaService",
+      "type": "service",
+      "versionRanges": [
+        [
+          "1.1.10",
+          "1.2.1"
+        ]
+      ],
+      "exported": true,
+      "process": null,
+      "permission": null,
+      "authorities": null,
+      "actions": [],
+      "categories": [],
+      "metaData": []
+    }
+  ]
+}

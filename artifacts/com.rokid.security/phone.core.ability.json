@@ -1,0 +1,17 @@
+{
+  "coordinate": "com.rokid.security:phone.core.ability",
+  "repository": "https://maven.rokid.com/repository/maven-public",
+  "versions": {
+    "2.5.1-P": {
+      "fetchedAt": "2026-10-25T20:34:28Z",
+      "sha256": "1907bad21d7fc9b91e0c9187acd4a5dcdcd83c8977e754d2edaa5f20fbba7c2f",
+      "dependencies": []
+    },
+    "2.6.2-P": {
+      "fetchedAt": "2026-11-22T13:44:07Z",
+      "sha256": "1907bad21d7fc9b91e0c9187acd4a5dcdcd83c8977e754d2edaa5f20fbba7c2f",
+      "dependencies": []
+    }
+  },
+  "components": []
+}

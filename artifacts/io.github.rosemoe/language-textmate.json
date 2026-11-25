@@ -1,0 +1,19 @@
+{
+  "coordinate": "io.github.rosemoe:language-textmate",
+  "repository": "https://maven.cnb.cool/tencent-tds/shiply-public/-/packages",
+  "versions": {
+    "0.24.7": {
+      "fetchedAt": "2026-11-22T14:00:37Z",
+      "sha256": "eca50e81595cd4cf1f677cca12c5fa2203d6051eaf87dabc7e7489413dd098f1",
+      "dependencies": [
+        "com.google.code.gson:gson:2.14.0",
+        "org.eclipse.jdt:org.eclipse.jdt.annotation:2.4.100",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.4.10",
+        "org.jruby.jcodings:jcodings:1.0.64",
+        "org.jruby.joni:joni:2.2.7",
+        "org.snakeyaml:snakeyaml-engine:3.2"
+      ]
+    }
+  },
+  "components": []
+}

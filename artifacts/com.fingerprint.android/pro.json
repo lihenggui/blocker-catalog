@@ -1,0 +1,17 @@
+{
+  "coordinate": "com.fingerprint.android:pro",
+  "repository": "https://maven.fpregistry.io/releases",
+  "versions": {
+    "2.17.1": {
+      "fetchedAt": "2026-10-25T19:00:15Z",
+      "sha256": "d2ee180f1e1e6b9f3518b988e9325c1a1b3ad06797bf323d9eea38a59b229197",
+      "dependencies": []
+    },
+    "2.17.3": {
+      "fetchedAt": "2026-11-22T13:10:50Z",
+      "sha256": "0d6102cc07aa861e324421d63f368de1227c9e39cf3ff9979c62c69fd4992630",
+      "dependencies": []
+    }
+  },
+  "components": []
+}

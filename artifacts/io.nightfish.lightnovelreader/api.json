@@ -1,0 +1,23 @@
+{
+  "coordinate": "io.nightfish.lightnovelreader:api",
+  "repository": "https://maven.nariko.org/release",
+  "versions": {
+    "0.3": {
+      "fetchedAt": "2026-11-22T14:07:12Z",
+      "sha256": "5f322d575ba6a3037fd297b161e0c8b969a9bac55745b69427bf727026bea09b",
+      "dependencies": [
+        "androidx.compose.foundation:foundation:1.10.6",
+        "androidx.compose.material3:material3:1.5.0-alpha16",
+        "androidx.compose.runtime:runtime:1.10.6",
+        "androidx.compose.ui:ui-graphics:1.10.6",
+        "androidx.compose:compose-bom:2026.03.01",
+        "androidx.navigation:navigation-compose:2.9.7",
+        "org.dom4j:dom4j:2.2.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.3.10",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.10.0"
+      ]
+    }
+  },
+  "components": []
+}

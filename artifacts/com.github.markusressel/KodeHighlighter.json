@@ -1,0 +1,20 @@
+{
+  "coordinate": "com.github.markusressel:KodeHighlighter",
+  "repository": "https://jitpack.io",
+  "versions": {
+    "7.1.0": {
+      "fetchedAt": "2026-11-15T13:08:05Z",
+      "sha256": "3a8941207368383392042d70bd6ec48a77b575604dcc43b579f7e6c526f10c0d",
+      "dependencies": [
+        "androidx.compose.material:material:1.10.4",
+        "androidx.compose.ui:ui-text:1.10.4",
+        "androidx.compose:compose-bom:2026.09.00",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.4.21",
+        "org.jetbrains.kotlin:kotlin-stdlib:2.4.21",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0"
+      ]
+    }
+  },
+  "components": []
+}
