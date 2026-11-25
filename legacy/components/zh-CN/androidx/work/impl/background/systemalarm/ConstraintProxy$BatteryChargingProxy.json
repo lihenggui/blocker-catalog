@@ -1,0 +1,5 @@
+{
+    "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+    "description": "电池充电约束条件的代理类",
+    "recommendToBlock": false
+}

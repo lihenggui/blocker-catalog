@@ -1,0 +1,5 @@
+{
+    "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+    "description": "用于输出有用的诊断信息的BroadcastReceiver。",
+    "recommendToBlock": false
+}

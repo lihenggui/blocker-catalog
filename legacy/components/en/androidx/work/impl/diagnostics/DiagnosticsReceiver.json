@@ -1,0 +1,5 @@
+{
+    "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+    "description": "The android.content.BroadcastReceiver which dumps out useful diagnostics information.",
+    "recommendToBlock": false
+}

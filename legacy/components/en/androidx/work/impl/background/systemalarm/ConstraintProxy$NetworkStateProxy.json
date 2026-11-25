@@ -1,0 +1,5 @@
+{
+    "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+    "description": "Proxy for Network State constraints.",
+    "recommendToBlock": false
+}

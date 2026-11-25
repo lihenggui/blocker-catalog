@@ -1,0 +1,5 @@
+{
+    "name": "androidx.startup.InitializationProvider",
+    "description": "The ContentProvider which discovers Initializers in an application and initializes them before Application#onCreate().",
+    "recommendToBlock": false
+}
