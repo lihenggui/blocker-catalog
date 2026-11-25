@@ -100,7 +100,7 @@ def main():
                     "git", "-C", str(args.legacy_root), "show",
                     f"{args.legacy_ref or manifest['legacy_ref']}:{relative}",
                 ]))
-            current = json.loads((args.root / "out" / relative).read_text(encoding="utf-8"))
+            current = json.loads((args.root / "out/legacy" / relative).read_text(encoding="utf-8"))
             changes.extend(differences(legacy, current, lang, manifest))
         lines = [detail(change) for change in changes] if args.details else summarize(changes)
         for line in lines:

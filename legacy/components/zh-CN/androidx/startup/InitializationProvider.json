@@ -1,0 +1,5 @@
+{
+    "name": "androidx.startup.InitializationProvider",
+    "description": "在应用程序中发现初始化组件并在 Application#onCreate() 之前初始化它们的ContentProvider。",
+    "recommendToBlock": false
+}

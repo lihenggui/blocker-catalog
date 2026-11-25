@@ -1,0 +1,5 @@
+{
+    "name": "com.google.firebase.provider.FirebaseInitProvider",
+    "description": "在应用程序启动时初始化 Firebase API。",
+    "recommendToBlock": false
+}
