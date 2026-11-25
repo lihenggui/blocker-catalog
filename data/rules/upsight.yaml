@@ -1,0 +1,16 @@
+id: 271
+keywords:
+- com.upsight.android
+website: https://www.upsight.com/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Upsight
+    description: '*A set of libraries which enables the use of the Upsight analytics data platform and
+      marketing tools.*'
+    company: upsight
+  zh-CN:
+    company: upsight
+upstream:
+  exodus: 254

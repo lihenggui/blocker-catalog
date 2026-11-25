@@ -1,0 +1,12 @@
+recommendToBlock: true
+contributor: blocker-component-index
+lastUpdateTime: '2026-10-28T18:26:36Z'
+i18n:
+  en:
+    description: When ByteDance's Pangle ad SDK starts, this Provider makes internal services available
+      to the SDK's other parts; some releases also register the app context and track screen activity.
+    disableEffect: Pangle ad setup or communication between its background parts may stop working, while
+      the host app's own screens remain available.
+  zh-CN:
+    description: 字节跳动 Pangle 广告 SDK 启动时，此 Provider 会为 SDK 的其他部分提供所需服务；部分版本还会登记应用上下文并跟踪界面活动。
+    disableEffect: Pangle 广告初始化或后台功能之间的协作可能停止，但宿主应用自己的界面仍可使用。

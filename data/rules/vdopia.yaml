@@ -1,0 +1,17 @@
+id: 444
+keywords:
+- com.vdopia.client.android.
+- com.vdopia.ads.
+website: https://chocolateplatform.com/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Vdopia
+    description: Vdopia rebrands to Chocolate, increasing focus on mobile app monetization offering with
+      global launch of its ad mediation platform
+    company: chocolateplatform
+  zh-CN:
+    company: chocolateplatform
+upstream:
+  exodus: 436

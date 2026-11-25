@@ -1,0 +1,17 @@
+id: 90
+keywords:
+- com.locuslabs.sdk
+networkSignature:
+- locuslabs\.com
+website: http://locuslabs.com
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Locuslabs
+    description: Indoor location
+    company: locuslabs
+  zh-CN:
+    company: locuslabs
+upstream:
+  exodus: 60

@@ -1,0 +1,17 @@
+id: 326
+keywords:
+- com.yume.android
+website: https://www.appbrain.com/stats/libraries/details/yume/yume
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: YuMe
+    description: 'Multi-screen video ad-solution
+
+      *Discontinued*'
+    company: appbrain
+  zh-CN:
+    company: appbrain
+upstream:
+  exodus: 309

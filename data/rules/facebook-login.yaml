@@ -1,0 +1,18 @@
+id: 96
+keywords:
+- com.facebook.login
+networkSignature:
+- \.facebook\.com
+iconUrl: icon/facebook.svg
+website: https://developers.facebook.com/docs/android
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Facebook Login
+    description: ''
+    company: Facebook
+  zh-CN:
+    company: Facebook
+upstream:
+  exodus: 67

@@ -1,0 +1,17 @@
+id: 353
+keywords:
+- io.didomi.sdk.
+website: https://www.didomi.io/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Didomi
+    description: 'Privacy and consent management platform
+
+      [SDK documentation](https://developers.didomi.io/cmp/mobile-sdk/android)'
+    company: didomi
+  zh-CN:
+    company: didomi
+upstream:
+  exodus: 342

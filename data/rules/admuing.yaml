@@ -1,0 +1,15 @@
+id: 290
+keywords:
+- com.admuing.danmaku.
+website: https://github.com/admuing
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: AdMuing
+    description: Video advertising
+    company: github
+  zh-CN:
+    company: github
+upstream:
+  exodus: 273

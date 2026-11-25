@@ -1,0 +1,15 @@
+id: 139
+keywords:
+- com.tencent.mta
+website: https://mta.qq.com/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Tencent MTA
+    description: Analytics
+    company: qq
+  zh-CN:
+    company: qq
+upstream:
+  exodus: 114

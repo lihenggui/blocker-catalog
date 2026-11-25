@@ -1,0 +1,12 @@
+recommendToBlock: true
+contributor: blocker-component-index
+lastUpdateTime: '2026-10-28T18:26:36Z'
+i18n:
+  en:
+    description: When a user opens details for an app shown in an ad, this screen lists the app's requested
+      permissions and offers a download action.
+    disableEffect: Users can no longer open the advertised app's details or start its download from this
+      screen.
+  zh-CN:
+    description: 用户查看广告中应用的详情时，此界面会列出该应用请求的权限，并提供下载入口。
+    disableEffect: 用户将无法通过此界面查看广告应用的详情或开始下载。

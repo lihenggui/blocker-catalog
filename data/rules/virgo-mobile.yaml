@@ -1,0 +1,15 @@
+id: 392
+keywords:
+- com.virgo.ads.
+website: http://virgomobile.com/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Virgo Mobile
+    description: Marketing
+    company: virgomobile
+  zh-CN:
+    company: virgomobile
+upstream:
+  exodus: 383
