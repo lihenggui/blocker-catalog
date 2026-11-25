@@ -1,0 +1,11 @@
+recommendToBlock: true
+contributor: blocker-component-index
+lastUpdateTime: '2026-10-28T18:26:36Z'
+i18n:
+  en:
+    description: This Service runs Pangle's downloader in a separate background process and handles download
+      requests from the app's other Pangle parts.
+    disableEffect: Pangle's separate background downloader cannot serve ad-related downloads.
+  zh-CN:
+    description: 此 Service 会在独立后台进程中运行 Pangle 下载器，并处理应用内其他 Pangle 功能发来的下载请求。
+    disableEffect: Pangle 的独立后台下载器将无法处理广告相关下载。

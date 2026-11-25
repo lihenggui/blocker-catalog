@@ -1,0 +1,17 @@
+id: 203
+keywords:
+- net.pubnative
+networkSignature:
+- pubnative\.net
+website: https://pubnative.net/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: PubNative
+    description: Mobile monetization
+    company: pubnative
+  zh-CN:
+    company: pubnative
+upstream:
+  exodus: 183

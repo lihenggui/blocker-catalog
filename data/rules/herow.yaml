@@ -1,0 +1,17 @@
+id: 301
+keywords:
+- com.connecthings.herow
+website: https://herow.io/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Herow
+    description: 'Formerly Connecthings
+
+      *A mobile engagement platform built around everyday behaviors*'
+    company: herow
+  zh-CN:
+    company: herow
+upstream:
+  exodus: 284

@@ -1,2 +1,5 @@
 .cache/
+/.crawl-state/
+.local/
+/out/
 __pycache__/

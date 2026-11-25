@@ -1,0 +1,16 @@
+id: 417
+keywords:
+- io.huq.sourcekit.
+website: https://huq.io/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Huq Sourcekit
+    description: '*Huq Real-world Analytics offers real-world mobile audience insights. Integrate today.
+      Join our Partner Program to monetise your mobile app.*'
+    company: huq
+  zh-CN:
+    company: huq
+upstream:
+  exodus: 408

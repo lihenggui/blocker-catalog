@@ -1,0 +1,20 @@
+id: 299
+keywords:
+- com.conversantmedia
+- com.greystripe.android.
+networkSignature:
+- conversantmedia\.com
+website: https://www.conversantmedia.com
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Conversant
+    description: 'Personalized Ad Marketing
+
+      Includes Greystripe, mobile advertising platform acquired by Conversant'
+    company: conversantmedia
+  zh-CN:
+    company: conversantmedia
+upstream:
+  exodus: 282

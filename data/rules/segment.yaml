@@ -1,0 +1,18 @@
+id: 92
+keywords:
+- com.segment.analytics.
+networkSignature:
+- api\.segment\.io
+- segment\.com
+website: https://segment.com/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Segment
+    description: Collects behavioral data
+    company: segment
+  zh-CN:
+    company: segment
+upstream:
+  exodus: 62

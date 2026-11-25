@@ -1,0 +1,17 @@
+id: 197
+keywords:
+- com.mocoplex.adlib.
+networkSignature:
+- adlibr\.com
+website: https://adlibr.com
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: ADLIB
+    description: https://developer.adlibr.com/guide/Android
+    company: adlibr
+  zh-CN:
+    company: adlibr
+upstream:
+  exodus: 177

@@ -1,0 +1,17 @@
+id: 328
+keywords:
+- com.mediba.jp
+- mediba.ad.sdk.android.openx
+website: https://www.mediba.jp
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: mediba
+    description: mediba, Inc provides advertising, business research, media production, and business development
+      services.
+    company: mediba
+  zh-CN:
+    company: mediba
+upstream:
+  exodus: 311

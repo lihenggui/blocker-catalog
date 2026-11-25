@@ -1,0 +1,11 @@
+recommendToBlock: true
+contributor: blocker-component-index
+lastUpdateTime: '2026-10-28T18:26:36Z'
+i18n:
+  en:
+    description: When a user opens privacy information for an advertised app, this screen displays the
+      policy in a web page.
+    disableEffect: Users can no longer view the advertised app's privacy information through this screen.
+  zh-CN:
+    description: 用户打开广告应用的隐私信息时，此界面会在网页中显示隐私政策。
+    disableEffect: 用户将无法通过此界面查看广告应用的隐私信息。

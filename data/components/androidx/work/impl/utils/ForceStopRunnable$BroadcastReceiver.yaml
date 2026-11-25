@@ -1,0 +1,12 @@
+recommendToBlock: false
+contributor: blocker-component-index
+lastUpdateTime: '2026-10-28T18:26:36Z'
+i18n:
+  en:
+    description: AndroidX WorkManager targets this private Receiver with an internal alarm broadcast;
+      when it fires, the Receiver resets the long-lived alarm used to track app force-stops.
+    disableEffect: WorkManager force-stop recovery can be disrupted, which may affect saved background
+      tasks after the app is force-stopped.
+  zh-CN:
+    description: AndroidX WorkManager 会通过内部闹钟广播直接启动此私有 Receiver；闹钟触发后，它会重设用于跟踪应用强行停止状态的长期闹钟。
+    disableEffect: WorkManager 的强行停止恢复流程可能受影响，进而影响应用被强行停止后的已保存后台任务。

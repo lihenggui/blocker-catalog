@@ -1,0 +1,15 @@
+id: 305
+keywords:
+- io.radar.sdk.Radar
+website: https://radar.io/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Radar
+    description: Location data infrastructure - Geofencing SDK
+    company: radar
+  zh-CN:
+    company: radar
+upstream:
+  exodus: 288

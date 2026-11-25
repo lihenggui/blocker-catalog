@@ -1,0 +1,17 @@
+id: 208
+keywords:
+- io.display.
+networkSignature:
+- display.io
+website: https://www.display.io/en/
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Display
+    description: Mobile marketing
+    company: display
+  zh-CN:
+    company: display
+upstream:
+  exodus: 188

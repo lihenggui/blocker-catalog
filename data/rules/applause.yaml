@@ -1,0 +1,15 @@
+id: 155
+keywords:
+- com.applause.android.
+website: http://www.applause.com
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: Applause
+    description: Analytics
+    company: applause
+  zh-CN:
+    company: applause
+upstream:
+  exodus: 132

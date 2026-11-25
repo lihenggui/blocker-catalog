@@ -1,0 +1,17 @@
+id: 88
+keywords:
+- com.helpshift
+networkSignature:
+- helpshift\.com
+website: https://www.helpshift.com
+contributors:
+- Exodus Tracker Investigation Platform
+i18n:
+  en:
+    name: HelpShift
+    description: ''
+    company: helpshift
+  zh-CN:
+    company: helpshift
+upstream:
+  exodus: 58
