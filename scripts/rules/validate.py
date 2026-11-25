@@ -8,6 +8,7 @@ from tempfile import TemporaryDirectory
 
 from build import (
     build, check_metadata, check_rule_icons, different_files, file_records, prepare_outputs, read_files,
+    release_files,
 )
 from rulelib import COMPONENT_TEXT_FIELDS, ROOT, TEXT_FIELDS, RuleError
 
@@ -103,6 +104,8 @@ def check_determinism(root):
         if changed:
             raise RuleError("builds differ: " + ", ".join(path.as_posix() for path in changed))
         check_v2(first / "v2")
+        if read_files(first / "release") != release_files(read_files(first / "v2")):
+            raise RuleError("release asset names or bytes differ from the v2 catalog")
     print("Two builds are byte-identical. V2 catalog and frozen components validated.")
 
 
