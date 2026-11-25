@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T18:42:26Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: ZHScanQRCode’s ZXing scanner opens this settings screen when an app offers scan preferences.
