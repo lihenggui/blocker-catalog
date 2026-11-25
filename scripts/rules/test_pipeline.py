@@ -247,7 +247,7 @@ class PipelineTests(unittest.TestCase):
             "files": [{"path": name, "sha256": hashlib.sha256((v2 / name).read_bytes()).hexdigest(),
                        "size": (v2 / name).stat().st_size} for name in expected_files],
         })
-        self.assertEqual(manifest.read_bytes(), (self.out / "release/catalog.json").read_bytes())
+        self.assertEqual(manifest.read_bytes(), (self.out / "release/v2-catalog.json").read_bytes())
         check_v2(v2)
         write_text(v2 / "icon/extra.svg", "<svg/>")
         with self.assertRaisesRegex(RuleError, "file paths, hashes or sizes"):
@@ -264,6 +264,9 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual((metadata["sequence"], metadata["sourceCommit"], metadata["publishedAt"]),
                          (12, "deadbeef", "2026-11-25T12:00:00Z"))
         subprocess.run(command + options + ["--check"], check=True, capture_output=True, cwd=ROOT)
+        preview = subprocess.run(command + ["--manifest-only"], check=True, capture_output=True, cwd=ROOT)
+        self.assertEqual(json.loads(preview.stdout)["sequence"], 0)
+        self.assertEqual(manifest_path.read_bytes(), manifest)
         for option, value, error in (
             ("--sequence", "-1", "non-negative integer"),
             ("--published-at", "2026-02-30T12:00:00Z", "ISO instant"),
@@ -282,13 +285,16 @@ class PipelineTests(unittest.TestCase):
         build(self.root)
         second = self.root / "second"
         build(self.root, output_dir=second)
+        self.assertEqual({path.name for path in (self.out / "release").iterdir()}, {
+            "v2-catalog.json", "v2-rules.json.gz", "v2-components.jsonl.gz", "v2-icons.zip",
+        })
         for name in ("rules.json", "components.jsonl"):
-            compressed = (self.out / "release" / f"{name}.gz").read_bytes()
-            self.assertEqual(compressed, (second / "release" / f"{name}.gz").read_bytes())
+            compressed = (self.out / "release" / f"v2-{name}.gz").read_bytes()
+            self.assertEqual(compressed, (second / "release" / f"v2-{name}.gz").read_bytes())
             self.assertEqual(compressed[:10], b"\x1f\x8b\x08\x00\x00\x00\x00\x00\x02\xff")
             self.assertEqual(gzip.decompress(compressed), (self.out / "v2" / name).read_bytes())
-        archive_path = self.out / "release/icons.zip"
-        self.assertEqual(archive_path.read_bytes(), (second / "release/icons.zip").read_bytes())
+        archive_path = self.out / "release/v2-icons.zip"
+        self.assertEqual(archive_path.read_bytes(), (second / "release/v2-icons.zip").read_bytes())
         with zipfile.ZipFile(archive_path) as archive:
             self.assertEqual(archive.namelist(), ["icon/nested/中文.svg", "icon/z.svg"])
             for entry in archive.infolist():
@@ -466,10 +472,10 @@ class PipelineTests(unittest.TestCase):
 
         def changing_build(root, *, output_dir):
             build(root, output_dir=output_dir)
-            write_text(output_dir / "release/rules.json.gz", f"{output_dir.name}\n")
+            write_text(output_dir / "release/v2-rules.json.gz", f"{output_dir.name}\n")
 
         with mock.patch("validate.build", side_effect=changing_build):
-            with self.assertRaisesRegex(RuleError, "builds differ: release/rules.json.gz"):
+            with self.assertRaisesRegex(RuleError, "builds differ: release/v2-rules.json.gz"):
                 check_determinism(self.root)
         self.assertFalse(self.out.exists())
 

@@ -120,6 +120,15 @@ def catalog_files(rules, components, icons, sequence, source_commit, published_a
     return files
 
 
+def release_files(v2):
+    return {
+        "v2-catalog.json": v2["catalog.json"],
+        "v2-rules.json.gz": gzip_bytes(v2["rules.json"]),
+        "v2-components.jsonl.gz": gzip_bytes(v2["components.jsonl"]),
+        "v2-icons.zip": zip_icons({path: data for path, data in v2.items() if path.startswith("icon/")}),
+    }
+
+
 def update_outputs(directory, files, check):
     if directory.is_symlink():
         raise RuleError(f"output directory is a symlink: {directory}")
@@ -159,7 +168,7 @@ def update_outputs(directory, files, check):
 
 
 def build(root=ROOT, check=False, *, output_dir=None, sequence=0, source_commit="",
-          published_at=DEFAULT_PUBLISHED_AT):
+          published_at=DEFAULT_PUBLISHED_AT, manifest_only=False):
     check_metadata(sequence, published_at)
     if type(source_commit) is not str:
         raise RuleError("sourceCommit must be a string")
@@ -169,14 +178,11 @@ def build(root=ROOT, check=False, *, output_dir=None, sequence=0, source_commit=
     legacy = {f"rules/{lang}/general.json": json_text(data).encode("utf-8")
               for lang, data in legacy_rules.items()}
     v2 = catalog_files(rules, components, icons, sequence, source_commit, published_at)
-    release = {
-        "catalog.json": v2["catalog.json"],
-        "rules.json.gz": gzip_bytes(v2["rules.json"]),
-        "components.jsonl.gz": gzip_bytes(v2["components.jsonl"]),
-        "icons.zip": zip_icons(icons),
-    }
+    if manifest_only:
+        print(v2["catalog.json"].decode("utf-8"), end="")
+        return legacy_rules
     outputs = {f"{group}/{path}": data for group, files in (
-        ("legacy", legacy | frozen | icons), ("v2", v2), ("release", release)
+        ("legacy", legacy | frozen | icons), ("v2", v2), ("release", release_files(v2))
     ) for path, data in files.items()}
     update_outputs(output_dir, outputs, check)
     print(f"{'Checked' if check else 'Built'} {len(rules)} rules, {len(components)} v2 components, "
@@ -187,7 +193,9 @@ def build(root=ROOT, check=False, *, output_dir=None, sequence=0, source_commit=
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
-    parser.add_argument("--check", action="store_true", help="fail if generated files would change; never write")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--check", action="store_true", help="fail if generated files would change; never write")
+    mode.add_argument("--manifest-only", action="store_true", help="print the v2 manifest without writing files")
     parser.add_argument("--sequence", type=int, default=0, help="non-negative catalog sequence (default: 0)")
     parser.add_argument("--source-commit", default="", help="source commit to record (default: empty)")
     parser.add_argument("--published-at", default=DEFAULT_PUBLISHED_AT,
@@ -195,7 +203,7 @@ def main():
     args = parser.parse_args()
     try:
         build(args.root, args.check, sequence=args.sequence, source_commit=args.source_commit,
-              published_at=args.published_at)
+              published_at=args.published_at, manifest_only=args.manifest_only)
     except (OSError, ValueError) as exc:
         parser.exit(1, f"ERROR: {exc}\n")
 

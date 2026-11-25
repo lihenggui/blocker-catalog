@@ -6,7 +6,7 @@ evidence, and generated descriptions arrive through pull requests. The
 `main` branch holds reviewed sources and evidence. Builds generate app data
 under the gitignored `out/` directory.
 
-Published app data will come from this repository's releases, and
+Published app data comes from this repository's releases, and
 `blocker-general-rules` remains the endpoint for older app versions.
 
 ## Repository layout
@@ -22,11 +22,12 @@ Published app data will come from this repository's releases, and
 | `config/` | Repository seeds, SDK group overrides, and reviewed functional prefixes |
 | `scripts/rules/` | Build, validation, Exodus sync and linking, and tests |
 | `scripts/crawl/` | Resumable crawler, fixtures, and tests |
-| `.github/workflows/` | Validation, weekly crawler, and weekly Exodus sync |
+| `scripts/publish/` | Release publisher and tests |
+| `.github/workflows/` | Validation, publishing, weekly crawler, and weekly Exodus sync |
 | `legacy/` | Frozen English and Chinese components and their SHA-256 checksums |
 | `out/legacy/` | Current `rules/<lang>/general.json`, frozen `components/<lang>/**/*.json`, and `icon/` |
 | `out/v2/` | Uncompressed catalog, rules, components, and icons |
-| `out/release/` | Catalog manifest, gzipped rules and components, and icon ZIP |
+| `out/release/` | `v2-catalog.json`, `v2-rules.json.gz`, `v2-components.jsonl.gz`, and `v2-icons.zip` |
 
 See [the v2 format](schema/v2.md) and [the frozen snapshot](legacy/README.md).
 
@@ -101,6 +102,7 @@ Use Python 3.11 or newer. CI uses Python 3.12.
 python3 -m pip install -r scripts/requirements.txt
 python3 -m unittest discover -s scripts/rules -p 'test_*.py'
 python3 -m unittest discover -s scripts/crawl -p 'test_*.py'
+python3 -m unittest discover -s scripts/publish -p 'test_*.py'
 python3 scripts/rules/build.py
 python3 scripts/rules/build.py --check
 python3 scripts/rules/validate.py --check
@@ -113,6 +115,25 @@ ending in `Z`, default `1970-01-01T00:00:00Z`). Use the same options with
 `validate.py` checks sources and frozen checksums. `validate.py --check` also
 compares two clean builds byte for byte and verifies the v2 catalog.
 Validation runs on pull requests and pushes to `main`.
+
+## Publishing
+
+The **Publish catalog** workflow verifies the build, publishes changed
+catalog data to GitHub and GitLab as `catalog-<sequence>` (title
+`Catalog <sequence>`), and updates the legacy `blocker-general-rules`
+endpoint. Release assets use the `v<format>-` prefix. If catalog files
+are unchanged, the workflow checks the existing release and completes
+any pending mirror or legacy updates. Published releases are immutable.
+A correction is a new release with a higher sequence.
+
+Run the workflow manually for the first publication. Set the repository
+variable `PUBLISH_ENABLED` to `true` to also publish on pushes to `main`.
+Use `python3 scripts/publish/publish.py --dry-run` to check the next
+publication without writing files or changing either provider.
+
+Format 2 clients fetch the manifest from
+[GitHub](https://github.com/lihenggui/blocker-catalog/releases/latest/download/v2-catalog.json)
+or [GitLab](https://gitlab.com/mercuryli/blocker-catalog/-/releases/permalink/latest/downloads/v2-catalog.json).
 
 ## Exodus updates
 
