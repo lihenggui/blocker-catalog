@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T02:21:32Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: Split's Android RUM Agent starts observing app screens during startup and records when

@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T18:42:08Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: UETool (Ele.me) is a UI inspection tool; it opens this transparent Activity over the

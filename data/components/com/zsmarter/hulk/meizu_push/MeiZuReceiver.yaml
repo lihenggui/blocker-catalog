@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T02:04:04Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: ZSmarter Hulk’s Meizu integration receives Flyme push arrivals, notification taps and

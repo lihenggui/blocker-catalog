@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T20:47:53Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: During a SAN install-promotion flow, the SDK opens this Activity to check the promoted

@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T22:21:00Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: While Tencent Tinker applies a hot fix in the background, it binds this Service to keep

@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T00:04:08Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: The Bugtags SDK opens its issue report form when a user starts a report and can show

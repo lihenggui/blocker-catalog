@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T23:31:52Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: ZeoFlow Flow Kit opens a selected crash report here to show its log text and device details

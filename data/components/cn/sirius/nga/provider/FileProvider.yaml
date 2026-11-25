@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T23:22:09Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: The Yodo1 MAS UC ad plug-in uses Android’s standard file provider to turn local files

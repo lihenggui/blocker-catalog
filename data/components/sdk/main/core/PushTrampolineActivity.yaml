@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T22:50:51Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: InTrack Android SDK and UserMost Android SDK use this screen when a user opens a push

@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T00:16:53Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: The BinduMCX Maven Central Demo SDK exposes this as a launcher entry, but it only calculates

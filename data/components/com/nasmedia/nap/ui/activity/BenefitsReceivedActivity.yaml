@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T01:13:05Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: NAP Offerwall (Nasmedia) uses this page to show benefits the user has received, with

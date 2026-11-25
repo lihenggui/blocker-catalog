@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T18:26:36Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: PushAlert opens this screen when requesting push access; it can show an opt-in prompt,

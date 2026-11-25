@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T19:08:14Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: After an app update on Android versions below 8.0, OneSignal starts this background Service

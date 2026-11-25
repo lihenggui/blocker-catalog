@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T00:48:39Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: The QIndicators sample activity opens a simple greeting screen using the library’s Jetpack

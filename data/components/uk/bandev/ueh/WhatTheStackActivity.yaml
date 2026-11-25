@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T03:20:46Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: BanDev Unexpected Exception Handler opens this screen after an uncaught app error. It

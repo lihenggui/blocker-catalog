@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T23:53:48Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: During an app update download, the Agora AVC conference SDK uses this Service to show

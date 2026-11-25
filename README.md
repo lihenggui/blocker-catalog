@@ -94,6 +94,29 @@ The v2 client falls back to English separately for each missing translation.
 Explicit empty strings remain empty. Older apps receive the snapshot in
 `legacy/`, which must remain unedited.
 
+### Blocking recommendations
+
+> **Recommend blocking only when disabling the component benefits the user (less tracking, ads,
+> analytics, background wake-ups or battery use) and the app's main features keep working.** If
+> disabling it can affect push notifications, sign-in, payments, the camera, language, maps, media
+> playback, downloads the user started, accessibility, widgets the user placed, app start-up or
+> library initialization, do not recommend it. When the available evidence does not establish both
+> conditions, do not recommend it.
+
+Use this definition for manual and generated entries. Default
+`recommendToBlock` to `false` for metadata holders, startup providers,
+`FileProvider`s, generic base classes, and shared job schedulers such as
+WorkManager's system services and reschedule receiver. Check push and
+messaging, authentication and OAuth, billing, camera and locale support,
+user-facing location and media, downloads, accessibility, and home-screen
+widgets for effects on those features.
+
+Use `true` when the component's role and disable effect establish both
+conditions. Examples include ad-only screens and download services,
+analytics and install attribution, SDK-only wake-ups and telemetry uploads,
+optional in-app marketing, and development-only previews, tests, and tracing.
+Check whether crash reporting also supports recovery or reports users submit.
+
 ## Build and validate
 
 Use Python 3.11 or newer. CI uses Python 3.12.

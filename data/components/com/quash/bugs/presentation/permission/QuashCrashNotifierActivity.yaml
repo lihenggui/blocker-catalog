@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T21:30:32Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: After Quash receives a crash log, this screen asks whether the user wants to report it

@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T23:22:09Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: ByteDance VGame uses this provider to turn local SDK files into content links on newer

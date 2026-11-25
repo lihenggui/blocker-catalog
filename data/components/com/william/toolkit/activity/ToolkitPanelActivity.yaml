@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T01:19:46Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: WeiLian's Android Toolkit and qweiop123's AndroidToolKit open a debug panel with shortcuts

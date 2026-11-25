@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T02:13:09Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: After a Hippo Agent call, this screen asks the user for a rating and optional written
