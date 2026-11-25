@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T00:59:11Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: LeavesCZY Monitor opens this screen to show the saved details of one recorded HTTP request

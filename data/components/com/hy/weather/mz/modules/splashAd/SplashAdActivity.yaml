@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: METEOR137
-lastUpdateTime: '2026-10-22T23:18:12.442524000Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: Splash screen advertisement shown when the app starts.

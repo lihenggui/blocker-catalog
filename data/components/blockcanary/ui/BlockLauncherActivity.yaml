@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T00:59:20Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: BlockCanaryX adds a Blocking History icon to the app launcher; tapping it opens the list

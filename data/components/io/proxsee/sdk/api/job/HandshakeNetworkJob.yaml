@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T02:22:44Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: ProxSee schedules this network job to perform its server handshake, immediately or on

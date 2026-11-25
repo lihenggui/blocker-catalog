@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T21:14:19Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: At app startup, the PingOne Fraud (Ping Identity) SDK waits for the first screen to open,

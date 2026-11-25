@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-29T02:50:35Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: At launch, Aywa Payment Gateway’s exported Activity displays the SDK’s simple welcome

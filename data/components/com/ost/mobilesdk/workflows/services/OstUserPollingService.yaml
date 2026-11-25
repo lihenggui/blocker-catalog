@@ -1,6 +1,6 @@
-recommendToBlock: true
+recommendToBlock: false
 contributor: blocker-component-index
-lastUpdateTime: '2026-10-28T21:00:28Z'
+lastUpdateTime: '2026-11-25T00:00:00Z'
 i18n:
   en:
     description: While OST wallet activation is in progress, the OST Client Android SDK checks whether
