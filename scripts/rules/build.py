@@ -2,6 +2,7 @@
 """Generate the legacy app JSON and component bundles; --check never writes."""
 
 import argparse
+import shutil
 import sys
 from pathlib import Path
 
@@ -11,18 +12,45 @@ from rulelib import (
 )
 
 
-def build(root=ROOT, check=False):
+def prepare_outputs(root):
     _, _, rendered, warnings = prepared(root)
     components = render_components(load_component_sources(root), rendered)
     for warning in warnings:
         print(f"WARNING: {warning}", file=sys.stderr)
-    stale = stale_outputs(root, rendered) + stale_component_outputs(root, components)
-    if check and stale:
-        raise RuleError("generated files are out of date: " + ", ".join(stale))
-    if not check:
+    return rendered, components
+
+
+def relative_files(directory):
+    return {path.relative_to(directory) for path in directory.rglob("*") if path.is_file()}
+
+
+def different_files(first, second):
+    first_files, second_files = relative_files(first), relative_files(second)
+    changed = first_files.symmetric_difference(second_files)
+    changed.update(path for path in first_files & second_files
+                   if (first / path).read_bytes() != (second / path).read_bytes())
+    return sorted(changed)
+
+
+def build(root=ROOT, check=False, *, output_dir=None):
+    root = Path(root)
+    output_dir = root / "out" if output_dir is None else Path(output_dir)
+    rendered, components = prepare_outputs(root)
+    icons = root / "data/icons"
+    output_icons = output_dir / "icon"
+    if check:
+        stale = stale_outputs(output_dir, rendered) + stale_component_outputs(output_dir, components)
+        stale.extend((Path("icon") / path).as_posix() for path in different_files(icons, output_icons))
+        if stale:
+            raise RuleError("generated files are out of date: " + ", ".join(stale))
+    else:
         for lang, data in rendered.items():
-            write_text(Path(root) / f"rules/{lang}/general.json", json_text(data))
-        write_component_outputs(root, components)
+            write_text(output_dir / f"rules/{lang}/general.json", json_text(data))
+        write_component_outputs(output_dir, components)
+        if output_icons.exists():
+            shutil.rmtree(output_icons)
+        if icons.is_dir():
+            shutil.copytree(icons, output_icons)
     print(f"{'Checked' if check else 'Built'} {len(rendered['en'])} rules and "
           f"{len(components['en'])} components in {len(rendered)} languages")
     return rendered

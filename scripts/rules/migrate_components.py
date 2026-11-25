@@ -7,15 +7,15 @@ from pathlib import Path
 
 from rulelib import (
     COMPONENT_METADATA_TYPES, COMPONENT_OUTPUT_TYPES, COMPONENT_TEXT_FIELDS,
-    LANGUAGES, ROOT, RuleError, check_component_source, component_name, json_text,
+    COMPONENT_SOURCES, LANGUAGES, ROOT, RuleError, check_component_source, component_name, json_text,
     write_text, yaml_text,
 )
 
 
 def migrate_components(legacy_root=ROOT, output_root=ROOT):
     legacy_root, output_root = Path(legacy_root), Path(output_root)
-    if list((output_root / "src/components").rglob("*.yaml")):
-        raise RuleError("src/components already contains YAML; migration refuses to overwrite sources")
+    if list((output_root / COMPONENT_SOURCES).rglob("*.yaml")):
+        raise RuleError(f"{COMPONENT_SOURCES} already contains YAML; migration refuses to overwrite sources")
     data = {}
     for lang in LANGUAGES:
         directory = legacy_root / f"components/{lang}"
@@ -66,7 +66,7 @@ def migrate_components(legacy_root=ROOT, output_root=ROOT):
             if translated:
                 component["i18n"]["zh-CN"] = translated
         check_component_source(component, relative.as_posix())
-        planned.append((output_root / "src/components" / relative.with_suffix(".yaml"), yaml_text(component)))
+        planned.append((output_root / COMPONENT_SOURCES / relative.with_suffix(".yaml"), yaml_text(component)))
     # Validate every input before creating the first source. PyYAML quotes
     # timestamp-looking strings, retaining all original fractional digits.
     for path, content in planned:

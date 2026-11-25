@@ -82,24 +82,25 @@ def summarize(changes):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
-    parser.add_argument("--legacy-root", type=Path, help="read the old rules from a directory instead of git")
-    parser.add_argument("--legacy-ref", help="defaults to the migration manifest's recorded git revision")
+    parser.add_argument("--legacy-root", type=Path, required=True, help="checkout of the legacy rules repository")
+    parser.add_argument("--legacy-ref", nargs="?", const="", help="read from git instead of the checkout; "
+                        "omit the revision to use the migration manifest's recorded revision")
     parser.add_argument("--fail-on-difference", action="store_true")
     parser.add_argument("--details", action="store_true", help="show individual field differences instead of category counts")
     args = parser.parse_args()
     try:
-        manifest = json.loads((args.root / "scripts/migration_manifest.json").read_text(encoding="utf-8"))
+        manifest = json.loads((args.root / "scripts/rules/migration_manifest.json").read_text(encoding="utf-8"))
         changes = []
         for lang in LANGUAGES:
             relative = f"rules/{lang}/general.json"
-            if args.legacy_root:
+            if args.legacy_ref is None:
                 legacy = json.loads((args.legacy_root / relative).read_text(encoding="utf-8"))
             else:
                 legacy = json.loads(subprocess.check_output([
-                    "git", "-C", str(args.root), "show",
+                    "git", "-C", str(args.legacy_root), "show",
                     f"{args.legacy_ref or manifest['legacy_ref']}:{relative}",
                 ]))
-            current = json.loads((args.root / relative).read_text(encoding="utf-8"))
+            current = json.loads((args.root / "out" / relative).read_text(encoding="utf-8"))
             changes.extend(differences(legacy, current, lang, manifest))
         lines = [detail(change) for change in changes] if args.details else summarize(changes)
         for line in lines:

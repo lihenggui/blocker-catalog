@@ -6,7 +6,7 @@ import json
 import subprocess
 from pathlib import Path
 
-from rulelib import ROOT, RuleError, json_text, merge_keywords, normalize_keyword, slugify, unique, write_text, yaml_text
+from rulelib import ROOT, RULE_SOURCES, RuleError, json_text, merge_keywords, normalize_keyword, slugify, unique, write_text, yaml_text
 
 # The original local rules own their ids. The legacy Exodus-import inputs and
 # 812c832 prove these collisions predate a3e5816; see .local/MIGRATION_REPORT.md.
@@ -93,8 +93,8 @@ def fold_stray_duplicates(data):
 
 def migrate(legacy_root=ROOT, output_root=ROOT, legacy_ref=None):
     legacy_root, output_root = Path(legacy_root), Path(output_root)
-    if list((output_root / "src/rules").glob("*.yaml")):
-        raise RuleError("src/rules already contains YAML; migration refuses to overwrite sources")
+    if list((output_root / RULE_SOURCES).glob("*.yaml")):
+        raise RuleError(f"{RULE_SOURCES} already contains YAML; migration refuses to overwrite sources")
     data = {
         lang: json.loads((legacy_root / f"rules/{lang}/general.json").read_text(encoding="utf-8"))
         for lang in ("en", "zh-CN")
@@ -164,11 +164,11 @@ def migrate(legacy_root=ROOT, output_root=ROOT, legacy_ref=None):
         if slug in used_slugs:
             slug = f"{slug}-{rule_id}"
         used_slugs.add(slug)
-        planned.append((output_root / f"src/rules/{slug}.yaml", yaml_text(source)))
+        planned.append((output_root / RULE_SOURCES / f"{slug}.yaml", yaml_text(source)))
     # Prepare the complete plan before writing any sources.
     for path, content in planned:
         write_text(path, content)
-    write_text(output_root / "scripts/migration_manifest.json", json_text(manifest))
+    write_text(output_root / "scripts/rules/migration_manifest.json", json_text(manifest))
     print(f"Migrated {len(planned)} rules; reassigned {len(manifest['id_reassignments'])} ids; "
           f"removed {len(manifest['removed_rules'])} stray locale rows; "
           f"merged {len(manifest['keyword_merges'])} keyword differences")

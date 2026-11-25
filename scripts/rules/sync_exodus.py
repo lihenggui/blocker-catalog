@@ -10,7 +10,7 @@ from pathlib import Path
 
 from exoduslib import markdown, summary, tracker_overlap
 from rulelib import (
-    ROOT, RuleError, check_rules, json_text, load_snapshot, load_sources, load_ignored, render_all,
+    ROOT, RULE_SOURCES, RuleError, check_rules, json_text, load_snapshot, load_sources, load_ignored, render_all,
     signatures, slugify, trim_trackers, write_text, yaml_text,
 )
 
@@ -71,7 +71,7 @@ def sync(root=ROOT, snapshot_only=False, from_snapshot=False, input_file=None, s
             }
             if tracker["website"]:
                 rule["website"] = tracker["website"]
-            path = root / f"src/rules/exodus-{tracker_id}-{slugify(tracker['name'])}.yaml"
+            path = root / RULE_SOURCES / f"exodus-{tracker_id}-{slugify(tracker['name'])}.yaml"
             if path.exists():
                 raise RuleError(f"refusing to overwrite existing source: {path}")
             planned.append((path, rule))

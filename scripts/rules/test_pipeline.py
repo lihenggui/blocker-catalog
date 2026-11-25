@@ -26,6 +26,7 @@ from rulelib import (
     yaml_text,
 )
 from sync_exodus import EXODUS_URL, fetch_trackers, sync
+from validate import check_determinism
 
 
 def tracker(tracker_id, name, code, network=""):
@@ -52,6 +53,7 @@ class PipelineTests(unittest.TestCase):
         (ROOT / ".local").mkdir(exist_ok=True)
         self.temp = tempfile.TemporaryDirectory(prefix="pipeline-test-", dir=ROOT / ".local")
         self.root = Path(self.temp.name)
+        self.out = self.root / "out"
         self.quiet_out = contextlib.redirect_stdout(io.StringIO())
         self.quiet_err = contextlib.redirect_stderr(io.StringIO())
         self.quiet_out.__enter__()
@@ -64,7 +66,7 @@ class PipelineTests(unittest.TestCase):
 
     def sources(self, *rules):
         for index, rule in enumerate(rules):
-            write_text(self.root / f"src/rules/rule-{index}.yaml", yaml_text(rule))
+            write_text(self.root / f"data/rules/rule-{index}.yaml", yaml_text(rule))
         return load_sources(self.root)
 
     def snapshot(self, *trackers):
@@ -76,11 +78,11 @@ class PipelineTests(unittest.TestCase):
 
     def components(self, *entries):
         for path, component in entries:
-            write_text(self.root / "src/components" / path, yaml_text(component))
+            write_text(self.root / "data/components" / path, yaml_text(component))
         return load_component_sources(self.root)
 
     def component_output(self, lang, path="com/vendor/Service.json"):
-        return json.loads((self.root / f"components/{lang}" / path).read_text(encoding="utf-8"))
+        return json.loads((self.out / f"components/{lang}" / path).read_text(encoding="utf-8"))
 
     def test_given_localized_components_when_built_then_bundles_match_per_file_objects_and_key_order(self):
         self.sources(source(keywords=["com.vendor"]))
@@ -92,11 +94,11 @@ class PipelineTests(unittest.TestCase):
         build(self.root)
         for lang in ("en", "zh-CN"):
             with self.subTest(lang=lang):
-                bundle = self.root / f"component-details/{lang}.json"
+                bundle = self.out / f"component-details/{lang}.json"
                 data = json.loads(bundle.read_text(encoding="utf-8"))
                 per_file = sorted(
                     (json.loads(path.read_text(encoding="utf-8"))
-                     for path in (self.root / f"components/{lang}").rglob("*.json")),
+                     for path in (self.out / f"components/{lang}").rglob("*.json")),
                     key=lambda item: item["name"],
                 )
                 self.assertEqual(data, per_file)
@@ -121,29 +123,28 @@ class PipelineTests(unittest.TestCase):
         )
         for lang in ("en", "zh-CN"):
             with self.subTest(lang=lang):
-                self.assertEqual((self.root / f"component-details/{lang}.json").read_text(encoding="utf-8"), expected)
+                self.assertEqual((self.out / f"component-details/{lang}.json").read_text(encoding="utf-8"), expected)
 
-    def test_given_stale_or_missing_bundle_when_checked_then_clis_fail_without_writing(self):
+    def test_given_stale_or_missing_bundle_when_checked_then_build_fails_without_writing(self):
         self.sources(source())
         self.components(("com/vendor/Service.yaml", component_source()))
         for change in ("stale", "missing"):
             for lang in ("en", "zh-CN"):
                 with self.subTest(change=change, lang=lang):
                     build(self.root)
-                    path = self.root / f"component-details/{lang}.json"
+                    path = self.out / f"component-details/{lang}.json"
                     if change == "stale":
                         path.write_text("[]\n", encoding="utf-8")
                     else:
                         path.unlink()
                     before = {p: p.read_bytes() for p in self.root.rglob("*.json")}
-                    for cli in ("build.py", "validate.py"):
-                        result = subprocess.run(
-                            [sys.executable, str(ROOT / "scripts" / cli), "--root", str(self.root), "--check"],
-                            capture_output=True, text=True, cwd=ROOT,
-                        )
-                        self.assertNotEqual(result.returncode, 0)
-                        self.assertIn(path.relative_to(self.root).as_posix(), result.stderr)
-                        self.assertEqual({p: p.read_bytes() for p in self.root.rglob("*.json")}, before)
+                    result = subprocess.run(
+                        [sys.executable, str(ROOT / "scripts/rules/build.py"), "--root", str(self.root), "--check"],
+                        capture_output=True, text=True, cwd=ROOT,
+                    )
+                    self.assertNotEqual(result.returncode, 0)
+                    self.assertIn(path.relative_to(self.out).as_posix(), result.stderr)
+                    self.assertEqual({p: p.read_bytes() for p in self.root.rglob("*.json")}, before)
 
     def test_given_stale_or_missing_generated_files_when_built_then_outputs_are_refreshed(self):
         self.sources(source(name="Fresh rule", keywords=["com.vendor"]))
@@ -154,34 +155,34 @@ class PipelineTests(unittest.TestCase):
             with self.subTest(change=change):
                 build(self.root)
                 for directory in ("rules", "components", "component-details"):
-                    for path in (self.root / directory).rglob("*.json"):
+                    for path in (self.out / directory).rglob("*.json"):
                         if change == "stale":
                             path.write_text("[]\n", encoding="utf-8")
                         else:
                             path.unlink()
                 for cli, flags in (("build.py", []), ("validate.py", ["--check"])):
                     result = subprocess.run(
-                        [sys.executable, str(ROOT / "scripts" / cli), "--root", str(self.root), *flags],
+                        [sys.executable, str(ROOT / "scripts/rules" / cli), "--root", str(self.root), *flags],
                         capture_output=True, text=True, cwd=ROOT,
                     )
                     self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
                 for lang in ("en", "zh-CN"):
-                    rules = json.loads((self.root / f"rules/{lang}/general.json").read_text(encoding="utf-8"))
+                    rules = json.loads((self.out / f"rules/{lang}/general.json").read_text(encoding="utf-8"))
                     self.assertEqual(rules[0]["name"], "Fresh rule")
                     output = self.component_output(lang)
                     self.assertEqual(output["description"], "Fresh component")
                     self.assertEqual(output["sdkName"], "Fresh rule")
-                    bundle = json.loads((self.root / f"component-details/{lang}.json").read_text(encoding="utf-8"))
+                    bundle = json.loads((self.out / f"component-details/{lang}.json").read_text(encoding="utf-8"))
                     self.assertEqual(bundle, [output])
 
     def test_given_orphan_bundles_when_built_then_orphans_are_removed_and_other_files_are_preserved(self):
         self.sources(source())
         self.components(("com/vendor/Service.yaml", component_source()))
         build(self.root)
-        orphans = [self.root / "component-details/fr.json", self.root / "component-details/old/en.json"]
+        orphans = [self.out / "component-details/fr.json", self.out / "component-details/old/en.json"]
         for path in orphans:
             write_text(path, "[]\n")
-        keep = self.root / "component-details/notes.txt"
+        keep = self.out / "component-details/notes.txt"
         write_text(keep, "Not generated\n")
         with self.assertRaisesRegex(RuleError, "component-details/fr.json"):
             build(self.root, check=True)
@@ -265,7 +266,7 @@ class PipelineTests(unittest.TestCase):
             self.assertEqual(self.component_output(lang, "org/other/Minimal.json"), {
                 "name": "org.other.Minimal", "description": "English description", "recommendToBlock": False,
             })
-        path = self.root / "components/zh-CN/com/vendor/Service.json"
+        path = self.out / "components/zh-CN/com/vendor/Service.json"
         raw = path.read_text(encoding="utf-8")
         self.assertIn('\n    "name": ', raw)
         self.assertIn("中文说明", raw)
@@ -281,23 +282,23 @@ class PipelineTests(unittest.TestCase):
         path = "com/vendor/Service.yaml"
         self.components((path, component_source()))
         for lang in ("en", "zh-CN", "zh_CN", "fr"):
-            write_text(self.root / f"components/{lang}/orphan/Removed.json", "{}\n")
-        keep = self.root / "components/en/notes.txt"
+            write_text(self.out / f"components/{lang}/orphan/Removed.json", "{}\n")
+        keep = self.out / "components/en/notes.txt"
         write_text(keep, "Not generated\n")
         build(self.root)
         for lang in ("en", "zh-CN"):
-            self.assertFalse((self.root / f"components/{lang}/orphan/Removed.json").exists())
-            self.assertEqual(len(list((self.root / f"components/{lang}").rglob("*.json"))), 1)
+            self.assertFalse((self.out / f"components/{lang}/orphan/Removed.json").exists())
+            self.assertEqual(len(list((self.out / f"components/{lang}").rglob("*.json"))), 1)
         for lang in ("zh_CN", "fr"):
-            self.assertEqual((self.root / f"components/{lang}/orphan/Removed.json").read_text(), "{}\n")
+            self.assertEqual((self.out / f"components/{lang}/orphan/Removed.json").read_text(), "{}\n")
         self.assertEqual(keep.read_text(), "Not generated\n")
-        (self.root / "src/components" / path).unlink()
+        (self.root / "data/components" / path).unlink()
         with self.assertRaisesRegex(RuleError, "components/en/com/vendor/Service.json"):
             build(self.root, check=True)
         build(self.root)
         for lang in ("en", "zh-CN"):
-            self.assertEqual(list((self.root / f"components/{lang}").rglob("*.json")), [])
-            self.assertEqual(json.loads((self.root / f"component-details/{lang}.json").read_text(encoding="utf-8")), [])
+            self.assertEqual(list((self.out / f"components/{lang}").rglob("*.json")), [])
+            self.assertEqual(json.loads((self.out / f"component-details/{lang}.json").read_text(encoding="utf-8")), [])
         self.assertTrue(keep.exists())
         build(self.root, check=True)
 
@@ -307,18 +308,18 @@ class PipelineTests(unittest.TestCase):
         for change in ("changed", "missing", "orphan"):
             with self.subTest(change=change):
                 build(self.root)
-                path = self.root / "components/zh-CN/com/vendor/Service.json"
+                path = self.out / "components/zh-CN/com/vendor/Service.json"
                 if change == "changed":
                     path.write_text("{}\n")
                 elif change == "missing":
                     path.unlink()
                 else:
-                    path = self.root / "components/en/com/vendor/Removed.json"
+                    path = self.out / "components/en/com/vendor/Removed.json"
                     write_text(path, "{}\n")
-                before = {p: p.read_bytes() for p in (self.root / "components").rglob("*.json")}
-                with self.assertRaisesRegex(RuleError, path.relative_to(self.root).as_posix()):
+                before = {p: p.read_bytes() for p in (self.out / "components").rglob("*.json")}
+                with self.assertRaisesRegex(RuleError, path.relative_to(self.out).as_posix()):
                     build(self.root, check=True)
-                after = {p: p.read_bytes() for p in (self.root / "components").rglob("*.json")}
+                after = {p: p.read_bytes() for p in (self.out / "components").rglob("*.json")}
                 self.assertEqual(after, before)
 
     def test_component_paths_allow_java_identifiers_including_dollars(self):
@@ -332,7 +333,7 @@ class PipelineTests(unittest.TestCase):
                      "com/class/Service.yaml", "com/_/Service.yaml", "../Escape.yaml", "/absolute/Name.yaml"):
             with self.subTest(path=path), self.assertRaisesRegex(RuleError, "Java identifiers"):
                 component_name(path)
-        write_text(self.root / "src/components/bad-name/Service.yaml", yaml_text(component_source()))
+        write_text(self.root / "data/components/bad-name/Service.yaml", yaml_text(component_source()))
         with self.assertRaisesRegex(RuleError, "Java identifiers"):
             build(self.root, check=True)
 
@@ -360,15 +361,15 @@ class PipelineTests(unittest.TestCase):
         invalid.append(missing)
         for index, item in enumerate(invalid):
             with self.subTest(case=index):
-                write_text(self.root / "src/components/com/vendor/Service.yaml", yaml_text(item))
+                write_text(self.root / "data/components/com/vendor/Service.yaml", yaml_text(item))
                 with self.assertRaises(RuleError):
                     build(self.root)
-                self.assertFalse((self.root / "rules").exists())
-                self.assertFalse((self.root / "components").exists())
+                self.assertFalse((self.out / "rules").exists())
+                self.assertFalse((self.out / "components").exists())
 
     def test_component_duplicate_keys_and_unquoted_timestamps_are_rejected(self):
         self.sources(source())
-        path = self.root / "src/components/com/vendor/Service.yaml"
+        path = self.root / "data/components/com/vendor/Service.yaml"
         write_text(path, "recommendToBlock: false\nrecommendToBlock: true\ni18n:\n  en:\n    description: ok\n")
         with self.assertRaisesRegex(RuleError, "duplicate YAML key"):
             build(self.root)
@@ -376,7 +377,7 @@ class PipelineTests(unittest.TestCase):
                         "i18n:\n  en:\n    description: ok\n")
         with self.assertRaisesRegex(RuleError, "lastUpdateTime: expected str"):
             build(self.root)
-        self.assertFalse((self.root / "rules").exists())
+        self.assertFalse((self.out / "rules").exists())
 
     def test_component_migration_preserves_text_reports_conflicts_and_refuses_overwrite(self):
         self.sources(source())
@@ -398,7 +399,7 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(set(migrated), {"recommendToBlock", "contributor", "lastUpdateTime", "i18n"})
         self.assertEqual(migrated["i18n"]["zh-CN"], {"description": "中文说明"})
         self.assertEqual(migrated["lastUpdateTime"], en["lastUpdateTime"])
-        raw = (self.root / "src/components/com/vendor/Service.yaml").read_text()
+        raw = (self.root / "data/components/com/vendor/Service.yaml").read_text()
         self.assertIn("lastUpdateTime: '2023-11-19T16:45:01.937788900Z'", raw)
         build(self.root)
         expected = {k: v for k, v in en.items() if k != "sdkName"}
@@ -421,20 +422,51 @@ class PipelineTests(unittest.TestCase):
         }))
         with self.assertRaisesRegex(RuleError, "only in zh-CN.*com.vendor.Service"):
             migrate_components(self.root, self.root)
-        self.assertFalse((self.root / "src/components").exists())
+        self.assertFalse((self.root / "data/components").exists())
 
-    def test_component_cli_checks_detect_staleness_without_writing(self):
+    def test_given_stale_components_when_checked_then_only_build_checks_freshness(self):
         self.sources(source())
         self.components(("com/vendor/Service.yaml", component_source()))
         build(self.root)
-        path = self.root / "components/zh-CN/com/vendor/Service.json"
+        path = self.out / "components/zh-CN/com/vendor/Service.json"
         path.write_text("{}\n")
         for cli, flags in (("build.py", ["--check"]), ("validate.py", ["--check"]), ("validate.py", [])):
-            result = subprocess.run([sys.executable, str(ROOT / "scripts" / cli), "--root", str(self.root), *flags],
+            result = subprocess.run([sys.executable, str(ROOT / "scripts/rules" / cli), "--root", str(self.root), *flags],
                                     capture_output=True, text=True, cwd=ROOT)
-            self.assertNotEqual(result.returncode, 0)
-            self.assertIn("components/zh-CN/com/vendor/Service.json", result.stderr)
+            if cli == "build.py":
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("components/zh-CN/com/vendor/Service.json", result.stderr)
+            else:
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             self.assertEqual(path.read_text(), "{}\n")
+
+    def test_given_icons_when_built_then_output_mirrors_source_bytes(self):
+        self.sources(source())
+        icon = self.root / "data/icons/sample.png"
+        icon.parent.mkdir(parents=True)
+        icon.write_bytes(b"\x00\xff\r\n")
+        output = self.out / "icon/sample.png"
+        build(self.root)
+        self.assertEqual(output.read_bytes(), icon.read_bytes())
+        build(self.root, check=True)
+        output.write_bytes(b"changed")
+        with self.assertRaisesRegex(RuleError, "icon/sample.png"):
+            build(self.root, check=True)
+        icon.unlink()
+        build(self.root)
+        self.assertFalse(output.exists())
+
+    def test_given_different_output_bytes_when_validated_then_determinism_check_fails(self):
+        self.sources(source())
+
+        def changing_build(root, *, output_dir):
+            build(root, output_dir=output_dir)
+            write_text(output_dir / "rules/en/general.json", f"{output_dir.name}\n")
+
+        with mock.patch("validate.build", side_effect=changing_build):
+            with self.assertRaisesRegex(RuleError, "builds differ: rules/en/general.json"):
+                check_determinism(self.root)
+        self.assertFalse(self.out.exists())
 
     def test_merge_upstream_first_dedup_strip_and_exclude_both_sources(self):
         self.assertEqual(
@@ -544,10 +576,10 @@ class PipelineTests(unittest.TestCase):
     def test_duplicate_ids_rejected_before_build_writes(self):
         with self.assertRaisesRegex(RuleError, "duplicate rule id"):
             self.sources(source(), source())
-        self.assertFalse((self.root / "rules").exists())
+        self.assertFalse((self.out / "rules").exists())
 
     def test_duplicate_yaml_key_rejected(self):
-        write_text(self.root / "src/rules/bad.yaml", "id: 1\nid: 2\n")
+        write_text(self.root / "data/rules/bad.yaml", "id: 1\nid: 2\n")
         with self.assertRaisesRegex(RuleError, "duplicate YAML key"):
             load_sources(self.root)
 
@@ -557,7 +589,7 @@ class PipelineTests(unittest.TestCase):
             with self.subTest(field=field):
                 rule = source()
                 rule[field] = value
-                write_text(self.root / "src/rules/rule-0.yaml", yaml_text(rule))
+                write_text(self.root / "data/rules/rule-0.yaml", yaml_text(rule))
                 with self.assertRaises(RuleError):
                     load_sources(self.root)
 
@@ -594,7 +626,7 @@ class PipelineTests(unittest.TestCase):
     def test_build_check_detects_manual_edits_without_repairing_them(self):
         self.sources(source())
         build(self.root)
-        path = self.root / "rules/en/general.json"
+        path = self.out / "rules/en/general.json"
         edited = path.read_text() + " "
         path.write_text(edited)
         with self.assertRaisesRegex(RuleError, "out of date"):
@@ -604,7 +636,7 @@ class PipelineTests(unittest.TestCase):
     def test_build_is_byte_stable_sorted_unicode_and_newline_terminated(self):
         self.sources(source(20), source(2, "中文"))
         build(self.root)
-        path = self.root / "rules/en/general.json"
+        path = self.out / "rules/en/general.json"
         content = path.read_bytes()
         self.assertIn("中文".encode(), content)
         self.assertTrue(content.endswith(b"\n"))
@@ -688,7 +720,7 @@ class PipelineTests(unittest.TestCase):
     def test_link_dry_run_is_read_only_and_real_link_changes_only_signatures(self):
         self.sources(source(10, "Local", ["com.unique."]))
         self.snapshot(tracker(3, "Remote rename", "com.unique|com.new", "new\\.test"))
-        source_path = self.root / "src/rules/rule-0.yaml"
+        source_path = self.root / "data/rules/rule-0.yaml"
         before_source = source_path.read_bytes()
         before = render_all(load_sources(self.root), load_snapshot(self.root))
         link(self.root, dry_run=True)
@@ -718,7 +750,7 @@ class PipelineTests(unittest.TestCase):
         self.assertNotIn("company", added[0])
         self.assertNotIn("company", added[0]["i18n"]["en"])
         self.assertEqual(added[0]["upstream"], {"exodus": 900})
-        before = {p: p.read_bytes() for p in (self.root / "src/rules").glob("*.yaml")}
+        before = {p: p.read_bytes() for p in (self.root / "data/rules").glob("*.yaml")}
         self.assertEqual(len(sync(self.root, from_snapshot=True)[0]), 0)
         self.assertEqual(before, {p: p.read_bytes() for p in before})
         self.assertEqual(len(render_all(load_sources(self.root), load_snapshot(self.root))["en"]), 2)
@@ -739,10 +771,10 @@ class PipelineTests(unittest.TestCase):
     def test_sync_does_not_import_prefix_overlap_even_without_an_exact_match(self):
         self.sources(source(10, "Local SDK", ["com.vendor.sdk."]))
         self.snapshot(tracker(900, "Upstream SDK", "com.vendor.sdk.nested"))
-        before = list((self.root / "src/rules").glob("*.yaml"))
+        before = list((self.root / "data/rules").glob("*.yaml"))
         added, report = sync(self.root, from_snapshot=True)
         self.assertEqual(added, [])
-        self.assertEqual(before, list((self.root / "src/rules").glob("*.yaml")))
+        self.assertEqual(before, list((self.root / "data/rules").glob("*.yaml")))
         self.assertIn("## Needs manual link", report)
         self.assertIn("Exodus 900 Upstream SDK", report)
         self.assertIn("app 10 Local SDK", report)
@@ -969,7 +1001,7 @@ class PipelineTests(unittest.TestCase):
             ["compare_legacy.py", "--root", str(self.root), "--legacy-root", str(legacy_root)],
         ]
         for args in commands:
-            result = subprocess.run([sys.executable, str(ROOT / "scripts" / args[0]), *args[1:]],
+            result = subprocess.run([sys.executable, str(ROOT / "scripts/rules" / args[0]), *args[1:]],
                                     capture_output=True, text=True, cwd=ROOT)
             self.assertEqual(result.returncode, 0, f"{args[0]}: {result.stdout}\n{result.stderr}")
         self.assertEqual(len(load_sources(self.root)), 2)
@@ -979,10 +1011,10 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(set(load_snapshot(self.root)[80]), set(rulelib.TRACKER_FIELDS))
         self.assertIn("Beta", (self.root / ".local/exodus-sync-summary.md").read_text())
         self.assertIn("1 code keywords", (self.root / "link-summary.md").read_text())
-        # A CI failure is deterministic and nonmutating after a manual JSON edit.
-        generated = self.root / "rules/en/general.json"
+        # The build freshness check reports a manual JSON edit without repairing it.
+        generated = self.out / "rules/en/general.json"
         generated.write_text("[]\n")
-        result = subprocess.run([sys.executable, str(ROOT / "scripts/validate.py"), "--root", str(self.root)],
+        result = subprocess.run([sys.executable, str(ROOT / "scripts/rules/build.py"), "--root", str(self.root), "--check"],
                                 capture_output=True, text=True, cwd=ROOT)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("out of date", result.stderr)

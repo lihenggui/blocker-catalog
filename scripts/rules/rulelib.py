@@ -8,7 +8,9 @@ from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
+RULE_SOURCES = Path("data/rules")
+COMPONENT_SOURCES = Path("data/components")
 LANGUAGES = ("en", "zh-CN")
 TRACKER_FIELDS = (
     "id", "name", "code_signature", "network_signature", "website",
@@ -258,9 +260,9 @@ def check_source(rule, label):
 
 
 def load_sources(root=ROOT):
-    paths = sorted((Path(root) / "src/rules").glob("*.yaml"))
+    paths = sorted((Path(root) / RULE_SOURCES).glob("*.yaml"))
     if not paths:
-        raise RuleError("no rule sources found in src/rules")
+        raise RuleError(f"no rule sources found in {RULE_SOURCES}")
     result = []
     seen = {}
     for path in paths:
@@ -413,7 +415,7 @@ def check_component_source(component, label):
 
 
 def load_component_sources(root=ROOT):
-    directory = Path(root) / "src/components"
+    directory = Path(root) / COMPONENT_SOURCES
     result = []
     for path in sorted(directory.rglob("*.yaml")):
         relative = path.relative_to(directory)

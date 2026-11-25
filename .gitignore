@@ -1,2 +1,4 @@
 .cache/
+.local/
+/out/
 __pycache__/
