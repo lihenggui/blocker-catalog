@@ -1,0 +1,17 @@
+id: 526
+keywords:
+- com.taobao.fleamarket.splashad.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Xianyu advertisement
+    description: The Xianyu app's startup advertising module displays advertisements when the app opens.
+    sideEffect: Startup advertisements shown by this module will no longer appear.
+    company: Zhejiang Alibaba Xianyu Network Technology Co., Ltd.
+  zh-CN:
+    name: 闲鱼广告
+    description: 闲鱼的开屏广告模块在应用启动时展示广告。
+    sideEffect: 此模块展示的开屏广告将不再出现。
+    company: 浙江阿里巴巴闲鱼网络科技有限公司

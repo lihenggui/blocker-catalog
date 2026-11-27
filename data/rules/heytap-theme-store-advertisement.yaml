@@ -1,0 +1,17 @@
+id: 532
+keywords:
+- com.wx.desktop.bathmos.ui.SplashAdActivity
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: HeyTap Theme Store advertisement
+    description: The interactive desktop module in HeyTap Theme Store uses this activity to display splash ads.
+    sideEffect: Splash ads shown by this activity will no longer appear.
+    company: HeyTap
+  zh-CN:
+    name: 欢太主题商店广告
+    description: 欢太主题商店的互动桌面模块通过此界面展示开屏广告。
+    sideEffect: 此界面展示的开屏广告将不再出现。
+    company: 欢太

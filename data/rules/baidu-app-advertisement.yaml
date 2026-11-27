@@ -1,0 +1,18 @@
+id: 529
+keywords:
+- com.baidu.searchbox.ad.dazzle.
+useRegexSearch: false
+iconUrl: icon/baidu.svg
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Baidu advertisement
+    description: The Dazzle advertising module displays advertisements in the Baidu app.
+    sideEffect: Advertisements displayed by this module may no longer appear.
+    company: Baidu
+  zh-CN:
+    name: 百度广告
+    description: 百度应用通过 Dazzle 广告模块展示应用内广告。
+    sideEffect: 此模块展示的广告可能不再出现。
+    company: 百度

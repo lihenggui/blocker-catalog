@@ -1,0 +1,17 @@
+id: 527
+keywords:
+- com.qidian.QDReader.ui.activity.SplashADActivity
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Qidian advertisement
+    description: The Qidian reading app uses this activity to display advertisements at startup.
+    sideEffect: Startup advertisements shown by this activity will no longer appear.
+    company: Shanghai Xuanting Entertainment Information Technology Co., Ltd.
+  zh-CN:
+    name: 起点读书广告
+    description: 起点读书通过此界面在应用启动时展示广告。
+    sideEffect: 此界面展示的开屏广告将不再出现。
+    company: 上海玄霆娱乐信息科技有限公司

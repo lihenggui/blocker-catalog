@@ -1,0 +1,17 @@
+id: 525
+keywords:
+- com.xingin.advert.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Xiaohongshu advertisement
+    description: The Xiaohongshu app's advertising module displays advertisements such as startup and interstitial ads.
+    sideEffect: Startup and interstitial advertisements that use this module may no longer appear.
+    company: Xingyin Information Technology (Shanghai) Co., Ltd.
+  zh-CN:
+    name: 小红书广告
+    description: 小红书的内置广告模块展示开屏广告和插屏广告等广告内容。
+    sideEffect: 依赖此模块的开屏广告和插屏广告可能不再出现。
+    company: 行吟信息科技（上海）有限公司

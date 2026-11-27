@@ -1,0 +1,17 @@
+id: 524
+keywords:
+- com.shuqi.controller.ad.huichuan.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Shuqi Novel advertisement
+    description: Shuqi Novel's Huichuan advertising module displays rewarded video ads and opens ad pages within the app.
+    sideEffect: Rewarded video ads and ad pages that use this module may fail to open. Rewards that require watching those ads may become unavailable.
+    company: Zhiyuan Yuedu (Guangzhou) Literature Information Technology Co., Ltd.
+  zh-CN:
+    name: 书旗小说广告
+    description: 书旗小说的汇川广告模块在应用内展示激励视频广告，并打开广告页面。
+    sideEffect: 依赖此模块的激励视频广告和广告页面可能无法打开。需要观看此类广告才能领取的奖励可能无法获得。
+    company: 至远悦读（广州）文学信息技术有限公司

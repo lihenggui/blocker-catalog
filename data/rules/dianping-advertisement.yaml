@@ -1,0 +1,17 @@
+id: 528
+keywords:
+- com.dianping.ad.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Dianping advertisement
+    description: The Dianping app's advertising module displays advertisements within the app.
+    sideEffect: Advertisements displayed by this module may no longer appear.
+    company: Shanghai Hantao Information Consulting Co., Ltd.
+  zh-CN:
+    name: 大众点评广告
+    description: 大众点评的内置广告模块在应用内展示广告。
+    sideEffect: 此模块展示的广告可能不再出现。
+    company: 上海汉涛信息咨询有限公司

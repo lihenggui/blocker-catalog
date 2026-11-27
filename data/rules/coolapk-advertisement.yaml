@@ -1,0 +1,17 @@
+id: 523
+keywords:
+- com.coolapk.market.view.ad.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Coolapk advertisement
+    description: The Coolapk app's advertising module displays in-app advertisements, including video and interstitial ads.
+    sideEffect: Advertisements that use this module may no longer appear, and their landing pages may fail to open.
+    company: Shenzhen Coolapk Network Technology Co., Ltd.
+  zh-CN:
+    name: 酷安广告
+    description: 酷安的内置广告模块展示应用内广告，包括视频广告和插屏广告。
+    sideEffect: 依赖此模块的广告可能不再出现，其落地页可能无法打开。
+    company: 深圳酷安网络科技有限公司

@@ -1,0 +1,17 @@
+id: 531
+keywords:
+- com.yupao.launch.yp.HotSplashAdActivity
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Yupao advertisement
+    description: The Yupao recruitment app uses this activity to display startup advertisements.
+    sideEffect: Startup advertisements shown by this activity will no longer appear.
+    company: Chengdu Yupao Technology Co., Ltd.
+  zh-CN:
+    name: 鱼泡广告
+    description: 鱼泡直聘通过此界面展示开屏广告。
+    sideEffect: 此界面展示的开屏广告将不再出现。
+    company: 成都鱼泡科技有限公司

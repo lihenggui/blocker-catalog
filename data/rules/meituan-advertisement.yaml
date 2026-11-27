@@ -1,0 +1,17 @@
+id: 530
+keywords:
+- com.sankuai.meituan.msv.page.outsidead.splashad.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Meituan advertisement
+    description: The Meituan app uses this module to display startup advertisements.
+    sideEffect: Startup advertisements shown by this module will no longer appear.
+    company: Meituan
+  zh-CN:
+    name: 美团广告
+    description: 美团应用通过此模块展示开屏广告。
+    sideEffect: 此模块展示的开屏广告将不再出现。
+    company: 美团
