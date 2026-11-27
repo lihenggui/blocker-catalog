@@ -1,0 +1,17 @@
+id: 522
+keywords:
+- com.netease.cloudmusic.module.ad.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: NetEase Cloud Music advertisement
+    description: The NetEase Cloud Music app's advertising module displays in-app advertisements, including banner ads and rewarded video ads.
+    sideEffect: Advertisements shown by this module will no longer appear. Features that depend on watching rewarded ads may become unavailable.
+    company: Hangzhou NetEase Cloud Music Technology Co., Ltd.
+  zh-CN:
+    name: 网易云音乐广告
+    description: 网易云音乐的内置广告模块展示应用内广告，包括横幅广告和激励视频广告。
+    sideEffect: 此模块展示的广告将不再出现。依赖观看激励广告的功能可能无法使用。
+    company: 杭州网易云音乐科技有限公司

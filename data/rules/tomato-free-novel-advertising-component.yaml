@@ -12,7 +12,7 @@ useRegexSearch: false
 safeToBlock: true
 iconUrl: icon/chuanshanjia.svg
 contributors:
-- '@nmsglmgg'
+- '@nmsglmg'
 i18n:
   en:
     name: Tomato Free Novel Advertising Component

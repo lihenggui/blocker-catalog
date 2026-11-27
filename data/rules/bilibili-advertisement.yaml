@@ -3,12 +3,15 @@ keywords:
 - com.bilibili.ad.
 - com.bilibili.adcommon.
 - tv.danmaku.bili.ui.webview.service.adv.
+- tv.danmaku.bili.splash.ad.
+- kntr.app.ad.
 useRegexSearch: false
 safeToBlock: true
 iconUrl: icon/bilibili.svg
 contributors:
 - 溯澜染汐
 - Mercury
+- '@nmsglmg'
 i18n:
   en:
     name: Bilibili advertisement

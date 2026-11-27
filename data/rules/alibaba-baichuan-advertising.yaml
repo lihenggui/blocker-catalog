@@ -5,7 +5,7 @@ useRegexSearch: false
 safeToBlock: true
 iconUrl: icon/alibabacloud.svg
 contributors:
-- '@nmsglmgg'
+- '@nmsglmg'
 i18n:
   en:
     name: Alibaba Baichuan Advertising
