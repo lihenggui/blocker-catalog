@@ -9,7 +9,7 @@ useRegexSearch: false
 safeToBlock: true
 iconUrl: icon/meizu.svg
 contributors:
-- '@nmsglmgg'
+- '@nmsglmg'
 i18n:
   en:
     name: Meizu Ads
