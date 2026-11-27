@@ -1,0 +1,20 @@
+id: 518
+keywords:
+- com.ltmb.ltadsdk.adx.ad.
+- com.ltmb.ltsdk.core.mt.ad.
+- com.ltmb.ltsdk.core.view.ad.
+- com.ltmb.ltsdk.art.ad.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: LTMB Ads
+    description: The LiteMob Android advertising SDK displays in-app ads from multiple sources, including interstitial and rewarded video ads.
+    sideEffect: Ads handled by these components may fail to display, and features that depend on rewarded videos may be unavailable.
+    company: LiteMob (Beijing) Network Technology Co., Ltd.
+  zh-CN:
+    name: 莱特摩比广告
+    description: 莱特摩比广告 SDK 用于在 Android 应用内展示来自多个广告源的广告，包括插屏广告和激励视频广告。
+    sideEffect: 由这些组件展示的广告可能无法显示，依赖激励视频的功能可能无法使用。
+    company: 莱特摩比（北京）网络技术有限公司

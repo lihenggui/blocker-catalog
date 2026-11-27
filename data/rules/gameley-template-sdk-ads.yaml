@@ -1,0 +1,17 @@
+id: 519
+keywords:
+- com.gameley.templatesdk.ad.impl.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Gameley TemplateSDK Ads
+    description: Gameley TemplateSDK is an Android module used by the Mobit advertising SDK to display in-app advertisements.
+    sideEffect: Interstitial ads, rewarded ads, and ad landing pages handled by this module may fail to open. Rewards that depend on these ads may be unavailable.
+    company: Beijing Leyou Sunshine Technology Co., Ltd.
+  zh-CN:
+    name: Gameley TemplateSDK 广告
+    description: Gameley TemplateSDK 是 Mobit 广告 SDK 所使用的 Android 模块，用于在应用内展示广告。
+    sideEffect: 由此模块处理的插屏广告、激励广告及广告落地页可能无法打开，依赖这些广告的奖励可能无法领取。
+    company: 北京乐游阳光科技有限公司

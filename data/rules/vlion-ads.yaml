@@ -1,0 +1,17 @@
+id: 517
+keywords:
+- cn.vlion.ad.inland.ad.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: VLion Ads
+    description: The VLion Android advertising SDK displays in-app ads, including interstitial and rewarded video ads.
+    sideEffect: Interstitial ads and rewarded videos handled by these components may fail to display, and features that require viewing a rewarded video may be unavailable.
+    company: Shanghai Ruishi Network Technology Co., Ltd.
+  zh-CN:
+    name: VLion 瑞狮广告
+    description: VLion 瑞狮广告 SDK 用于在 Android 应用内展示广告，包括插屏广告和激励视频广告。
+    sideEffect: 由这些组件展示的插屏广告和激励视频可能无法播放或显示，要求观看激励视频的功能可能无法使用。
+    company: 上海瑞狮网络科技有限公司
