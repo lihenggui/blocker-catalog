@@ -1,0 +1,17 @@
+id: 521
+keywords:
+- com.baihemob.ad.h5.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Baihe Ads
+    description: The Baihe Android advertising SDK uses this module to display HTML5 and video ads.
+    sideEffect: Web-based ads and video ads handled by this module may fail to display.
+    company: Hangzhou Baihe Information Technology Co., Ltd.
+  zh-CN:
+    name: 白盒广告
+    description: 白盒 Android 广告 SDK 通过此模块展示 HTML5 广告和视频广告。
+    sideEffect: 由此模块处理的网页广告和视频广告可能无法展示。
+    company: 杭州白盒信息科技有限公司
