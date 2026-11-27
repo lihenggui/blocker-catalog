@@ -1,0 +1,17 @@
+id: 520
+keywords:
+- cj.mobile.ad.supply.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: CJ Mobile Ads
+    description: The CJ Mobile Android advertising SDK uses this module to display rewarded video ads and web-based ad content.
+    sideEffect: Rewarded videos and ad pages handled by this module may fail to open, and the associated rewards may be unavailable.
+    company: Shanghai Lingye Information Technology Co., Ltd.
+  zh-CN:
+    name: 领页广告
+    description: 领页 Android 广告 SDK 通过此模块展示激励视频广告和网页广告内容。
+    sideEffect: 由此模块处理的激励视频和广告页面可能无法打开，相关奖励可能无法领取。
+    company: 上海领页信息科技有限公司

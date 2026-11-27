@@ -1,0 +1,17 @@
+id: 516
+keywords:
+- com.alliance.ssp.ad.core.
+useRegexSearch: false
+contributors:
+- '@nmsglmg'
+i18n:
+  en:
+    name: Alliance SSP
+    description: Alliance SSP is the Youtui Android SDK for displaying advertisements in apps.
+    sideEffect: Ads served through these components may fail to display, and downloads started from those ads may be unavailable.
+    company: Beijing Leyou Sunshine Technology Co., Ltd.
+  zh-CN:
+    name: 优推广告 SDK
+    description: 优推广告 SDK（Alliance SSP）用于在 Android 应用内展示广告。
+    sideEffect: 通过这些组件投放的广告可能无法展示，从这些广告发起的下载可能无法进行。
+    company: 北京乐游阳光科技有限公司
